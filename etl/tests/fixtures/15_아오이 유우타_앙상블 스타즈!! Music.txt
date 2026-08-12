@@ -1,0 +1,541 @@
+[include(틀:상위 문서,top1=아오이 유우타)]
+
+[목차]
+
+== 개요 ==
+게임 [[앙상블 스타즈!! Music]] 내의 [[아오이 유우타]]의 정보를 정리한 문서.
+
+== 등장 스토리 ==
+||<tablealign=center><table width=100%><table bordercolor=#FF3B9A><bgcolor=#00a1e9><table bgcolor=#ffffff,#2d2f34><|8> {{{#ffffff '''캐릭터'''}}} ||<-3> 아오이 유우타 「1화」 ||
+||<-3> 아오이 유우타 「2화」 ||
+||<-3> 아오이 유우타 「3화」 ||
+||<-3> 아오이 유우타 「돌발 바이올리니스트」 ||
+||<-3> 아오이 히나타 「2화」 ||
+||<-3> 타카미네 미도리 「2화」 ||
+||<-3> 사자나미 쥰 「3화」 ||
+||<-3> 오오가미 코가 「3화」 ||
+||<bgcolor=#00a1e9><-4>||
+||<bgcolor=#00a1e9><|6> {{{#ffffff '''메인'''}}} ||<|6><bgcolor=#C4EFFF,#434448> 제4장[br]대전쟁 ||<-2> 93화 「Members」 ||
+||<-2> 94화 「Teacher」 ||
+||<-2> 98화 「Rebelliously」 ||
+||<-2> 101화 「Conspiracy」 ||
+||<-2> 104화 「Liar」 ||
+||<-2> 109화 「Pesticides」 ||
+||<bgcolor=#00a1e9><-4>||
+||<bgcolor=#00a1e9><width=10%> '''[[앙상블 스타즈!! Music/이벤트|{{{#ffffff 이벤트}}}]]''' ||<width=38%><bgcolor=#C4EFFF,#434448> SHUFFLE×사랑의 √는 AtoZ ||<width=27%> {{{-2 2020/04/15 ~ 2020/04/23}}} ||<width=25%> '''{{{#!wiki style="background-color:rgb(0, 161, 233); margin : 1px ; border-radius : 0px ; display:inline-block ; color :#ffffff; font-style: normal ; width:40px ; text-align: center"
+{{{-2 {{{#ffffff Music}}}}}}}}}''' {{{#000000 -}}} ||
+||<bgcolor=#00a1e9><-4>||
+||<bgcolor=#00a1e9><width=10%> '''[[앙상블 스타즈!! Music/스카우트|{{{#ffffff 스카우트}}}]]''' ||<width=38%><bgcolor=#C4EFFF,#434448> 스카우트명 ||<width=27%> {{{-2 2020/00/00 ~ 2020/00/00}}} ||<width=25%> '''{{{#!wiki style="background-color:rgb(0, 161, 233); margin : 1px ; border-radius : 0px ; display:inline-block ; color :#ffffff; font-style: normal ; width:40px ; text-align: center"
+{{{-2 {{{#ffffff Music}}}}}}}}}''' {{{#FF5A5A '''★0'''}}} ||
+
+== 아이돌 퀘스트 ==
+||<table width=100%><table bordercolor=#FF3B9A><rowbgcolor=#00a1e9><table bgcolor=#ffffff,#2d2f34><:> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+{{{#ffffff 랭크}}}}}}''' ||<:> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+{{{#ffffff 미션}}}}}}''' ||<:> '''{{{#ffffff 클리어 조건}}}''' ||<:> '''{{{#ffffff 보상}}}''' ||
+||<width=5%><bgcolor=#00a1e9><|6> {{{#ffffff '''E'''}}} ||<width=7%><bgcolor=#00a1e9> {{{#ffffff '''1'''}}} ||<width=64%>스테이터스 피스(레드/소) × 30 ||<width=24%><bgcolor=#C4EFFF,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 아침-아침의 대화 - 1}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''2'''}}} ||스테이터스 피스(블루/소) × 30 ||<bgcolor=#C4EFFF,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 낮-낮의 대화 - 1}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''3'''}}} ||스테이터스 피스(옐로/소) × 30 ||<bgcolor=#C4EFFF,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 일 대화-아이돌 랭크 E - 1}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''4'''}}} ||아이돌 피스(아오이 유우타) × 1 ||<bgcolor=#C4EFFF,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 일 대화-아이돌 랭크 E - 2}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''5'''}}} ||블로섬 메달 × 1 ||<bgcolor=#C4EFFF,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 라이브 시작 - 1}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''승급'''}}} ||'''{{{#!wiki style="background-color:rgb(0, 161, 233); margin : 1px ; border-radius : 0px ; display:inline-block ; color :#ffffff; font-style: normal ; width:50px ; text-align: center"
+{{{-1 {{{#ffffff Music}}}}}}}}}'''[br]- 팬 2,000명 이상[br]- 아오이 유우타를 센터로 설정 후 『곡명』에서 120,000점 이상 달성 ||<bgcolor=#C4EFFF,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 아이돌 랭크 업-랭크D - 1[br][스토리] 아오이 유우타 「2화」}}}}}} ||
+||<bgcolor=#00a1e9><-4>||
+||<bgcolor=#00a1e9><|6> {{{#ffffff '''D'''}}} ||<bgcolor=#00a1e9> {{{#ffffff '''1'''}}} ||스테이터스 피스(블루/소) × 50 ||<bgcolor=#C4EFFF,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 저녁-저녁의 대화 - 1}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''2'''}}} ||스테이터스 피스(옐로/중) × 10 ||<bgcolor=#C4EFFF,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 밤-밤의 대화 - 1}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''3'''}}} ||스테이터스 피스(레드/중) × 10 ||<bgcolor=#C4EFFF,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 아침-아침의 대화 - 2}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''4'''}}} ||아이돌 피스(아오이 유우타) × 2 ||<bgcolor=#C4EFFF,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 일-시작 - 1}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''5'''}}} ||블로섬 메달 × 3 ||<bgcolor=#C4EFFF,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 일-종료 - 1}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''승급'''}}} ||'''{{{#!wiki style="background-color:rgb(0, 161, 233); margin : 1px ; border-radius : 0px ; display:inline-block ; color :#ffffff; font-style: normal ; width:50px ; text-align: center"
+{{{-1 {{{#ffffff Music}}}}}}}}}'''[br]- 팬 10,000명 이상[br]- 아오이 유우타를 센터로 설정 후 『[[TRICK with TREAT!!(with UNDEAD)]]』에서 300,000점 이상 달성 ||<bgcolor=#C4EFFF,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 아이돌 랭크 업-랭크C - 1[br][스토리] 아오이 유우타 「3화」}}}}}} ||
+||<bgcolor=#00a1e9><-4>||
+||<bgcolor=#00a1e9><|6> {{{#ffffff '''C'''}}} ||<bgcolor=#00a1e9> {{{#ffffff '''1'''}}} ||스테이터스 피스(??/중) × 30 ||<bgcolor=#C4EFFF,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 낮-낮의 대화 - 2}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''2'''}}} ||스테이터스 피스(??/대) × 15 ||<bgcolor=#C4EFFF,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 저녁-저녁의 대화 - 2}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''3'''}}} ||아이돌 피스(아오이 유우타) × 3 ||<bgcolor=#C4EFFF,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 밤-밤의 대화 - 2}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''4'''}}} ||블로섬 메달 × 5 ||<bgcolor=#C4EFFF,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 밤-굿나잇 - 1}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''5'''}}} ||크라운 메달 × 5 ||<bgcolor=#C4EFFF,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 라이브-스킬 발동 - 1}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''승급'''}}} ||'''{{{#!wiki style="background-color:rgb(0, 161, 233); margin : 1px ; border-radius : 0px ; display:inline-block ; color :#ffffff; font-style: normal ; width:50px ; text-align: center"
+{{{-1 {{{#ffffff Music}}}}}}}}}'''[br]- 팬 50,000명 이상[br]- 아오이 유우타를 센터로 설정 후 『곡명』에서 -점 이상 달성 ||<bgcolor=#C4EFFF,#434448>{{{-2 {{{#373a3c,#dddddd  }}}}}} ||
+
+== 오피스 ==
+=== 기본 스테이터스 ===
+## 의상재료
+## Active : '''{{{#FF403B ●}}}''' 재료이름 × 1
+## Passion : '''{{{#F39801 ●}}}''' 재료이름 × 1
+## Unique : '''{{{#F8397E ●}}}''' 재료이름 × 1
+## Smart: '''{{{#01A0E2 ●}}}''' 재료이름 × 1
+## Technique: '''{{{#1160F0 ●}}}''' 재료이름 × 1
+## Charisma: '''{{{#74B501 ●}}}''' 재료이름 × 1
+
+||<table width=100%><table bordercolor=#FF3B9A><table bgcolor=#ffffff,#2d2f34><bgcolor=#FF403B><width=16%> '''{{{#ffffff Ac}}}''' ||<bgcolor=#F39801><width=16%> '''{{{#ffffff Pa}}}''' ||<bgcolor=#F8397E><width=16%> '''{{{#ffffff Un}}}''' ||<bgcolor=#01A0E2><width=16%> '''{{{#ffffff Sm}}}''' ||<bgcolor=#1160F0><width=16%> '''{{{#ffffff Te}}}''' ||<bgcolor=#74B501><width=16%> '''{{{#ffffff Ch}}}''' ||
+|| {{{#FF403B 16}}} || {{{#F39801 18}}}  || {{{#F8397E 20}}} || {{{#01A0E2 22}}} || {{{#1160F0 12}}} || {{{#74B501 12}}} ||
+
+=== 의상 제작 ===
+||<table width=100%><table bordercolor=#FF3B9A><rowbgcolor=#00a1e9><table bgcolor=#ffffff,#2d2f34><width=25%><:> '''{{{#ffffff 의상}}}''' ||<width=49%><:> '''{{{#ffffff 제작 재료}}}''' ||<width=26%><:> '''{{{#ffffff 능력치}}}''' ||
+|| [[파일:이미지 업로드.jpg|width=100]] ||- ||<bgcolor=#C4EFFF,#434448>'''{{{#!wiki style="background-color:rgb(255, 64, 59); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Ac}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(243, 152, 01); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Pa}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(248, 57, 126); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Un}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(1, 160, 226); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Sm}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(17, 96, 240); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Te}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(116, 181, 001); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Ch}}}}}}}}}''' +0 ||
+||<-3><bgcolor=#00a1e9> '''{{{#ffffff 2wink 연습복}}}''' ||
+||<-3><bgcolor=#FF3B9A>||
+|| [[파일:이미지 업로드.jpg|width=100]] ||필요재료 ||<bgcolor=#C4EFFF,#434448>'''{{{#!wiki style="background-color:rgb(255, 64, 59); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Ac}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(243, 152, 01); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Pa}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(248, 57, 126); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Un}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(1, 160, 226); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Sm}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(17, 96, 240); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Te}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(116, 181, 001); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Ch}}}}}}}}}''' +0 ||
+||<-3><bgcolor=#00a1e9> '''{{{#ffffff 공통 아이돌 의상}}}''' ||
+||<-3><bgcolor=#FF3B9A>||
+|| [[파일:이미지 업로드.jpg|width=100]] ||필요재료 ||<bgcolor=#C4EFFF,#434448>'''{{{#!wiki style="background-color:rgb(255, 64, 59); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Ac}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(243, 152, 01); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Pa}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(248, 57, 126); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Un}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(1, 160, 226); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Sm}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(17, 96, 240); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Te}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(116, 181, 001); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Ch}}}}}}}}}''' +0 ||
+||<-3><bgcolor=#00a1e9> '''{{{#ffffff 로손 선전 스타일}}}''' ||
+||<-3><bgcolor=#FF3B9A>||
+|| [[파일:이미지 업로드.jpg|width=100]] ||필요재료 ||<bgcolor=#C4EFFF,#434448>'''{{{#!wiki style="background-color:rgb(255, 64, 59); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Ac}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(243, 152, 01); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Pa}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(248, 57, 126); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Un}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(1, 160, 226); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Sm}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(17, 96, 240); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Te}}}}}}}}}''' +0[br]'''{{{#!wiki style="background-color:rgb(116, 181, 001); margin : 1px ; border-radius : 3px ; display:inline-block ; color :#ffffff; font-style: normal ; width:25px ; text-align: center"
+{{{-1 {{{#ffffff Ch}}}}}}}}}''' +0 ||
+||<-3><bgcolor=#00a1e9> '''{{{#ffffff 코코이치 스타일}}}''' ||
+
+== 보이스 일람 ==
+||<table width=100%><table bordercolor=#FF3B9A><rowbgcolor=#00a1e9><table bgcolor=#ffffff,#2d2f34><width=20%><:> '''{{{#ffffff 보이스 일람}}}''' ||<width=60%><:> '''{{{#ffffff 대사}}}''' ||<width=20%><:> '''{{{#ffffff 입수 방법}}}''' ||
+||<bgcolor=#00a1e9> {{{#ffffff '''아침-아침의 대화 - 1'''}}} || 대사 ||<bgcolor=#C4EFFF,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 E - 미션1 클리어}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''아침-아침의 대화 - 2'''}}} || 대사 ||<bgcolor=#C4EFFF,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 D - 미션3 클리어}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''낮-낮의 대화 - 1'''}}} || 대사 ||<bgcolor=#C4EFFF,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 E - 미션2 클리어}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''낮-낮의 대화 - 2'''}}} || 대사 ||<bgcolor=#C4EFFF,#434448> {{{-2 {{{#373a3c,#dddddd 조건}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''저녁-저녁의 대화 - 1'''}}} || 대사 ||<bgcolor=#C4EFFF,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 D - 미션1 클리어}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''저녁-저녁의 대화 - 2'''}}} || 대사 ||<bgcolor=#C4EFFF,#434448> {{{-2 {{{#373a3c,#dddddd 조건}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''밤-밤의 대화 - 1'''}}} || 대사 ||<bgcolor=#C4EFFF,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 D - 미션2 클리어}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''밤-밤의 대화 - 2'''}}} || 대사 ||<bgcolor=#C4EFFF,#434448> {{{-2 {{{#373a3c,#dddddd 조건}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''밤-굿나잇 - 1'''}}} || 대사 ||<bgcolor=#C4EFFF,#434448> {{{-2 {{{#373a3c,#dddddd 조건}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''일 대화-아이돌 랭크 E - 1'''}}} || 대사 ||<bgcolor=#C4EFFF,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 E - 미션3 클리어}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''일 대화-아이돌 랭크 E - 2'''}}} || 대사 ||<bgcolor=#C4EFFF,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 E - 미션4 클리어}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''라이브 시작 - 1'''}}} || 대사 ||<bgcolor=#C4EFFF,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 E - 미션5 클리어}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''라이브-스킬 발동 - 1'''}}} || 대사 ||<bgcolor=#C4EFFF,#434448> {{{-2 {{{#373a3c,#dddddd 조건}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''일-시작 - 1'''}}} || 대사 ||<bgcolor=#C4EFFF,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 D - 미션4 클리어}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''일-종료 - 1'''}}} || 대사 ||<bgcolor=#C4EFFF,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 D - 미션5 클리어}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''아이돌 랭크 업-랭크D - 1'''}}} || 대사 ||<bgcolor=#C4EFFF,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 D 승급}}}}}} ||
+||<bgcolor=#00a1e9> {{{#ffffff '''아이돌 랭크 업-랭크C - 1'''}}} || 대사 ||<bgcolor=#C4EFFF,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 C 승급}}}}}} ||
+
+== 의상 일람 ==
+||<table width=100%><table bgcolor=#ffffff,#2d2f34><table bordercolor=#FF3B9A><-3><rowbgcolor=#FF3B9A> ||
+||<width=33%> {{{#!wiki style="margin: -6px -10px"
+[[파일:이미지 업로드.jpg|width=100%]]}}} ||<width=33%> {{{#!wiki style="margin: -6px -10px"
+[[파일:이미지 업로드.jpg|width=100%]]}}} ||<width=33%> {{{#!wiki style="margin: -6px -10px"
+[[파일:이미지 업로드.jpg|width=100%]]}}} ||
+||<rowbgcolor=#00a1e9> '''{{{#ffffff 공통 아이돌 의상}}}''' || '''{{{#ffffff 2wink 의상}}}''' || '''{{{#ffffff 2wink 연습복}}}''' ||
+||<-3><rowbgcolor=#FF3B9A> ||
+|| {{{#!wiki style="margin: -6px -10px"
+[[파일:이미지 업로드.jpg|width=100%]]}}} || {{{#!wiki style="margin: -6px -10px"
+}}} || {{{#!wiki style="margin: -6px -10px"
+}}} ||
+||<rowbgcolor=#00a1e9> '''{{{#ffffff 사복}}}''' || '''{{{#ffffff -}}}''' || '''{{{#ffffff -}}}''' ||
+
+== 카드 일람 ==
+* 카드는 게임 내 추가되는 순서대로 작성 부탁드립니다. 같은 ★등급 카드가 동시에 추가될 경우 SPARKLE-BRILLIANT-GLITTER-FLASH 순.
+ * Lv.Max의 기준은 '카드 1장의 아이돌 로드' 전 구역 돌파 완료 기준입니다.
+ * 한계돌파 Lv.Max의 기준은 '최대 레벨에서의 아이돌 로드' 전 구역 돌파 완료 기준입니다.
+ * 문서 편집 시 카드 템플릿은 [[템플릿:앙상블 스타즈!/카드]]를 참고하시길 바랍니다.
+
+=== ★1 ===
+||<table align=center><table bordercolor=#FF2960><table width=100%><-2><:><bgcolor=#FF2960>[[파일:music_icon_sparkle_hex.png|width=22]] '''{{{#ffffff [한 명의 아이돌] 아오이 유우타}}}''' ||
+||<:><rowbgcolor=#FFFFFF,#2d2f34><width=50%>{{{#!wiki style="margin: -6px -10px"
+[[파일:유우타_한명의아이돌_뮤직_개화전.png|width=100%]]}}}||<width=50%><:>{{{#!wiki style="margin: -6px -10px"
+[[파일:.jpg|width=100%]]}}}||
+||<-2><:><bgcolor=#FF2960>'''{{{#ffffff 　}}}'''||
+||<-2><:><bgcolor=#ffffff,#2d2f34> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#FF2960><table bgcolor=#ffffff,#2d2f34><bgcolor=#FF2960><width=19%>{{{#FFFFFF '''능력치'''}}}||<-2><bgcolor=#FF2960><width=27%> {{{#FFFFFF '''Lv.1''' }}} ||<-2><bgcolor=#FF2960><width=27%> {{{#FFFFFF '''Lv.Max''' }}} ||<-2><bgcolor=#FF2960><width=27%> {{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}'''}}} ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''Da'''}}}||<-2><rowbgcolor=#fccccc>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''Vo'''}}}||<-2><rowbgcolor=#cef9ff>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#FFD600>{{{#FFFFFF '''Pf'''}}}||<-2><rowbgcolor=#fcf1d2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<-7><bgcolor=#FF2960>{{{#FFFFFF '''아이돌 로드'''}}}||
+||<bgcolor=#FF2960>{{{#FFFFFF '''스킬'''}}}||<-3><bgcolor=#FF2960> {{{#FFFFFF '''이름''' }}} ||<-3><bgcolor=#FF2960> {{{#FFFFFF '''효과''' }}} ||
+||<bgcolor=#0c1860>{{{#FFFFFF '''센터'''}}}||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Da}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Vo}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Pf}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(12, 24, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff All}}}}}}}}}''' 효과(해당 효과 말머리 기재) ||
+||<bgcolor=#0079E1>{{{#FFFFFF '''라이브'''}}}||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 121, 225); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.5}}}}}}}}}''' 효과 ||
+||<bgcolor=#00AF22>{{{#FFFFFF '''서포트'''}}}||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 175, 34); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.3}}}}}}}}}''' 효과 ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''의상'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff MV}}}}}}}}}''' 의상명[br]'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-3 {{{#ffffff MV/SCP}}}}}}}}}''' 의상명 (한계돌파 MAX 시 개방)[br]'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 의상명 ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''배경'''}}}||<-6>배경명 ||
+||<bgcolor=#FF2960>{{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+오리지널 SPP}}}'''}}}||<-6>대응 악곡 [[노래 이름]] ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''스토리'''}}}||<-6>스토리명 / 제1화[br]스토리명 / 제2화 ||
+||<bgcolor=#FF2960>{{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 이벤트}}}}}}}}}''' '''이벤트명''' 포인트 보상[br]'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:55px ; text-align: center"
+{{{-1 {{{#ffffff 스카우트}}}}}}}}}''' 스카우트명 ||
+}}}||
+||<-2><bgcolor=#FF2960>||
+
+=== ★2 ===
+||<table align=center><table bordercolor=#0DC9FF><table width=100%><-2><:><bgcolor=#0DC9FF>[[파일:music_icon_brilliant_hex.png|width=22]] '''{{{#ffffff [ES의 아이돌] 아오이 유우타}}}''' ||
+||<:><rowbgcolor=#FFFFFF,#2d2f34><width=50%>{{{#!wiki style="margin: -6px -10px"
+[[파일:유우타_es의아이돌_뮤직_개화전.png|width=100%]]}}}||<width=50%><:>{{{#!wiki style="margin: -6px -10px"
+[[파일:.jpg|width=100%]]}}}||
+||<-2><:><bgcolor=#0DC9FF>'''{{{#ffffff 　}}}'''||
+||<-2><:><bgcolor=#ffffff,#2d2f34> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#0DC9FF><table bgcolor=#ffffff,#2d2f34><bgcolor=#0DC9FF><width=19%>{{{#FFFFFF '''능력치'''}}}||<-2><bgcolor=#0DC9FF><width=27%> {{{#FFFFFF '''Lv.1''' }}} ||<-2><bgcolor=#0DC9FF><width=27%> {{{#FFFFFF '''Lv.Max''' }}} ||<-2><bgcolor=#0DC9FF><width=27%> {{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}'''}}} ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''Da'''}}}||<-2><rowbgcolor=#fccccc>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''Vo'''}}}||<-2><rowbgcolor=#cef9ff>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#FFD600>{{{#FFFFFF '''Pf'''}}}||<-2><rowbgcolor=#fcf1d2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<-7><bgcolor=#0DC9FF>{{{#FFFFFF '''아이돌 로드'''}}}||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''스킬'''}}}||<-3><bgcolor=#0DC9FF> {{{#FFFFFF '''이름''' }}} ||<-3><bgcolor=#0DC9FF> {{{#FFFFFF '''효과''' }}} ||
+||<bgcolor=#0c1860>{{{#FFFFFF '''센터'''}}}||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Da}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Vo}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Pf}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(12, 24, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff All}}}}}}}}}''' 효과(해당 효과 말머리 기재) ||
+||<bgcolor=#0079E1>{{{#FFFFFF '''라이브'''}}}||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 121, 225); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.5}}}}}}}}}''' 효과 ||
+||<bgcolor=#00AF22>{{{#FFFFFF '''서포트'''}}}||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 175, 34); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.3}}}}}}}}}''' 효과 ||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''의상'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff MV}}}}}}}}}''' 의상명[br]'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-3 {{{#ffffff MV/SCP}}}}}}}}}''' 의상명 (한계돌파 MAX 시 개방)[br]'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 의상명 ||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''배경'''}}}||<-6>배경명 ||
+||<bgcolor=#0DC9FF>{{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+오리지널 SPP}}}'''}}}||<-6>대응 악곡 [[노래 이름]] ||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''스토리'''}}}||<-6>스토리명 / 제1화[br]스토리명 / 제2화 ||
+||<bgcolor=#0DC9FF>{{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 이벤트}}}}}}}}}''' '''이벤트명''' 포인트 보상[br]'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:55px ; text-align: center"
+{{{-1 {{{#ffffff 스카우트}}}}}}}}}''' 스카우트명 ||
+}}}||
+||<-2><bgcolor=#0DC9FF>||
+
+=== ★3 ===
+||<table align=center><table bordercolor=#9BD113><table width=100%><-2><:><bgcolor=#9BD113>[[파일:music_icon_glitter_hex.png|width=22]] '''{{{#ffffff [연습 풍경] 아오이 유우타}}}''' ||
+||<:><rowbgcolor=#FFFFFF,#2d2f34><width=50%>{{{#!wiki style="margin: -6px -10px"
+[[파일:유우타_연습풍경_뮤직_개화전.png|width=100%]]}}}||<width=50%><:>{{{#!wiki style="margin: -6px -10px"
+[[파일:.jpg|width=100%]]}}}||
+||<-2><:><bgcolor=#9BD113>'''{{{#ffffff 　}}}'''||
+||<-2><:><bgcolor=#ffffff,#2d2f34> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#9BD113><table bgcolor=#ffffff,#2d2f34><bgcolor=#9BD113><width=19%>{{{#FFFFFF '''능력치'''}}}||<-2><bgcolor=#9BD113><width=27%> {{{#FFFFFF '''Lv.1''' }}} ||<-2><bgcolor=#9BD113><width=27%> {{{#FFFFFF '''Lv.Max''' }}} ||<-2><bgcolor=#9BD113><width=27%> {{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}'''}}} ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''Da'''}}}||<-2><rowbgcolor=#fccccc>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''Vo'''}}}||<-2><rowbgcolor=#cef9ff>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#FFD600>{{{#FFFFFF '''Pf'''}}}||<-2><rowbgcolor=#fcf1d2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<-7><bgcolor=#9BD113>{{{#FFFFFF '''아이돌 로드'''}}}||
+||<bgcolor=#9BD113>{{{#FFFFFF '''스킬'''}}}||<-3><bgcolor=#9BD113> {{{#FFFFFF '''이름''' }}} ||<-3><bgcolor=#9BD113> {{{#FFFFFF '''효과''' }}} ||
+||<bgcolor=#0c1860>{{{#FFFFFF '''센터'''}}}||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Da}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Vo}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Pf}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(12, 24, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff All}}}}}}}}}''' 효과(해당 효과 말머리 기재) ||
+||<bgcolor=#0079E1>{{{#FFFFFF '''라이브'''}}}||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 121, 225); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.5}}}}}}}}}''' 효과 ||
+||<bgcolor=#00AF22>{{{#FFFFFF '''서포트'''}}}||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 175, 34); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.3}}}}}}}}}''' 효과 ||
+||<bgcolor=#9BD113>{{{#FFFFFF '''의상'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(155, 209, 19); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff MV}}}}}}}}}''' 의상명[br]'''{{{#!wiki style="background-color:rgb(155, 209, 19); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-3 {{{#ffffff MV/SCP}}}}}}}}}''' 의상명 (한계돌파 MAX 시 개방)[br]'''{{{#!wiki style="background-color:rgb(155, 209, 19); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 의상명 ||
+||<bgcolor=#9BD113>{{{#FFFFFF '''배경'''}}}||<-6>배경명 ||
+||<bgcolor=#9BD113>{{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+오리지널 SPP}}}'''}}}||<-6>대응 악곡 [[노래 이름]] ||
+||<bgcolor=#9BD113>{{{#FFFFFF '''스토리'''}}}||<-6>스토리명 / 제1화[br]스토리명 / 제2화 ||
+||<bgcolor=#9BD113>{{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(155, 209, 19); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 이벤트}}}}}}}}}''' '''이벤트명''' 포인트 보상[br]'''{{{#!wiki style="background-color:rgb(155, 209, 19); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:55px ; text-align: center"
+{{{-1 {{{#ffffff 스카우트}}}}}}}}}''' 스카우트명 ||
+}}}||
+||<-2><bgcolor=#9BD113>||
+
+-------
+
+||<table align=center><table bordercolor=#FFD600><table width=100%><-2><:><bgcolor=#FFD600>[[파일:music_icon_flash_hex.png|width=22]] '''{{{#ffffff [숨겨진 기능] 아오이 유우타}}}''' ||
+||<:><rowbgcolor=#FFFFFF,#2d2f34>{{{#!wiki style="margin: -6px -10px"
+[[파일:유우타_피처타츠미_뮤직_개화전.png|width=100%]]}}}||<:>{{{#!wiki style="margin: -6px -10px"
+[[파일:유우타피처타츠미개화후1.png|width=100%]]}}}||
+||<width=50%><:><bgcolor=#FFD600>'''{{{#ffffff {{{-1 원문}}}[br]번역}}}'''||<width=50%><:><bgcolor=#FFD600>'''{{{#ffffff {{{-1 원문}}}[br]번역}}}'''||
+
+||<table align=center><table bordercolor=#FFD600><-4><table width=100%><:><bgcolor=#ffffff,#2d2f34> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#FFD600><table bgcolor=#ffffff,#2d2f34><bgcolor=#FFD600><width=19%>{{{#FFFFFF '''능력치'''}}}||<-2><bgcolor=#FFD600><width=27%> {{{#FFFFFF '''Lv.1''' }}} ||<-2><bgcolor=#FFD600><width=27%> {{{#FFFFFF '''Lv.Max''' }}} ||<-2><bgcolor=#FFD600><width=27%> {{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}'''}}} ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''Da'''}}}||<-2><rowbgcolor=#fccccc>{{{#373A3C }}}||<-2>{{{#373A3C 13,592}}}||<-2>{{{#373A3C }}}||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''Vo'''}}}||<-2><rowbgcolor=#cef9ff>{{{#373A3C }}}||<-2>{{{#373A3C 18,215}}}||<-2>{{{#373A3C }}}||
+||<bgcolor=#FFD600>{{{#FFFFFF '''Pf'''}}}||<-2><rowbgcolor=#fcf1d2>{{{#373A3C }}}||<-2>{{{#373A3C 11,550}}}||<-2>{{{#373A3C }}}||
+||<-7><bgcolor=#FFD600>{{{#FFFFFF '''아이돌 로드'''}}}||
+||<bgcolor=#FFD600>{{{#FFFFFF '''스킬'''}}}||<-3><bgcolor=#FFD600> {{{#FFFFFF '''이름''' }}} ||<-3><bgcolor=#FFD600> {{{#FFFFFF '''효과''' }}} ||
+||<bgcolor=#0c1860>{{{#FFFFFF '''센터'''}}}||<-3> 악기 경험 ||<-3>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Vo}}}}}}}}}''' Flash 타입의 Vo 80％ up ||
+||<bgcolor=#0079E1>{{{#FFFFFF '''라이브'''}}}||<-3> 여러 악기 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 121, 225); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.5}}}}}}}}}''' 5초간 20％ 스코어 up ||
+||<bgcolor=#00AF22>{{{#FFFFFF '''서포트'''}}}||<-3> 연주 강의 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 175, 34); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.3}}}}}}}}}''' VOLTAGE 하락량 조금 down ||
+||<bgcolor=#FFD600>{{{#FFFFFF '''스토리'''}}}||<-6>돌발 바이올리니스트 ||
+||<bgcolor=#FFD600>{{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:55px ; text-align: center"
+{{{-1 {{{#ffffff 스카우트}}}}}}}}}''' 피처 스카우트 타츠미 편 ||
+}}}||
+
+-------
+
+||<table align=center><table bordercolor=#ff2960><table width=100%><-2><:><bgcolor=#ff2960>[[파일:music_icon_sparkle_hex.png|width=22]] '''{{{#ffffff [생존과 관전] 아오이 유우타}}}''' ||
+||<:><rowbgcolor=#ffffff,#1f2023><width=50%>{{{#!wiki style="margin: -6px -10px"
+[[파일:유우타_세기말워즈_뮤직_개화전.png|width=100%]]}}}||<width=50%><:>{{{#!wiki style="margin: -6px -10px"
+[[파일:유우타_세기말워즈_뮤직_개화후.png|width=100%]]}}}||
+||<-2><:><bgcolor=#ff2960>'''{{{#ffffff 　}}}'''||
+||<-2><:><bgcolor=#ffffff,#1f2023> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#ff2960><table bgcolor=#ffffff,#1f2023><rowbgcolor=#ff2960><rowcolor=#ffffff><colcolor=#ffffff><width=19%> '''능력치''' ||<-2><width=27%> '''Lv.1'''  ||<-2><width=27%> '''Lv.Max''' ||<-2><width=27%> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}''' ||
+||<bgcolor=#ff2960> '''Da''' ||<-2><rowbgcolor=#fccccc><rowcolor=#373a3c> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<bgcolor=#0dc9ff> '''Vo''' ||<-2><rowbgcolor=#cef9ff><rowcolor=#373a3c> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<bgcolor=#ffd600> '''Pf''' ||<-2><rowbgcolor=#fcf1d2><rowcolor=#373a3c> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<-7><bgcolor=#ff2960>{{{#ffffff '''아이돌 로드'''}}}||
+||<rowbgcolor=#ff2960><colbgcolor=#ff2960><rowcolor=#ffffff> '''스킬''' ||<-3> '''이름''' ||<-3> '''효과''' ||
+||<bgcolor=#0c1860> '''센터''' ||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Da}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Vo}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Pf}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(12, 24, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff All}}}}}}}}}''' 효과(해당 효과 말머리 기재) ||
+||<bgcolor=#0079E1> '''라이브''' ||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 121, 225); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.5}}}}}}}}}''' 효과 ||
+||<bgcolor=#00AF22> '''서포트''' ||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 175, 34); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.3}}}}}}}}}''' 효과 ||
+|| '''의상''' ||<-6>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff MV}}}}}}}}}''' 의상명[br]'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-3 {{{#ffffff MV/SCR}}}}}}}}}''' 의상명{{{-2 (한계돌파 MAX)}}}[br]'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 의상명[br]'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-3 {{{#ffffff 룸/SCR}}}}}}}}}''' 의상명{{{-2 (한계돌파 2회)}}} ||
+|| '''배경''' ||<-6>배경명 ||
+|| '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+오리지널 SPP}}}''' ||<-6>대응 악곡 [[노래 이름]] ||
+|| '''스토리''' ||<-6>스토리명 / 제1화[br]스토리명 / 제2화 ||
+|| '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}''' ||<-6>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:55px ; text-align: center"
+{{{-1 {{{#ffffff 스카우트}}}}}}}}}''' 스카우트! 세기말 워즈 ||
+}}}||
+||<-2><bgcolor=#ff2960>||
+
+=== ★4 ===
+||<table align=center><table bordercolor=#ffd600><table width=100%><-2><:><bgcolor=#ffd600>[[파일:music_icon_flash_hex.png|width=22]] '''{{{#ffffff [한 쌍의 유성] 아오이 유우타}}}''' ||
+||<:><rowbgcolor=#ffffff,#1f2023><width=50%>{{{#!wiki style="margin: -6px -10px"
+[[파일:유우타_한쌍유성_뮤직_개화전.png|width=100%]]}}}||<width=50%><:>{{{#!wiki style="margin: -6px -10px"
+[[파일:이미지 업로드.jpg|width=100%]]}}}||
+||<-2><:><bgcolor=#ffd600>'''{{{#ffffff 　}}}'''||
+||<-2><:><bgcolor=#ffffff,#1f2023> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#ffd600><table bgcolor=#ffffff,#1f2023><rowbgcolor=#ffd600><rowcolor=#ffffff><colcolor=#ffffff><width=19%> '''능력치''' ||<-2><width=27%> '''Lv.1'''  ||<-2><width=27%> '''Lv.Max''' ||<-2><width=27%> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}''' ||
+||<bgcolor=#ff2960> '''Da''' ||<-2><rowbgcolor=#fccccc><rowcolor=#373a3c> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<bgcolor=#0dc9ff> '''Vo''' ||<-2><rowbgcolor=#cef9ff><rowcolor=#373a3c> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<bgcolor=#ffd600> '''Pf''' ||<-2><rowbgcolor=#fcf1d2><rowcolor=#373a3c> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<-7><bgcolor=#ffd600>{{{#ffffff '''아이돌 로드'''}}}||
+||<rowbgcolor=#ffd600><colbgcolor=#ffd600><rowcolor=#ffffff> '''스킬''' ||<-3> '''이름''' ||<-3> '''효과''' ||
+||<bgcolor=#0c1860> '''센터''' ||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Da}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Vo}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Pf}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(12, 24, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff All}}}}}}}}}''' 효과(해당 효과 말머리 기재) ||
+||<bgcolor=#0079E1> '''라이브''' ||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 121, 225); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.5}}}}}}}}}''' 효과 ||
+||<bgcolor=#00AF22> '''서포트''' ||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 175, 34); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.3}}}}}}}}}''' 효과 ||
+|| '''의상''' ||<-6>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff MV}}}}}}}}}''' 의상명[br]'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-3 {{{#ffffff MV/SCR}}}}}}}}}''' 의상명{{{-2 (한계돌파 MAX)}}}[br]'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 의상명[br]'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-3 {{{#ffffff 룸/SCR}}}}}}}}}''' 의상명{{{-2 (한계돌파 2회)}}} ||
+|| '''배경''' ||<-6>배경명 ||
+|| '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+오리지널 SPP}}}''' ||<-6>[[歓迎☆トゥ・ウィンク雑技団]] ||
+|| '''스토리''' ||<-6>스토리명 / 제1화[br]스토리명 / 제2화 ||
+|| '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}''' ||<-6>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 이벤트}}}}}}}}}''' '''이벤트명''' 포인트 보상[br]'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:55px ; text-align: center"
+{{{-1 {{{#ffffff 스카우트}}}}}}}}}''' 스카우트명 ||
+}}}||
+||<-2><bgcolor=#ffd600>||
+
+-------
+
+||<table align=center><table bordercolor=#FF2960><table width=100%><-2><:><bgcolor=#FF2960>[[파일:music_icon_sparkle_hex.png|width=22]] '''{{{#ffffff [코즈프로의 용기] 아오이 유우타}}}''' ||
+||<:><rowbgcolor=#FFFFFF,#2d2f34><width=50%>{{{#!wiki style="margin: -6px -10px"
+[[파일:뮤직_유우타_5주년_개화전.png|width=100%]]}}}||<width=50%><:>{{{#!wiki style="margin: -6px -10px"
+[[파일:뮤직_유우타_5주년_개화후.png|width=100%]]}}}||
+||<-2><:><bgcolor=#FF2960>'''{{{#ffffff 　}}}'''||
+||<-2><:><bgcolor=#ffffff,#2d2f34> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#FF2960><table bgcolor=#ffffff,#2d2f34><bgcolor=#FF2960><width=19%>{{{#FFFFFF '''능력치'''}}}||<-2><bgcolor=#FF2960><width=27%> {{{#FFFFFF '''Lv.1''' }}} ||<-2><bgcolor=#FF2960><width=27%> {{{#FFFFFF '''Lv.Max''' }}} ||<-2><bgcolor=#FF2960><width=27%> {{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}'''}}} ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''Da'''}}}||<-2><rowbgcolor=#fccccc>{{{#373A3C 2,910}}}||<-2>{{{#373A3C 15,590}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''Vo'''}}}||<-2><rowbgcolor=#cef9ff>{{{#373A3C 3,190}}}||<-2>{{{#373A3C 15,789}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#FFD600>{{{#FFFFFF '''Pf'''}}}||<-2><rowbgcolor=#fcf1d2>{{{#373A3C 5,060}}}||<-2>{{{#373A3C 26,984}}}||<-2>{{{#373A3C 수치}}}||
+||<-7><bgcolor=#FF2960>{{{#FFFFFF '''아이돌 로드'''}}}||
+||<bgcolor=#FF2960>{{{#FFFFFF '''스킬'''}}}||<-3><bgcolor=#FF2960> {{{#FFFFFF '''이름''' }}} ||<-3><bgcolor=#FF2960> {{{#FFFFFF '''효과''' }}} ||
+||<bgcolor=#0c1860>{{{#FFFFFF '''센터'''}}}||<-3> 접시꽃의 잎이 흔들리는 우주 ||<-3>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Pf}}}}}}}}}''' Sparkle 타입의 Pf 80% up ||
+||<bgcolor=#0079E1>{{{#FFFFFF '''라이브'''}}}||<-3> 동생별의 비약욕 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 121, 225); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.5}}}}}}}}}''' 12초간 16% 스코어 up ||
+||<bgcolor=#00AF22>{{{#FFFFFF '''서포트'''}}}||<-3> 축복의 감사 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 175, 34); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.3}}}}}}}}}''' VOLTAGE 하강량 down ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''의상'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 남색 애니버서리 수트 ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''배경'''}}}||<-6>배경명 ||
+||<bgcolor=#FF2960>{{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+오리지널 SPP}}}'''}}}||<-6>[[Walk with your smile]] ||
+||<bgcolor=#FF2960>{{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:55px ; text-align: center"
+{{{-1 {{{#ffffff 스카우트}}}}}}}}}''' 5주년 기념! 소속사별 스카우트 코즈프로편 그룹A ||
+}}}||
+||<-2><bgcolor=#FF2960>||
+
+-------
+
+||<table align=center><table bordercolor=#9bd113><table width=100%><-2><:><bgcolor=#9bd113>[[파일:music_icon_glitter_hex.png|width=22]] '''{{{#ffffff [몰래카메라 코너] 아오이 유우타}}}''' ||
+||<:><rowbgcolor=#ffffff,#1f2023><width=50%>{{{#!wiki style="margin: -6px -10px"
+[[파일:유우타_피처토모야_뮤직_개화전.png|width=100%]]}}}||<width=50%><:>{{{#!wiki style="margin: -6px -10px"
+[[파일:유우타_피처토모야_뮤직_개화후.png|width=100%]]}}}||
+||<-2><:><bgcolor=#9bd113>'''{{{#ffffff 　}}}'''||
+||<-2><:><bgcolor=#ffffff,#1f2023> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#9bd113><table bgcolor=#ffffff,#1f2023><rowbgcolor=#9bd113><rowcolor=#ffffff><colcolor=#ffffff><width=19%> '''능력치''' ||<-2><width=27%> '''Lv.1'''  ||<-2><width=27%> '''Lv.Max''' ||<-2><width=27%> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}''' ||
+||<bgcolor=#ff2960> '''Da''' ||<-2><rowbgcolor=#fccccc><rowcolor=#373a3c> 수치 ||<-2> 28,220 ||<-2> 수치 ||
+||<bgcolor=#0dc9ff> '''Vo''' ||<-2><rowbgcolor=#cef9ff><rowcolor=#373a3c> 수치 ||<-2> 13,410 ||<-2> 수치 ||
+||<bgcolor=#FFd600> '''Pf''' ||<-2><rowbgcolor=#fcf1d2><rowcolor=#373a3c> 수치 ||<-2> 14,010 ||<-2> 수치 ||
+||<-7><bgcolor=#9bd113>{{{#ffffff '''아이돌 로드'''}}}||
+||<rowbgcolor=#9bd113><colbgcolor=#9bd113><rowcolor=#ffffff> '''스킬''' ||<-3> '''이름''' ||<-3> '''효과''' ||
+||<bgcolor=#0c1860> '''센터''' ||<-3> 장난의 아이 ||<-3>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Da}}}}}}}}}''' Glitter 타입의 Da 80% up ||
+||<bgcolor=#0079E1> '''라이브''' ||<-3> 후배의 조정자 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 121, 225); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.5}}}}}}}}}''' 12초간 16% 스코어 up ||
+||<bgcolor=#00AF22> '''서포트''' ||<-3> 매운맛의 복수 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 175, 34); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.3}}}}}}}}}''' 스테이터스 피스(레드/중) 드랍률이 1.5배가 된다 ||
+|| '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+오리지널 SPP}}}''' ||<-6>[[TRICK with TREAT!!(with UNDEAD)]] ||
+|| '''스토리''' ||<-6>다우트 다우트 다우트 ||
+|| '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}''' ||<-6>'''{{{#!wiki style="background-color:rgb(155, 209, 19); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:55px ; text-align: center"
+{{{-1 {{{#ffffff 스카우트}}}}}}}}}''' 피처 스카우트 토모야 편 ||
+}}}||
+||<-2><bgcolor=#9bd113>||
+
+-------
+
+||<table align=center><table bordercolor=#0dc9ff><table width=100%><-2><:><bgcolor=#0dc9ff>[[파일:music_icon_brilliant_hex.png|width=22]] '''{{{#ffffff [둘이 겹쳐진 꼭대기] 아오이 유우타}}}''' ||
+||<:><rowbgcolor=#ffffff,#1f2023><width=50%>{{{#!wiki style="margin: -6px -10px"
+[[파일:유우타_트윈피크스_뮤직_개화전.png|width=100%]]}}}||<width=50%><:>{{{#!wiki style="margin: -6px -10px"
+[[파일:유우타_트윈피크스_뮤직_개화후.png|width=100%]]}}}||
+||<-2><:><bgcolor=#0dc9ff>'''{{{#ffffff 　}}}'''||
+||<-2><:><bgcolor=#ffffff,#1f2023> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#0dc9ff><table bgcolor=#ffffff,#1f2023><rowbgcolor=#0dc9ff><rowcolor=#ffffff><colcolor=#ffffff><width=19%> '''능력치''' ||<-2><width=27%> '''Lv.1'''  ||<-2><width=27%> '''Lv.Max''' ||<-2><width=27%> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}''' ||
+||<bgcolor=#ff2960> '''Da''' ||<-2><rowbgcolor=#fccccc><rowcolor=#373a3c> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<bgcolor=#0dc9ff> '''Vo''' ||<-2><rowbgcolor=#cef9ff><rowcolor=#373a3c> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<bgcolor=#ffd600> '''Pf''' ||<-2><rowbgcolor=#fcf1d2><rowcolor=#373a3c> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<-7><bgcolor=#0dc9ff>{{{#ffffff '''아이돌 로드'''}}}||
+||<rowbgcolor=#0dc9ff><colbgcolor=#0dc9ff><rowcolor=#ffffff> '''스킬''' ||<-3> '''이름''' ||<-3> '''효과''' ||
+||<bgcolor=#0c1860> '''센터''' ||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Da}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Vo}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Pf}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(12, 24, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff All}}}}}}}}}''' 효과(해당 효과 말머리 기재) ||
+||<bgcolor=#0079E1> '''라이브''' ||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 121, 225); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.5}}}}}}}}}''' 효과 ||
+||<bgcolor=#00AF22> '''서포트''' ||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 175, 34); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.3}}}}}}}}}''' 효과 ||
+|| '''의상''' ||<-6>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff MV}}}}}}}}}''' 의상명[br]'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-3 {{{#ffffff MV/SCR}}}}}}}}}''' 의상명{{{-2 (한계돌파 MAX)}}}[br]'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 의상명[br]'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-3 {{{#ffffff 룸/SCR}}}}}}}}}''' 의상명{{{-2 (한계돌파 2회)}}} ||
+|| '''배경''' ||<-6>배경명 ||
+|| '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+오리지널 SPP}}}''' ||<-6>[[Fighting Dreamer]] ||
+|| '''스토리''' ||<-6>스토리명 / 제1화[br]스토리명 / 제2화 ||
+|| '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}''' ||<-6>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 이벤트}}}}}}}}}''' '''Beyond! 공명하는 트윈피크스''' 포인트 보상 ||
+}}}||
+||<-2><bgcolor=#0dc9ff>||
+
+=== ★5 ===
+||<table align=center><table bordercolor=#0DC9FF><table width=100%><-2><:><bgcolor=#0DC9FF>[[파일:music_icon_brilliant_hex.png|width=22]] '''{{{#ffffff [망설임과 밤놀이] 아오이 유우타}}}''' ||
+||<:><rowbgcolor=#FFFFFF,#2d2f34><width=50%>{{{#!wiki style="margin: -6px -10px"
+[[파일:뮤직_유우타_나이트클럽_개화전.png|width=100%]]}}}||<width=50%><:>{{{#!wiki style="margin: -6px -10px"
+[[파일:뮤직_유우타_나이트클럽_개화후.png|width=100%]]}}}||
+||<-2><:><bgcolor=#0DC9FF>'''{{{#ffffff 　}}}'''||
+||<-2><:><bgcolor=#ffffff,#2d2f34> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#0DC9FF><table bgcolor=#ffffff,#2d2f34><bgcolor=#0DC9FF><width=19%>{{{#FFFFFF '''능력치'''}}}||<-2><bgcolor=#0DC9FF><width=27%> {{{#FFFFFF '''Lv.1''' }}} ||<-2><bgcolor=#0DC9FF><width=27%> {{{#FFFFFF '''Lv.Max''' }}} ||<-2><bgcolor=#0DC9FF><width=27%> {{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}'''}}} ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''Da'''}}}||<-2><rowbgcolor=#fccccc>{{{#373A3C 수치}}}||<-2>{{{#373A3C 23,771}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''Vo'''}}}||<-2><rowbgcolor=#cef9ff>{{{#373A3C 수치}}}||<-2>{{{#373A3C 25,294}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#FFD600>{{{#FFFFFF '''Pf'''}}}||<-2><rowbgcolor=#fcf1d2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 41,433}}}||<-2>{{{#373A3C 수치}}}||
+||<-7><bgcolor=#0DC9FF>{{{#FFFFFF '''아이돌 로드'''}}}||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''스킬'''}}}||<-3><bgcolor=#0DC9FF> {{{#FFFFFF '''이름''' }}} ||<-3><bgcolor=#0DC9FF> {{{#FFFFFF '''효과''' }}} ||
+||<bgcolor=#0c1860>{{{#FFFFFF '''센터'''}}}||<-3> 마주보는 나이트 ||<-3>'''{{{#!wiki style="background-color:rgb(12, 24, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff All}}}}}}}}}''' Brilliant 타입 총합치 50% up ||
+||<bgcolor=#0079E1>{{{#FFFFFF '''라이브'''}}}||<-3> 털어놓는 클럽 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 121, 225); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.5}}}}}}}}}''' 8초간 26% 스코어 up ||
+||<bgcolor=#00AF22>{{{#FFFFFF '''서포트'''}}}||<-3> 밤길의 목격 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 175, 34); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.3}}}}}}}}}''' VOLTAGE 하강량 down ||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''의상'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 나이트클럽 의상 ||
+||<bgcolor=#0DC9FF>{{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+오리지널 SPP}}}'''}}}||<-6>대응 악곡 [[Play “Tag”]] ||
+||<bgcolor=#0DC9FF>{{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 이벤트}}}}}}}}}''' '''어서오세요／나이트클럽''' 포인트 보상 ||
+}}}||
+||<-2><bgcolor=#0DC9FF>||
+
+-------
+
+||<table align=center><table bordercolor=#ffd600><table width=100%><-2><:><bgcolor=#ffd600>[[파일:music_icon_flash_hex.png|width=22]] '''{{{#ffffff [개성과 가능성] 아오이 유우타}}}''' ||
+||<:><rowbgcolor=#ffffff,#1f2023><width=50%>{{{#!wiki style="margin: -6px -10px"
+[[파일:유우타_피처유우타_뮤직_개화전.png|width=100%]]}}}||<width=50%><:>{{{#!wiki style="margin: -6px -10px"
+[[파일:유우타_피처유우타_뮤직_개화후.png|width=100%]]}}}||
+||<-2><:><bgcolor=#ffd600>'''{{{#ffffff 　}}}'''||
+||<-2><:><bgcolor=#ffffff,#1f2023> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#ffd600><table bgcolor=#ffffff,#1f2023><rowbgcolor=#ffd600><rowcolor=#ffffff><colcolor=#ffffff><width=19%> '''능력치''' ||<-2><width=27%> '''Lv.1'''  ||<-2><width=27%> '''Lv.Max''' ||<-2><width=27%> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}''' ||
+||<bgcolor=#ff2960> '''Da''' ||<-2><rowbgcolor=#fccccc><rowcolor=#373a3c> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<bgcolor=#0dc9ff> '''Vo''' ||<-2><rowbgcolor=#cef9ff><rowcolor=#373a3c> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<bgcolor=#ffd600> '''Pf''' ||<-2><rowbgcolor=#fcf1d2><rowcolor=#373a3c> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<-7><bgcolor=#ffd600>{{{#ffffff '''아이돌 로드'''}}}||
+||<rowbgcolor=#ffd600><colbgcolor=#ffd600><rowcolor=#ffffff> '''스킬''' ||<-3> '''이름''' ||<-3> '''효과''' ||
+||<bgcolor=#0c1860> '''센터''' ||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Da}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Vo}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Pf}}}}}}}}}''' '''{{{#!wiki style="background-color:rgb(12, 24, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff All}}}}}}}}}''' 효과(해당 효과 말머리 기재) ||
+||<bgcolor=#0079E1> '''라이브''' ||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 121, 225); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.5}}}}}}}}}''' 효과 ||
+||<bgcolor=#00AF22> '''서포트''' ||<-3> 스킬명 ||<-3>'''{{{#!wiki style="background-color:rgb(0, 175, 34); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff Lv.3}}}}}}}}}''' 효과 ||
+|| '''의상''' ||<-6>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff MV}}}}}}}}}''' 의상명[br]'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-3 {{{#ffffff MV/SCR}}}}}}}}}''' 의상명{{{-2 (한계돌파 MAX)}}}[br]'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 의상명[br]'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-3 {{{#ffffff 룸/SCR}}}}}}}}}''' 의상명{{{-2 (한계돌파 2회)}}} ||
+|| '''배경''' ||<-6>배경명 ||
+|| '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+오리지널 SPP}}}''' ||<-6>[[ハートプリズム・シンメトリー]] ||
+|| '''스토리''' ||<-6>스토리명 / 제1화[br]스토리명 / 제2화 ||
+|| '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}''' ||<-6>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:55px ; text-align: center"
+{{{-1 {{{#ffffff 스카우트}}}}}}}}}''' 피처 스카우트 유우타 편 ||
+}}}||
+||<-2><bgcolor=#ffd600>||
+
+
+[[분류:앙상블 스타즈!!]]

@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "나무위키 개인화 추천",
+  "version": "0.2.0",
+  "description": "나무위키 열람 기록 기반 문서 추천. 데이터 출처: 나무위키(CC BY-NC-SA 2.0 KR). 모든 기록은 내 브라우저에만 저장됩니다.",
+  "minimum_chrome_version": "92",
+  "permissions": ["alarms"],
+  "background": { "service_worker": "sw.js" },
+  "content_scripts": [
+    { "matches": ["*://namu.wiki/*"], "js": ["common.js", "content.js"] }
+  ],
+  "action": { "default_popup": "popup/popup.html" }
+}

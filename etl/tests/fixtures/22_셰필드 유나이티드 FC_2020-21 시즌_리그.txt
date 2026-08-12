@@ -1,0 +1,506 @@
+[[분류:셰필드 유나이티드 FC]]
+[include(틀:상위 문서, top1=셰필드 유나이티드 FC/2020-21 시즌)]
+
+||<-9><tablebordercolor=#410648><tablealign=center><tablewidth=100%><bgcolor=#410648><:>[[프리미어 리그|[[파일:Premier League logo header.png|width=200]]]][br]'''{{{#ffffff 셰필드 유나이티드 FC 프리미어 리그 2020-21 시즌[br](25R 종료 시점 기준)}}}'''||
+||<rowbgcolor=#ffffff><:>{{{#410648 '''순위'''}}}||<:>{{{#410648 '''경기수'''}}}||<:>{{{#410648 '''승'''}}}||<:>{{{#410648 '''무'''}}}||<:>{{{#410648 '''패'''}}}||<:>{{{#410648 '''득점'''}}}||<:>  {{{#410648 '''실점'''}}}||<:>{{{#410648 '''득실차'''}}}||<:>{{{#410648 '''승점'''}}}||
+||<:>{{{+3 '''20'''}}} {{{+1 / 20}}}||<:>25||<:>3||<:>2||<:>20||<:>15||<:>41||<:>-26||<:>11||
+
+[목차]
+
+'''※ 순위는 각 라운드의 모든 경기가 종료되었을 때를 기준으로 기재하여 주시기 바랍니다. 단 특정 라운드에서 먼저 경기를 갖고 다른 팀 경기 결과와 상관없이 특정 순위를 차지하게 되면 미리 기재하셔도 좋습니다.'''
+
+== 개요 ==
+[[셰필드 유나이티드 FC]]의 2020-21시즌의 프리미어 리그 경기를 기록한 문서이다.
+
+상위 문서인 [[셰필드 유나이티드 FC/2020-21 시즌]] 문서의 방대함을 방지하기 위해 별도로 분리되었다.
+
+시간은 [[KST|한국시간]](UTC+9)이며, MOM은 버드와이저가 선정한 [[https://www.premierleague.com/results|King Of the Match]]로 표기한다.
+== 전반기 ==
+=== 1R VS [[울버햄튼 원더러스 FC]] (브라몰 레인) 0:2 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 1R [br]2020. 09. 15.(화) 02:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''[[브라몰 레인|{{{#410648 브라몰 레인}}}]] ([[셰필드|{{{#410648 셰필드}}}]])'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 리 메이슨}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 0 : 2}}}}}}'''||<:><bgcolor=#ffa41c>[[파일:Wolverhampton.png|height=100]]||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||<width=40%><bgcolor=#231F20><:>'''{{{#ffa41c 울버햄튼 원더러스}}}'''||
+||<bgcolor=#FFF><:>'''-'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''3' [[라울 히메네스]][br] 6' [[로맹 사이스]]'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[라울 히메네스|{{{#FFF 라울 히메네스}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+=== 2R VS [[아스톤 빌라 FC]] (빌라 파크) 0:1 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 2R [br]2020. 09. 22.(화) 02:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''[[빌라 파크|{{{#410648 빌라 파크}}}]] ([[버밍엄|{{{#410648 버밍엄}}}]])'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 그레이엄 스콧}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #9CC2E7 10%, #650932 10%, #650932 90%, #9CC2E7 90%)"
+[[파일:AVFC.png|height=100]]}}}||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 1 : 0}}}}}}'''||<:><bgcolor=#FFAEB5>[[파일:SheffieldUtd.png|height=100]]||
+||<width=40%><bgcolor=#FFF><:>'''{{{#650932 아스톤 빌라}}}'''||<width=40%><bgcolor=#171717><:>'''{{{#FFAEB5 셰필드 유나이티드}}}'''||
+||<bgcolor=#FFF><:> '''63' [[에즈리 콘사]]''' ||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<:><#FCC>'''-'''||<:><#C00>[[파일:퇴장카드.png|height=20]]||<:><#FCC>'''12' [[존 이건]]'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[에밀리아노 마르티네스|{{{#FFF 에밀리아노 마르티네스}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+=== 3R VS [[리즈 유나이티드 FC]] (브라몰 레인) 0:1 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 3R [br]2020. 09. 27.(일) 20:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 브라몰 레인 ([[셰필드|{{{#410648 셰필드}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 폴 티어니}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 0 : 1}}}}}}'''||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #142336 6%, #055669 6%, #055669 14%, #142336 14%, #142336 22%, #055669 22%, #055669 30%, #142336 30%, #142336 38%, #055669 38%, #055669 46%, #142336 46%, #142336 54%, #055669 54%, #055669 62%, #142336 62%, #142336 70%, #055669 70%, #055669 78%, #142336 78%, #142336 86%, #055669 86%, #055669 94%, #142336 94%)"
+[[파일:Leeds Utd new logo.png|height=100]]}}}||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||<width=40%><bgcolor=#142336><:>'''{{{#d9ceb5 리즈 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''-'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''88' [[패트릭 뱀포드]]'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[패트릭 뱀포드|{{{#FFF 패트릭 뱀포드}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+승격팀 리즈에게도 후반막판 골을 먹히면서 3연패중이다. 물론 아스톤빌라전과 리즈 경기는 운이 없었던건 맞지만 계속 이렇게 간다면 중위권은 커녕 강등을 걱정해야 할 처지에 놓였다.
+=== 4R VS [[아스날 FC]] (에미레이트 스타디움) 1:2 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 4R [br]2020. 10. 04.(일) 22:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 에미레이트 스타디움 ([[런던|{{{#410648 런던}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 리 메이슨}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<bgcolor=#F00000><:>[[파일:Arsenal.png|height=100]]||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 2 : 1}}}}}}'''||<:><bgcolor=#024234>[[파일:SheffieldUtd.png|height=100]]||
+||<width=40%><bgcolor=#FFF><:>'''{{{#F00000 아스날}}}'''||<width=40%><bgcolor=#024234><:>'''{{{#ead2a1 셰필드 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''61' [[부카요 사카]][br]64' [[니콜라 페페]]'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''83' [[데이비드 맥골드릭]]'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[부카요 사카|{{{#FFF 부카요 사카}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[https://youtu.be/kqbYNZ75jkQ|{{{#FFF 경기 하이라이트}}}]]'''||
+
+=== 5R VS [[풀럼 FC]] (브라몰 레인) 1:1 무 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 5R [br]2020. 10. 18.(일) 20:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 브라몰 레인 ([[셰필드|{{{#410648 셰필드}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 안드레 마리너}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 1 : 1}}}}}}'''||<:><bgcolor=#f6df00>[[파일:Fulham.png|height=100]]||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||<width=40%><bgcolor=#f6df00><:>'''{{{#000 풀럼}}}'''||
+||<bgcolor=#FFF><:>'''85' [[빌리 샤프]] (PK)'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>''' 77' [[아데몰라 루크먼]]'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[아데몰라 루크먼|{{{#FFF 아데몰라 루크먼}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+=== 6R VS [[리버풀 FC]] (안필드) 1:2 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 6R [br]2020. 10. 25.(일) 04:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 안필드 ([[리버풀|{{{#410648 리버풀}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 마이크 딘}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to bottom, #11bdc4 2%, #FFF 2%, #FFF 5%,  #d00027 5%)"
+[[파일:liverbird_white.png|height=100]]}}}||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 2 : 1}}}}}}'''||<:><bgcolor=#024234>[[파일:SheffieldUtd.png|height=100]]||
+||<width=40%><bgcolor=#D00027><:>'''{{{#FFF 리버풀}}}'''||<width=40%><bgcolor=#ead2a1><:>'''{{{#024234 셰필드 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''41' [[호베르투 피르미누]][br]64' [[디오구 조타]]'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''13' [[산데르 베르게]] (PK)'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[조 고메즈|{{{#FFF 조 고메즈}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[https://youtu.be/R7PqP0lpi54|{{{#FFF 경기 하이라이트}}}]]'''||
+=== 7R VS [[맨체스터 시티 FC]] (브라몰 레인) 0:1 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 7R [br]2020. 10. 31.(토) 21:30(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''[[브라몰 레인|{{{#410648 브라몰 레인}}}]] ([[셰필드|{{{#410648 셰필드}}}]])'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 마이클 올리버}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 관중: 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 0 : 1}}}}}}'''||<:><bgcolor=#95c8e9> {{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #63A7DE, #98C5E9 45%, #98C5E9 55%, #63A7DE)"
+[[파일:ManCity.png|height=100]]}}}||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||<width=40%><bgcolor=#fff><:>'''{{{#00285e 맨체스터 시티}}}'''||
+||<bgcolor=#FFF><:>'''-'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''28' [[카일 워커]]'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF King of the Match: [[카일 워커|{{{#FFF 카일 워커}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[https://youtu.be/1TB65PF6fsw|{{{#FFF 경기 하이라이트}}}]]'''||
+
+=== 8R VS [[첼시 FC]] (스탬퍼드 브리지) 1:4 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 8R [br]2020. 11. 08.(일) 02:30(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 스탬퍼드 브리지 ([[런던|{{{#410648 런던}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 조너선 모스}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<bgcolor=#034694><:>[[파일:Chelsea.png|height=100]]||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 4 : 1}}}}}}'''||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||
+||<width=40%><bgcolor=#034694><:>'''{{{#FFF 첼시}}}'''||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''23' [[태미 에이브러햄]] (A. [[마테오 코바치치]])[br]34' [[벤 칠웰]] (A. [[하킴 지예흐]])[br]77' [[치아구 시우바]] (A. [[하킴 지예흐]])[br]80' [[티모 베르너]] (A. [[은골로 캉테]])'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''9' [[데이비드 맥골드릭]] (A. [[산데르 베르게]])'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[하킴 지예흐|{{{#FFF 하킴 지예흐}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[https://youtu.be/bm0T2fvdNoc|{{{#FFF 경기 하이라이트}}}]]'''||
+
+=== 9R VS [[웨스트 햄 유나이티드 FC]] (브라몰 레인) 0:1 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 9R [br]2020. 11. 22.(일) 23:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''[[브라몰 레인|{{{#410648 브라몰 레인}}}]] ([[셰필드|{{{#410648 셰필드}}}]])'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 마틴 앳킨슨}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 관중: 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 0 : 1}}}}}}'''||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to bottom, #80BFFF 15%, #7d2b3a 15%, #7d2b3a 30%, #80BFFF 30%, #80BFFF 60%, #7d2b3a 60%, #7d2b3a 75%, #80BFFF 75%)"
+[[파일:WHU_125Crest.png|height=100]]}}}||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||<width=40%><bgcolor=#80BFFF><:>'''{{{#000 웨스트 햄 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''-'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''56' [[세바스티앵 알레]]'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[애런 크레스웰|{{{#FFF 애런 크레스웰}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[https://youtu.be/ZTDmvhXm9ZM|{{{#FFF 경기 하이라이트}}}]]'''||
+
+이 경기도 0-1로 지면서 1무 8패로 20위 꼴찌에서 벗어나지 못하고 있다.
+
+=== 10R VS [[웨스트 브롬위치 알비온 FC]] (더 호손스) 0:1 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 10R [br]2020. 11. 29.(일) 05:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 더 호손스 ([[웨스트 브롬위치|{{{#410648 웨스트 브롬위치}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 마이크 딘}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 7%, #223067 7%, #223067 10%, #FFF 10%, #FFF 15%, #223067 15%, #223067 32.5%, #FFF 32.5%, #FFF 37.5%, #223067 37.5%, #223067 40.5%, #FFF 40.5%, #FFF 47.5%, #223067 47.5%, #223067 50.5%, #FFF 50.5%, #FFF 57.5%, #223067 57.5%, #223067 62.5%, #FFF 62.5%, #FFF 63.5%, #223067 63.5%, #223067 64.5%, #FFF 64.5%, #FFF 68.5%, #223067 68.5%, #223067 86%, #FFF 86%, #FFF 90%, #223067 90%, #223067 91%, #FFF 91%, #FFF 92%, #223067 92%, #223067 97%, #FFF 97%)"
+[[파일:WBA.png|height=100]]}}}||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 1 : 0}}}}}}'''||<:><bgcolor=#FFAEB5>[[파일:SheffieldUtd.png|height=100]]||
+||<width=40%><bgcolor=#FFF><:>'''{{{#223067 웨스트 브롬위치 알비온}}}'''||<width=40%><bgcolor=#171717><:>'''{{{#FFAEB5 셰필드 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''13' [[코너 갤러거]]'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF King of the Match: [[샘 존스톤|{{{#FFF 샘 존스톤}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[https://youtu.be/YfFTFlyTMYE|{{{#FFF 경기 하이라이트}}}]]'''||
+
+10라운드가 종료된 가운데 리그에서 유일하게 승리가 없는 팀이다. 10R 현재 0승 1무 9패.
+
+=== 11R VS [[레스터 시티 FC]] (브라몰 레인) 1:2 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 11R [br]2020. 12. 06.(일). 23:15(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 브라몰 레인 ([[셰필드|{{{#410648 셰필드}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 스튜어트 애트웰}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||<|2><#FFF><:>'''{{{+5 {{{#410648 1 : 2}}}}}}'''||<:><bgcolor=#004798>[[파일:Leicester.png|height=100]]||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||<width=40%><bgcolor=#004798><:>'''{{{#FFF 레스터 시티}}}'''||
+||<bgcolor=#FFF><:>'''26' [[올리버 맥버니]]'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''24' [[아요세 페레스]][br]90' [[제이미 바디]]'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[제이미 바디|{{{#FFF 제이미 바디}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[https://youtu.be/Gr6ZNwFseh8|{{{#FFF 경기 하이라이트}}}]]'''||
+
+=== 12R VS [[사우스햄튼 FC]] (세인트 메리즈 스타디움) 0:3 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 12R [br]2020. 12. 13.(일) 21:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 세인트 메리즈 스타디움 ([[사우스햄튼|{{{#410648 사우스햄튼}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 앤드루 메들리}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(45deg, #cb0b11 40%, #FFF 40%, #FFF 60%, #cb0b11 60%)"
+[[파일:Southampton.png|height=100]]}}}||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 3 : 0}}}}}}'''||<:><bgcolor=#024234>[[파일:SheffieldUtd.png|height=100]]||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 사우스햄튼}}}'''||<width=40%><bgcolor=#024234><:>'''{{{#ead2a1 셰필드 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''34' [[체 아담스]][br]62' [[스튜어트 암스트롱]][br]83' [[네이선 레드먼드]]'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[야니크 베스테르고르|{{{#FFF 야니크 베스테르고르}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+강등권 경쟁중인 번리와 풀럼이 모두 승점을 따내면서 잔류권 마지노선인 17위와의 승점 차이가 8점 차이로 넓어졌다.
+
+=== 13R VS [[맨체스터 유나이티드 FC]] (브라몰 레인) 2:3 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 13R [br]2020. 12. 18.(금) 05:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 브라몰 레인 ([[셰필드|{{{#410648 셰필드}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 마이클 올리버}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||<|2><#FFF><:>'''{{{+5 {{{#410648 2 : 3}}}}}}'''||<:><bgcolor=#383b40>[[파일:ManUtd 2nd black.png|height=100]]||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||<width=40%><bgcolor=#FFF><:>'''{{{#383b40 맨체스터 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''5', 87' [[데이비드 맥골드릭]]'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''26', 51' [[마커스 래시포드]][br]33' [[앙토니 마르시알]]'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[마커스 래시포드|{{{#FFF 마커스 래시포드}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[https://youtu.be/wlhIj333AXs|{{{#FFF 경기 하이라이트}}}]]'''||
+
+1무 12패... 여태 1승조차 없다. 다른 하위팀들은 최소 1승이라도 거뒀거늘, 강등 1순위가 되어버리고 있다.
+
+=== 14R VS [[브라이튼 앤 호브 알비온 FC]] (아메리칸 익스프레스 커뮤니티 스타디움) 1:1 무 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 14R [br]2020. 12. 20.(일) 21:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 아메리칸 익스프레스 커뮤니티 스타디움 ([[브라이튼|{{{#410648 브라이튼}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 피터 뱅크스}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 2000명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #005DAA 9.55%, #FFF 9.55%, #FFF 10.05%, #005DAA 10.05%, #005DAA 19.6%, #FFF 19.6%, #FFF 20.1%, #005DAA 20.1%, #005DAA 29.65%, #FFF 29.65%, #FFF 30.15%, #005DAA 30.15% , #005DAA 39.7%, #FFF 39.7%, #FFF 40.2%, #005DAA 40.2%, #005DAA 49.75%, #FFF 49.75%, #FFF 50.25%, #005DAA 50.25%, #005DAA 59.8%, #FFF 59.8%, #FFF 60.3%, #005DAA 60.3%, #005DAA 69.85%, #FFF 69.85%, #FFF 70.35%, #005DAA 70.35%, #005DAA 79.9%, #FFF 79.9%, #FFF 80.4%, #005DAA 80.4%, #005DAA 89.95%, #FFF 89.95%, #FFF 90.45%, #005DAA 90.45%)"
+[[파일:BHA.png|height=100]]}}}||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 1 : 1}}}}}}'''||<:><bgcolor=#FFAEB5>[[파일:SheffieldUtd.png|height=100]]||
+||<width=40%><bgcolor=#FFF><:>'''{{{#005DAA 브라이튼 앤 호브 알비온}}}'''||<width=40%><bgcolor=#171717><:>'''{{{#FFAEB5 셰필드 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''87' [[대니 웰벡]]'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''63' [[제이든 보글]]'''||
+||<:><#FCC>'''-'''||<:><#C00>[[파일:퇴장카드.png|height=20]]||<:><#FCC>'''40' [[존 룬스트럼]]'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[대니 웰벡|{{{#FFF 대니 웰벡}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+최하위권 끼리의 승부,현재까지 1승도 없는 세필드에게 브라이튼은 그래도 한번 승부 걸어볼만한 팀이었지만 전반 룬스트럼의 퇴장으로 인해서 다시한번 무승을 이어가는중이다. 그나마 이번 무승부로 드디어 2번째 승점을 얻었다는게 위안.
+
+=== 15R VS [[에버튼 FC]] (브라몰 레인) 0:1 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 15R [br]2020. 12. 27.(일) 05:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 브라몰 레인 ([[셰필드|{{{#410648 셰필드}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 데이비드 쿠테}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||<|2><#FFF><:>'''{{{+5 {{{#410648 0 : 1}}}}}}'''||<bgcolor=#274488><:>[[파일:Everton.png|height=100]]||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||<width=40%><bgcolor=#FFF><:>'''{{{#274488 에버튼}}}'''||
+||<bgcolor=#FFF><:>'''-'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''80' [[길비 시귀르드손]]'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[길비 시귀르드손|{{{#FFF 길비 시귀르드손}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+=== 16R VS [[번리 FC]] (터프 무어) 0:1 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 16R [br]2020. 12. 30.(수) 03:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 터프 무어 ([[번리|{{{#410648 번리}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 크리스 카바나흐}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #8fd2f4 10%, #81204c 10%, #81204c 90%, #8fd2f4 90%)"
+[[파일:Burnley.png|height=100]]}}}||<|2><#FFF><:>'''{{{+5 {{{#410648 1 : 0}}}}}}'''||<:><bgcolor=#FFAEB5>[[파일:SheffieldUtd.png|height=100]]||
+||<width=40%><bgcolor=#FFF><:>'''{{{#81204c 번리}}}'''||<width=40%><bgcolor=#171717><:>'''{{{#FFAEB5 셰필드 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''32' [[벤 미]]'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[벤 미|{{{#FFF 벤 미}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[https://youtu.be/CKIXARNnw9I|{{{#FFF 경기 하이라이트}}}]]'''||
+
+이 경기 패배를 통해 셰필드 유나이티드는 2012-13시즌 퀸즈파크 레인저스[* 박지성의 QPR시절이다.]와 동률 기록인 16경기 연속 무승 기록을 수립하였다. 다만 두 팀의 차이라면 당시 QPR은 [[줄리우 세자르]], [[박지성]], [[조제 보싱와]], [[로익 레미]], [[지브릴 시세]], [[안드로스 타운센드]], [[얀 음빌라]], [[크리스토페 삼바]] 등 한때 이름 날렸던 선수들을 영입했지만 셰필드는 그렇지 않다는 것, 그리고 현재 셰필드는 2무 14패를 기록중이지만 당시 QPR은 6무 10패를 기록하여 승점이 3배는 많았다는 것 등이 있다. --쉽게 말해 셰필드가 더 암울하다--
+이 경기 패배를 통해 셰필드 유나이티드는 2012-13시즌 퀸즈파크 레인저스[* 박지성의 QPR시절이다.]와 동률 기록인 개막 후 16경기 연속 무승 기록을 수립하였다. 다만 두 팀의 차이라면 당시 QPR은 [[줄리오 세자르]], [[박지성]], [[주제 보싱와]], [[로익 레미]], [[지브릴 시세]], [[안드로스 타운센드]], [[얀 음빌라]], [[크리스토페 삼바]] 등 한때 이름 날렸던 선수들을 영입했지만 셰필드는 그렇지 않다는 것, 그리고 현재 셰필드는 2무 14패를 기록중이지만 당시 QPR은 7무 9패를 기록하여 승점이 3배는 많았다는 것 등이 있다. --쉽게 말해 셰필드가 더 암울하다--
+=== 17R VS [[크리스탈 팰리스 FC]] (셀허스트 파크) 0:2 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 17R [br]2021. 01. 03.(일) 00:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 셀허스트 파크 ([[런던|{{{#410648 런던}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 스튜어트 애트웰}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to bottom, #1B458F 10%, transparent 100%), linear-gradient(to right, #1B458F 10%, #c7313c 10%, #c7313c 37%, #1B458F 37%, #1B458F 63%, #c7313c 63%, #c7313c 90%, #1B458F 90%)"
+[[파일:CrystalPalace.png|height=100]]}}}||<|2><#FFF><:>'''{{{+5 {{{#410648 2 : 0}}}}}}'''||<:><bgcolor=#FFAEB5>[[파일:SheffieldUtd.png|height=100]]||
+||<width=40%><bgcolor=#1B458F><:>'''{{{#FFF 크리스탈 팰리스}}}'''||<width=40%><bgcolor=#171717><:>'''{{{#FFAEB5 셰필드 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''4' [[제프 슐루프]][br]45{{{-2 +6}}}' [[에베레치 에제]]'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[비센테 과이타|{{{#FFF 비센테 과이타}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[https://youtu.be/I8v2OuHsB5o|{{{#FFF 경기 하이라이트}}}]]'''||
+
+17라운드까지 무승. EPL 출범 이후 개막 최다 경기 무승이라는 역사적인 기록을 썼다. 역대 리그 전체로 본다면 1902-03 시즌 [[볼튼 원더러스 FC|볼튼]]의 22경기 무승 기록이 있다.
+
+지난시즌부터 따진다면 20경기 무승을 기록중이다[* 2무18패] 현시점 30경기 리그 무승을 기록중인 분데스리가의 [[FC 샬케 04]]와 함께 최악의 시즌을 보내고 있다. 그리그 셰필드가 FA컵 일정을 소화중이던 1월 10일 즈음에 살케 마저 호펜하임을 4:0으로 이겨 셰필드는 '''유럽 5대리그 유일 무승팀이 되면서(...)''' 더욱 안쓰러워진 상황이 되었다.
+=== 18R VS [[뉴캐슬 유나이티드 FC]] (브라몰 레인) 1:0 승 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 18R [br]2021. 01. 13.(수) 03:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 브라몰 레인 ([[셰필드|{{{#410648 셰필드}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 앤디 메들리}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||<|2><#FFF><:>'''{{{+5 {{{#410648 1 : 0}}}}}}'''||<:><bgcolor=#EFFD5F>[[파일:NewcastleUtd.png|height=100]]||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||<width=40%><bgcolor=#EFFD5F><:>'''{{{#000 뉴캐슬 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''73' [[빌리 샤프]] (PK)'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<:><#FCC>'''-'''||<:><#C00>[[파일:퇴장카드.png|height=20]]||<:><#FCC>'''45' [[라이언 프레이저]]'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[칼 달로우|{{{#FFF 칼 달로우}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+주장 [[빌리 샤프]]가 골을 넣으며 18경기만에 1승을 거뒀다. 이제 07-08 시즌 강등당한 [[더비 카운티 FC|더비 카운티]] 최소 승점, 최소 득점, 최다 득실차, 최다 패배 기록을 갱신 하지 않아야 하는 목표가 생겼다.
+=== 19R VS [[토트넘 홋스퍼 FC]] (브라몰 레인) 1:3 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 19R [br]2021. 01. 17.(일) 23:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''[[브라몰 레인|{{{#410648 브라몰 레인}}}]] ([[셰필드|{{{#410648 셰필드}}}]])'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 안드레 마리너}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 관중: 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||<|2><#FFF><:>'''{{{+5 {{{#410648 1 : 3}}}}}}'''||<:><bgcolor=#295e52>[[파일:spurslogo_white.png|height=100]]||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||<width=40%><bgcolor=#000><:>'''{{{#ebf4c4 토트넘 홋스퍼}}}'''||
+||<bgcolor=#FFF><:>'''59' [[데이비드 맥골드릭]]'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''5' [[세르주 오리에]][br]40' [[해리 케인]][br]62' [[탕기 은돔벨레]]'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF King of the Match: [[해리 케인|{{{#FFF 해리 케인}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[https://youtu.be/COEv6BZtEPs|{{{#FFF 경기 하이라이트}}}]]'''||
+
+지난 시즌 브라몰 레인에서 3:1로 토트넘을 뭉겟었던 셰필드건만, 올 시즌 행보가 너무 좋지않아 승리를 장담하긴 힘들다. 토트넘도 시즌 초반보다는 기세가 떨어지긴 했지만 그래도 현재 6위에 위치해 있어 승리를 장담하기는 어렵다. 그리고 예상대로 졌다.
+=== 전반기 총평 ===
+말 그대로 [[망했어요|역대급으로 망한 전반기였다.]] 그나마 뉴캐슬 상대로 승리를 거두며 전반기 무승은 간신히 면하였으나 이대로면 강등 1순위가 되는 상황.
+== 후반기 ==
+=== 20R VS [[맨체스터 유나이티드 FC]] (올드 트레포드) 2:1 승 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 20R [br]2021. 01. 28.(목) 05:15(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 올드 트래포드 ([[맨체스터|{{{#410648 그레이터맨체스터 트래포드}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 피터 뱅크스}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<bgcolor=#DA020E><:>[[파일:ManUtd.png|height=100]]||<|2><#FFF><:>'''{{{+5 {{{#410648 1 : 2}}}}}}'''||<:><bgcolor=#FFAEB5>[[파일:SheffieldUtd.png|height=100]]||
+||<width=40%><bgcolor=#FFF><:>'''{{{#000 맨체스터 유나이티드}}}'''||<width=40%><bgcolor=#171717><:>'''{{{#FFAEB5 셰필드 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''64' [[해리 매과이어]] (A. [[알렉스 텔리스]])'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''23' [[킨 브라이언]] (A. [[존 플렉]])[br]74' [[올리버 버크]] (A. [[존 룬스트럼]])'''||
+||<bgcolor=#410648><-3><:>'''[[https://youtu.be/9pCLkKz6K40|{{{#FFF 경기 하이라이트}}}]] | [[https://www.premierleague.com/match/59089|{{{#FFFFFF 매치 리포트}}}]]'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[브루노 페르난데스|{{{#FFF 브루노 페르난데스}}}]]}}}'''||
+
+=== 21R VS [[맨체스터 시티 FC]] (에티하드 스타디움) 0:1 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 21R [br]2021. 01. 31.(일) 02:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 에티하드 스타디움 ([[맨체스터|{{{#410648 맨체스터}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 데이비드 쿠테}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 관중: 0명}}}'''||
+||<:><bgcolor=#95c8e9> {{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #63A7DE, #98C5E9 45%, #98C5E9 55%, #63A7DE)"
+[[파일:ManCity.png|height=100]]}}}||<|2><#FFF><:>'''{{{+5 {{{#410648 1 : 0}}}}}}'''||<:><bgcolor=#FFAEB5>[[파일:SheffieldUtd.png|height=100]]||
+||<width=40%><bgcolor=#FFF><:>'''{{{#00285e 맨체스터 시티}}}'''||<width=40%><bgcolor=#171717><:>'''{{{#FFAEB5 셰필드 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''9' [[가브리에우 제주스]]'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF King of the Match: [[후벵 디아스|{{{#FFF 후벵 디아스}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[https://youtu.be/Z6c_Ue1XU_A|{{{#FFF 경기 하이라이트}}}]]'''||
+=== 22R VS [[웨스트 브롬위치 알비온 FC]] (브라몰 레인) 2:1 승 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 22R [br]2021. 02. 03.(수) 03:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 브라몰 레인 ([[셰필드|{{{#410648 셰필드}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 폴 티어니}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 2 : 1}}}}}}'''||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FD0 7%, #007b22 7%, #007b22 10%, #FD0 10%, #FD0 15%, #007b22 15%, #007b22 32.5%, #FD0 32.5%, #FD0 37.5%, #007b22 37.5%, #007b22 40.5%, #FD0 40.5%, #FD0 47.5%, #007b22 47.5%, #007b22 50.5%, #FD0 50.5%, #FD0 57.5%, #007b22 57.5%, #007b22 62.5%, #FD0 62.5%, #FD0 63.5%, #007b22 63.5%, #007b22 64.5%, #FD0 64.5%, #FD0 68.5%, #007b22 68.5%, #007b22 86%, #FD0 86%, #FD0 90%, #007b22 90%, #007b22 91%, #FD0 91%, #FD0 92%, #007b22 92%, #007b22 97%, #FD0 97%)"
+[[파일:WBA.png|height=100]]}}}||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||<width=40%><bgcolor=#007b22><:>'''{{{#FD0 웨스트 브롬위치 알비온}}}'''||
+||<bgcolor=#FFF><:>'''56' [[제이든 보글]][br]73' [[빌리 샤프]]'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''41' 맷 필립스'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[빌리 샤프|{{{#FFF 빌리 샤프}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+=== 23R VS [[첼시 FC]] (브라몰 레인) 1:2 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 23R [br]2021. 02. 08.(월) 04:15(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 브라몰 레인 ([[셰필드|{{{#410648 셰필드}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 케빈 프렌드}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 1 : 2}}}}}}'''||<:><bgcolor=#034694>[[파일:Chelsea.png|height=100]]||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||<width=40%><bgcolor=#034694><:>'''{{{#FFF 첼시}}}'''||
+||<bgcolor=#FFF><:>'''55' [[안토니오 뤼디거]] (OG)'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''43' [[메이슨 마운트]][br]58' [[조르지뉴]] (PK)'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[티모 베르너|{{{#FFF 티모 베르너}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[https://youtu.be/sesIim8wLe4|{{{#FFF 경기 하이라이트}}}]]'''||
+
+이전 경기에서 [[웨스트 브롬위치 알비온 FC]]을 상대로 2:1 승리를 가져왔지만 올 시즌 3승 2무 17패로 셰필드는 현재 리그 20위에 위치해 있어, 상당히 좋지 못한 경기력과 성적을 기록하고 있다. 현재 [[데이비드 맥골드릭]]이 5득점으로 가장 많은 득점 포인트를 기록하고 있지만 조직력에 불안정함과 공수 밸런스가 상당히 좋지 못하다. 
+
+또한 득점 찬스에서도 결정력이 높지 않기 때문에 강팀을 상대로 무기력한 경기 내용을 보일 가능성이 높을 것으로 보인다.
+
+이번 상대와 전력상 큰 차이를 극복하기란 사실상 불가능에 가깝기 때문에 반전을 만들기 어려울 것으로 보이며 이번 경기에서 셰필드는 패배를 기록할 것으로 예상하는 바이다.
+=== 24R VS [[웨스트 햄 유나이티드 FC]] (런던 스타디움) 0:3 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 24R [br]2021. 02. 16.(화) 03:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''[[런던 스타디움|{{{#410648 런던 스타디움}}}]] ([[런던|{{{#410648 런던}}}]])'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 사이먼 후퍼}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<bgcolor=#f4f4f4><:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #59b3e4 10%, #7C2C3B 10%, #7C2C3B 90%, #59b3e4 90%)"
+[[파일:WHU_125Crest.png|height=100]]}}}||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 3 : 0}}}}}}'''||<:><bgcolor=#024234>[[파일:SheffieldUtd.png|height=100]]||
+||<width=40%><bgcolor=#FFF><:>'''{{{#7C2C3B 웨스트 햄 유나이티드}}}'''||<width=40%><bgcolor=#024234><:>'''{{{#ead2a1 셰필드 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''41' [[데클란 라이스]] (PK)[br]58' [[이사 디오프]][br]90{{{-2 +6}}}' [[라이언 프레데릭스]]'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[애런 크레스웰|{{{#FFF 애런 크레스웰}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+=== 25R VS [[풀럼 FC]] (크레이븐 코티지) 0:1 패 ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 25R [br]2020. 02. 21.(일) 05:00(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 크레이븐 코티지 ([[런던|{{{#410648 런던}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 마틴 앳킨슨}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to bottom, #000 15%, #FFF 15%)"
+[[파일:Fulham.png|height=100]]}}}||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 1 : 0}}}}}}'''||<:><bgcolor=#024234>[[파일:SheffieldUtd.png|height=100]]||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 풀럼}}}'''||<width=40%><bgcolor=#024234><:>'''{{{#ead2a1 셰필드 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''61' [[아데몰라 루크먼]]'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[아데몰라 루크먼|{{{#FFF 아데몰라 루크먼}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+=== 26R VS [[리버풀 FC]] (브라몰 레인) ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 26R [br]2021. ??. ??.(?) ??:??(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 브라몰 레인 ([[셰필드|{{{#410648 셰필드}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 미정}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||<|2><#FFF><:>'''{{{+5 {{{#410648 - : -}}}}}}'''||<:><bgcolor=#11bdc4>[[파일:liverbird_black.png|height=100]]||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||<width=40%><bgcolor=#11bdc4><:>'''{{{#000 리버풀}}}'''||
+||<bgcolor=#FFF><:>'''-'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[|{{{#FFF 미정}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+=== 29R VS [[아스톤 빌라 FC]] (브라몰 레인) ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 29R [br]2020. ??. ??.(?) ??:??(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 브라몰 레인 ([[셰필드|{{{#410648 셰필드}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 미정}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||<|2><#FFF><:>'''{{{+5 {{{#410648 - : -}}}}}}'''||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #333 4.525%, #650932 4.525%, #650932 5.025%, #333 5.025%, #333 9.55%, #650932 9.55%, #650932 10.05%, #333 10.05%, #333 14.575%, #650932 14.575%, #650932 15.075%, #333 15.075%, #333 19.6%, #650932 19.6%, #650932 20.1%, #333 20.1%, #333 24.625%, #650932 24.625%, #650932 25.125%, #333 25.125%, #333 29.65%, #650932 29.65%, #650932 30.15%, #333 30.15%, #333 34.675%, #650932 34.675%, #650932 35.175%, #333 35.175%, #333 39.7%, #650932 39.7%, #650932 40.2%, #333 40.2%, #333 44.725%, #650932 44.725%, #650932 45.225%, #333 45.225%, #333 49.75%, #650932 49.75%, #650932 50.25%, #333 50.25%, #333 54.775%, #650932 54.775%, #650932 55.275%, #333 55.275%, #333 59.8%, #650932 59.8%, #650932 60.3%, #333 60.3%, #333 64.825%, #650932 64.825%, #650932 65.325%, #333 65.325%, #333 69.85%, #650932 69.85%, #650932 70.35%, #333 70.35%, #333 74.875%, #650932 74.875%, #650932 75.375%, #333 75.375%, #333 79.9%, #650932 79.9%, #650932 80.4%, #333 80.4%, #333 84.925%, #650932 84.925%, #650932 85.425%, #333 85.425%, #333 89.95%, #650932 89.95%, #650932 90.45%, #333 90.45%, #333 94.975%, #650932 94.975%, #650932 95.475%, #333 95.475%)" 
+[[파일:AVFC.png|height=100]]}}}||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||<width=40%><bgcolor=#333><:>'''{{{#FFF 아스톤 빌라}}}'''||
+||<bgcolor=#FFF><:>'''-'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[|{{{#FFF 미정}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+=== 27R VS [[사우스햄튼 FC]] (브라몰 레인) ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 27R [br]2020. ??. ??.(?) ??:??(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 브라몰 레인 ([[셰필드|{{{#410648 셰필드}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 미정}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 - : -}}}}}}'''||<:><bgcolor=#19212E>[[파일:Southampton.png|height=100]]||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||<width=40%><bgcolor=#1122DD><:>'''{{{#eee400 사우스햄튼}}}'''||
+||<bgcolor=#FFF><:>'''-'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[|{{{#FFF 미정}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+=== 28R VS [[레스터 시티 FC]] (킹 파워 스타디움) ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 28R [br]2021. 03. 13.(토) ??:??(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 킹 파워 스타디움 ([[레스터|{{{#410648 레스터}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 미정}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:><bgcolor=#004798>[[파일:Leicester.png|height=100]]||<|2><#FFF><:>'''{{{+5 {{{#410648 - : -}}}}}}'''||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||
+||<width=40%><bgcolor=#004798><:>'''{{{#FFF 레스터 시티}}}'''||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''-'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[|{{{#FFF 미정}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+
+=== 30R VS [[리즈 유나이티드 FC]] (엘런드 로드) ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 30R [br]2020. ??. ??.(?) ??:??(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 엘런드 로드 ([[리즈(도시)|{{{#410648 리즈}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 미정}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<bgcolor=#FFF><:>[[파일:Leeds Utd new logo.png|height=100]]||<|2><#FFF><:>'''{{{+5 {{{#410648 - : -}}}}}}'''||<:><bgcolor=#024234>[[파일:SheffieldUtd.png|height=100]]||
+||<width=40%><bgcolor=#FFF><:>'''{{{#005b9e 리즈 유나이티드}}}'''||<width=40%><bgcolor=#024234><:>'''{{{#ead2a1 셰필드 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''-'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[|{{{#FFF 미정}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+=== 31R VS [[아스날 FC]] (브라몰 레인) ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 31R [br]2020. ??. ??.(?) ??:??(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 브라몰 레인 ([[셰필드|{{{#410648 셰필드}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 미정}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 - : -}}}}}}'''||<:><bgcolor=#0d497d>[[파일:Arsenal.png|height=100]]||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||<width=40%><bgcolor=#0d497d><:>'''{{{#d5b29c 아스날}}}'''||
+||<bgcolor=#FFF><:>'''-'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[|{{{#FFF 미정}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+=== 32R VS [[울버햄튼 원더러스 FC]] (몰리뉴 스타디움) ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 32R [br]2020. ??. ??.(?) ??:??(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 몰리뉴 스타디움 ([[울버햄튼|{{{#410648 울버햄튼}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 미정}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<bgcolor=#ffa41c><:>[[파일:Wolverhampton.png|height=100]]||<|2><#FFF><:>'''{{{+5 {{{#410648 - : -}}}}}}'''||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||
+||<width=40%><bgcolor=#231F20><:>'''{{{#ffa41c 울버햄튼 원더러스}}}'''||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''-'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[|{{{#FFF 미정}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+=== 33R VS [[브라이튼 앤 호브 알비온 FC]] (브라몰 레인) ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 33R [br]2020. ??. ??.(?) ??:??(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 브라몰 레인 ([[셰필드|{{{#410648 셰필드}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 미정}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 - : -}}}}}}'''||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #005DAA 9.55%, #FFF 9.55%, #FFF 10.05%, #005DAA 10.05%, #005DAA 19.6%, #FFF 19.6%, #FFF 20.1%, #005DAA 20.1%, #005DAA 29.65%, #FFF 29.65%, #FFF 30.15%, #005DAA 30.15% , #005DAA 39.7%, #FFF 39.7%, #FFF 40.2%, #005DAA 40.2%, #005DAA 49.75%, #FFF 49.75%, #FFF 50.25%, #005DAA 50.25%, #005DAA 59.8%, #FFF 59.8%, #FFF 60.3%, #005DAA 60.3%, #005DAA 69.85%, #FFF 69.85%, #FFF 70.35%, #005DAA 70.35%, #005DAA 79.9%, #FFF 79.9%, #FFF 80.4%, #005DAA 80.4%, #005DAA 89.95%, #FFF 89.95%, #FFF 90.45%, #005DAA 90.45%)"
+[[파일:BHA.png|height=100]]}}}||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||<width=40%><bgcolor=#FFF><:>'''{{{#005DAA 브라이튼 앤 호브 알비온}}}'''||
+||<bgcolor=#FFF><:>'''-'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[|{{{#FFF 미정}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+=== 34R VS [[토트넘 홋스퍼 FC]] (토트넘 홋스퍼 스타디움) ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 34R [br]2020. ??. ??.(?) ??:??(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 토트넘 홋스퍼 스타디움 ([[런던|{{{#410648 런던}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 미정}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<bgcolor=#f4f4f4><:>[[파일:Spurs.png|height=100]]||<|2><#FFF><:>'''{{{+5 {{{#410648 - : -}}}}}}'''||<:><bgcolor=#024234>[[파일:SheffieldUtd.png|height=100]]||
+||<width=40%><bgcolor=#001C58><:>'''{{{#FFF 토트넘 홋스퍼}}}'''||<width=40%><bgcolor=#024234><:>'''{{{#ead2a1 셰필드 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''-'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[|{{{#FFF 미정}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+=== 35R VS [[크리스탈 팰리스 FC]] (브라몰 레인) ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 35R [br]2020. ??. ??.(?) ??:??(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 브라몰 레인 ([[셰필드|{{{#410648 셰필드}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 미정}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||<|2><bgcolor=#FFF><:>'''{{{+5 {{{#410648 - : -}}}}}}'''||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to bottom, #1B458F 10%, transparent 100%), linear-gradient(to right, #1B458F 10%, #c7313c 10%, #c7313c 37%, #1B458F 37%, #1B458F 63%, #c7313c 63%, #c7313c 90%, #1B458F 90%)"
+[[파일:CrystalPalace.png|height=100]]}}}||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||<width=40%><bgcolor=#1B458F><:>'''{{{#FFF 크리스탈 팰리스}}}'''||
+||<bgcolor=#FFF><:>'''-'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[|{{{#FFF 미정}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+=== 36R VS [[에버튼 FC]] (구디슨 파크) ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 36R [br]2020. ??. ??.(?) ??:??(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 구디슨 파크 ([[리버풀|{{{#410648 리버풀}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 미정}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<bgcolor=#274488><:>[[파일:Everton.png|height=100]]||<|2><#FFF><:>'''{{{+5 {{{#410648 - : -}}}}}}'''||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||
+||<width=40%><bgcolor=#FFF><:>'''{{{#274488 에버튼}}}'''||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''-'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[|{{{#FFF 미정}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+=== 37R VS [[뉴캐슬 유나이티드 FC]] (세인트 제임스 파크) ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 37R [br]2020. ??. ??.(?) ??:??(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 세인트 제임스 파크 ([[뉴캐슬어폰타인|{{{#410648 뉴캐슬어폰타인}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 미정}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 8%, #000 8%, #000 20%, #FFF 20%, #FFF 32%, #000 32%, #000 44%, #FFF 44%, #FFF 56%, #000 56%, #000 68%, #FFF 68%, #FFF 80%, #000 80%, #000 92%, #FFF 92%)"
+[[파일:NewcastleUtd.png|height=100]]}}}||<|2><#FFF><:>'''{{{+5 {{{#410648 - : -}}}}}}'''||<:><bgcolor=#FFAEB5>[[파일:SheffieldUtd.png|height=100]]||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 뉴캐슬 유나이티드}}}'''||<width=40%><bgcolor=#171717><:>'''{{{#FFAEB5 셰필드 유나이티드}}}'''||
+||<bgcolor=#FFF><:>'''-'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[|{{{#FFF 미정}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+=== 38R VS [[번리 FC]] (브라몰 레인) ===
+||<tablewidth=100%><tablebordercolor=#410648><tablealign=center><bgcolor=#410648><-3><:>[[파일:Premier League logo header.png|height=50]][br]'''{{{#FFF 2020-21 PL 38R [br]2020. ??. ??.(?) ??:??(UTC+9)}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 브라몰 레인 ([[셰필드|{{{#410648 셰필드}}}]])}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 주심: 미정}}}'''||
+||<bgcolor=#FFF><-3><:>'''{{{#410648 0명}}}'''||
+||<:>{{{#!wiki style="margin: -5px -10px; padding: 5px 10px; background-image: linear-gradient(to right, #FFF 15%, #BB0000 15%, #BB0000 29%, #FFF 29%, #FFF 43%, #BB0000 43%, #BB0000 57%, #FFF 57%, #FFF 71%, #BB0000 71%, #BB0000 85%, #FFF 85%)"
+[[파일:SheffieldUtd.png|height=100]]}}}||<|2><#FFF><:>'''{{{+5 {{{#410648 - : -}}}}}}'''||<:><bgcolor=#303033>[[파일:Burnley.png|height=100]]||
+||<width=40%><bgcolor=#000><:>'''{{{#FFF 셰필드 유나이티드}}}'''||<width=40%><bgcolor=#000><:>'''{{{#8fd2f4 번리}}}'''||
+||<bgcolor=#FFF><:>'''-'''||<bgcolor=#FFF><:>[[파일:득점.png|height=20]]||<bgcolor=#FFF><:>'''-'''||
+||<bgcolor=#410648><-3><:>'''{{{#FFF Man of the Match: [[|{{{#FFF 미정}}}]]}}}'''||
+||<bgcolor=#410648><-3><:>'''[[|{{{#FFF 경기 하이라이트}}}]]'''||
+
+
+=== 후반기 총평 ===
+
+== 리그 총평 ==

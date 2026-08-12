@@ -1,0 +1,586 @@
+[include(틀:상위 문서,top1=미케지마 마다라)]
+
+[목차]
+
+== 개요 ==
+게임 [[앙상블 스타즈!! Basic]] 내의 [[미케지마 마다라]]의 정보를 정리한 문서.
+
+== 등장 스토리 ==
+||<tablealign=center><table width=100%><table bordercolor=#5A6964><bgcolor=#622d18><table bgcolor=#ffffff,#2d2f34><|4> {{{#ffffff '''캐릭터'''}}} ||<-3> 미케지마 마다라 「1화」 ||
+||<-3> 미케지마 마다라 「2화」 ||
+||<-3> 미케지마 마다라 「3화」 ||
+||<-3> 미케지마 마다라 「뉴 사무원 씨」 ||
+||<bgcolor=#622d18><-4>||
+||<bgcolor=#622d18><|10> {{{#ffffff '''메인'''}}} ||<|10><bgcolor=#D7C2BA,#434448> 제3장[br]혼란기 ||<-2> 72화 「Giant」 ||
+||<-2> 73화 「Trainer」 ||
+||<-2> 74화 「Vote」 ||
+||<-2> 75화 「Folktale」 ||
+||<-2> 76화 「Unmask」 ||
+||<-2> 77화 「Phantom」 ||
+||<-2> 79화 「Foreigner」 ||
+||<-2> 80화 「Endeavor」 ||
+||<-2> 81화 「Begun」 ||
+||<-2> 85화 「Taunted」 ||
+||<bgcolor=#622d18><-4>||
+||<bgcolor=#622d18><width=10%> '''[[앙상블 스타즈!! Basic/이벤트|{{{#ffffff 이벤트}}}]]''' ||<width=38%><bgcolor=#D7C2BA,#434448> 이벤트명 ||<width=27%> {{{-2 2020/00/00 ~ 2020/00/00}}} ||<width=25%> '''{{{#!wiki style="background-color:rgb(98, 45, 24); margin : 1px ; border-radius : 0px ; display:inline-block ; color :#ffffff; font-style: normal ; width:40px ; text-align: center"
+{{{-2 {{{#ffffff Basic}}}}}}}}}''' {{{#FF5A5A '''★0'''}}} ||
+||<bgcolor=#622d18><-4>||
+||<bgcolor=#622d18><width=10%> '''[[앙상블 스타즈!! Basic/스카우트|{{{#ffffff 스카우트}}}]]''' ||<width=38%><bgcolor=#D7C2BA,#434448> 스카우트명 ||<width=27%> {{{-2 2020/00/00 ~ 2020/00/00}}} ||<width=25%> '''{{{#!wiki style="background-color:rgb(98, 45, 24); margin : 1px ; border-radius : 0px ; display:inline-block ; color :#ffffff; font-style: normal ; width:40px ; text-align: center"
+{{{-2 {{{#ffffff Basic}}}}}}}}}''' {{{#FF5A5A '''★0'''}}} ||
+
+== 아이돌 퀘스트 ==
+||<table width=100%><table bordercolor=#5A6964><rowbgcolor=#622d18><table bgcolor=#ffffff,#2d2f34><:> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+{{{#ffffff 랭크}}}}}}''' ||<:> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+{{{#ffffff 미션}}}}}}''' ||<:> '''{{{#ffffff 클리어 조건}}}''' ||<:> '''{{{#ffffff 보상}}}''' ||
+||<width=5%><bgcolor=#622d18><|6> {{{#ffffff '''E'''}}} ||<width=7%><bgcolor=#622d18> {{{#ffffff '''1'''}}} ||<width=64%>스테이터스 피스(레드/소) × 30 ||<width=24%><bgcolor=#D7C2BA,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 아침-아침의 대화 - 1}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''2'''}}} ||스테이터스 피스(블루/소) × 30 ||<bgcolor=#D7C2BA,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 낮-낮의 대화 - 1}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''3'''}}} ||스테이터스 피스(옐로/소) × 30 ||<bgcolor=#D7C2BA,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 일 대화-아이돌 랭크 E - 1}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''4'''}}} ||아이돌 피스(미케지마 마다라) × 1 ||<bgcolor=#D7C2BA,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 일 대화-아이돌 랭크 E - 2}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''5'''}}} ||블로섬 메달 × 1 ||<bgcolor=#D7C2BA,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 라이브 시작 - 1}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''승급'''}}} ||'''{{{#!wiki style="background-color:rgb(98, 45, 24); margin : 1px ; border-radius : 0px ; display:inline-block ; color :#ffffff; font-style: normal ; width:50px ; text-align: center"
+{{{-1 {{{#ffffff Basic}}}}}}}}}'''[br]- 팬 2,000명 이상[br]- 미케지마 마다라를 유닛에 편성 후 『MaM』 코스에서 115,000점 이상 달성 ||<bgcolor=#D7C2BA,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 아이돌 랭크 업-랭크D - 1[br][스토리] 미케지마 마다라 「2화」}}}}}} ||
+||<bgcolor=#622d18><-4>||
+||<bgcolor=#622d18><|6> {{{#ffffff '''D'''}}} ||<bgcolor=#622d18> {{{#ffffff '''1'''}}} ||스테이터스 피스(??/소) × 50 ||<bgcolor=#D7C2BA,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 저녁-저녁의 대화 - 1}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''2'''}}} ||스테이터스 피스(??/중) × 10 ||<bgcolor=#D7C2BA,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 밤-밤의 대화 - 1}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''3'''}}} ||스테이터스 피스(??/중) × 10 ||<bgcolor=#D7C2BA,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 아침-아침의 대화 - 2}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''4'''}}} ||아이돌 피스(미케지마 마다라) × 2 ||<bgcolor=#D7C2BA,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 일-시작 - 1}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''5'''}}} ||블로섬 메달 × 3 ||<bgcolor=#D7C2BA,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 일-종료 - 1}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''승급'''}}} ||'''{{{#!wiki style="background-color:rgb(98, 45, 24); margin : 1px ; border-radius : 0px ; display:inline-block ; color :#ffffff; font-style: normal ; width:50px ; text-align: center"
+{{{-1 {{{#ffffff Basic}}}}}}}}}'''[br]- 팬 10,000명 이상[br]- 미케지마 마다라를 유닛에 편성 후 『MaM』 코스에서 285,000점 이상 달성 ||<bgcolor=#D7C2BA,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 아이돌 랭크 업-랭크C - 1[br][스토리] 미케지마 마다라 「3화」}}}}}} ||
+||<bgcolor=#622d18><-4>||
+||<bgcolor=#622d18><|6> {{{#ffffff '''C'''}}} ||<bgcolor=#622d18> {{{#ffffff '''1'''}}} ||스테이터스 피스(??/중) × 30 ||<bgcolor=#D7C2BA,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 낮-낮의 대화 - 2}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''2'''}}} ||스테이터스 피스(??/대) × 15 ||<bgcolor=#D7C2BA,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 저녁-저녁의 대화 - 2}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''3'''}}} ||아이돌 피스(미케지마 마다라) × 3 ||<bgcolor=#D7C2BA,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 밤-밤의 대화 - 2}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''4'''}}} ||블로섬 메달 × 5 ||<bgcolor=#D7C2BA,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 밤-굿나잇 - 1}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''5'''}}} ||크라운 메달 × 5 ||<bgcolor=#D7C2BA,#434448>{{{-2 {{{#373a3c,#dddddd [보이스] 라이브-스킬 발동 - 1}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''승급'''}}} ||'''{{{#!wiki style="background-color:rgb(98, 45, 24); margin : 1px ; border-radius : 0px ; display:inline-block ; color :#ffffff; font-style: normal ; width:50px ; text-align: center"
+{{{-1 {{{#ffffff Basic}}}}}}}}}'''[br]- 팬 50,000명 이상[br]- 미케지마 마다라를 유닛에 편성 후 『MaM』 코스에서 -점 이상 달성 ||<bgcolor=#D7C2BA,#434448>{{{-2 {{{#373a3c,#dddddd  }}}}}} ||
+
+== 프로듀스 ==
+=== 어필 토크 ===
+## 글자색상: 레드-#FF6A6A, 블루-#6799FF, 옐로-#EE9040
+ *'''대사'''
+ 「おお、あんずさん! ここで会ったのも何かの縁! 一緒にお昼ご飯を食べようじゃないかな♪」
+ ||<table bordercolor=#5A6964><bgcolor=#622d18><table bgcolor=#ffffff,#2d2f34> '''{{{#ffffff 선택지}}}''' ||<bgcolor=#622d18> '''{{{#ffffff 효과}}}''' ||
+ ||'''선택지1''' (いいですよ) ||<bgcolor=#D7C2BA,#434448> '''{{{#373A3C,#dddddd 어필 스타}}}''' ||
+ ||'''선택지2''' (みんなと食べましょう) ||<bgcolor=#D7C2BA,#434448> '''{{{#FF6A6A 적색 소}}}''' ||
+ ||'''선택지3''' (急いでるので......) ||<bgcolor=#D7C2BA,#434448> '''{{{#FF6A6A 선택지보상}}}''' ||
+
+
+ *'''대사'''
+ 「あんずさん、困った顔をしてどうしたあ? ふむふむ。 落とし物を拾ったけど、落とし主が分からないって?일어원문」
+ ||<table bordercolor=#5A6964><bgcolor=#622d18><table bgcolor=#ffffff,#2d2f34> '''{{{#ffffff 선택지}}}''' ||<bgcolor=#622d18> '''{{{#ffffff 효과}}}''' ||
+ ||'''선택지1''' (帽子なんですけど) ||<bgcolor=#D7C2BA,#434448> '''{{{#373A3C,#dddddd 어필 스타}}}''' ||
+ ||'''선택지2''' (靴下なんですけど) ||<bgcolor=#D7C2BA,#434448> '''{{{#FF6A6A 선택지보상}}}''' ||
+ ||'''선택지3''' (ハンカチなんですけど) ||<bgcolor=#D7C2BA,#434448> '''{{{#FF6A6A Pf 노트}}}''' ||
+
+
+ *'''대사'''
+ 「おお、あんずさん! そういえば今日の仕事はあんずさんと一緒たったなあ。 とても楽しみだぞう」
+ ||<table bordercolor=#5A6964><bgcolor=#622d18><table bgcolor=#ffffff,#2d2f34> '''{{{#ffffff 선택지}}}''' ||<bgcolor=#622d18> '''{{{#ffffff 효과}}}''' ||
+ ||'''선택지1''' (グルメレポートでしたっけ? ||<bgcolor=#D7C2BA,#434448> '''{{{#373A3C,#dddddd 어필 스타}}}''' ||
+ ||'''선택지2''' (スポーツバラエティでしたっけ?) ||<bgcolor=#D7C2BA,#434448> '''{{{#FF6A6A 청색 소}}}''' ||
+ ||'''선택지3''' (ドラマ撮影でしたっけ?) ||<bgcolor=#D7C2BA,#434448> '''{{{#FF6A6A Vo 노트}}}''' ||
+
+
+=== 통상 프로듀스 - MaM ===
+ *'''대사'''
+ 「일어원문」
+ ||<table bordercolor=#5A6964><bgcolor=#622d18><table bgcolor=#ffffff,#2d2f34> '''{{{#ffffff 선택지}}}''' ||<bgcolor=#622d18> '''{{{#ffffff 효과}}}''' ||
+ ||'''선택지1''' (일어원문) ||<bgcolor=#D7C2BA,#434448> '''{{{#FF6A6A 선택지보상}}}''' ||
+ ||'''선택지2''' (일어원문) ||<bgcolor=#D7C2BA,#434448> '''{{{#FF6A6A 선택지보상}}}''' ||
+
+
+ *'''대사'''
+ 「일어원문」
+ ||<table bordercolor=#5A6964><bgcolor=#622d18><table bgcolor=#ffffff,#2d2f34> '''{{{#ffffff 선택지}}}''' ||<bgcolor=#622d18> '''{{{#ffffff 효과}}}''' ||
+ ||'''선택지1''' (일어원문) ||<bgcolor=#D7C2BA,#434448> '''{{{#FF6A6A 선택지보상}}}''' ||
+ ||'''선택지2''' (일어원문) ||<bgcolor=#D7C2BA,#434448> '''{{{#FF6A6A 선택지보상}}}''' ||
+
+
+ *'''대사'''
+ 「일어원문」
+ ||<table bordercolor=#5A6964><bgcolor=#622d18><table bgcolor=#ffffff,#2d2f34> '''{{{#ffffff 선택지}}}''' ||<bgcolor=#622d18> '''{{{#ffffff 효과}}}''' ||
+ ||'''선택지1''' (일어원문) ||<bgcolor=#D7C2BA,#434448> '''{{{#FF6A6A 선택지보상}}}''' ||
+ ||'''선택지2''' (일어원문) ||<bgcolor=#D7C2BA,#434448> '''{{{#FF6A6A 선택지보상}}}''' ||
+
+
+=== 요일 프로듀스 - MaM ===
+ *'''대사'''
+ 「일어원문」
+ ||<table bordercolor=#5A6964><bgcolor=#622d18><table bgcolor=#ffffff,#2d2f34> '''{{{#ffffff 선택지}}}''' ||<bgcolor=#622d18> '''{{{#ffffff 효과}}}''' ||
+ ||'''선택지1''' (일어원문) ||<bgcolor=#D7C2BA,#434448> '''{{{#FF6A6A 선택지보상}}}''' ||
+ ||'''선택지2''' (일어원문) ||<bgcolor=#D7C2BA,#434448> '''{{{#FF6A6A 선택지보상}}}''' ||
+
+
+ *'''대사'''
+ 「일어원문」
+ ||<table bordercolor=#5A6964><bgcolor=#622d18><table bgcolor=#ffffff,#2d2f34> '''{{{#ffffff 선택지}}}''' ||<bgcolor=#622d18> '''{{{#ffffff 효과}}}''' ||
+ ||'''선택지1''' (일어원문) ||<bgcolor=#D7C2BA,#434448> '''{{{#FF6A6A 선택지보상}}}''' ||
+ ||'''선택지2''' (일어원문) ||<bgcolor=#D7C2BA,#434448> '''{{{#FF6A6A 선택지보상}}}''' ||
+
+
+ *'''대사'''
+ 「일어원문」
+ ||<table bordercolor=#5A6964><bgcolor=#622d18><table bgcolor=#ffffff,#2d2f34> '''{{{#ffffff 선택지}}}''' ||<bgcolor=#622d18> '''{{{#ffffff 효과}}}''' ||
+ ||'''선택지1''' (일어원문) ||<bgcolor=#D7C2BA,#434448> '''{{{#FF6A6A 선택지보상}}}''' ||
+ ||'''선택지2''' (일어원문) ||<bgcolor=#D7C2BA,#434448> '''{{{#FF6A6A 선택지보상}}}''' ||
+
+== 보이스 일람 ==
+||<table width=100%><table bordercolor=#5A6964><rowbgcolor=#622d18><table bgcolor=#ffffff,#2d2f34><width=20%><:> {{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+'''{{{#ffffff 보이스 일람}}}'''}}} ||<width=60%><:> '''{{{#ffffff 대사}}}''' ||<width=20%><:> '''{{{#ffffff 입수 방법}}}''' ||
+||<bgcolor=#622d18> {{{#ffffff '''아침-아침의 대화 - 1'''}}} || 대사 ||<bgcolor=#D7C2BA,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 E - 미션1 클리어}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''아침-아침의 대화 - 2'''}}} || 대사 ||<bgcolor=#D7C2BA,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 D - 미션3 클리어}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''낮-낮의 대화 - 1'''}}} || 대사 ||<bgcolor=#D7C2BA,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 E - 미션2 클리어}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''낮-낮의 대화 - 2'''}}} || 대사 ||<bgcolor=#D7C2BA,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 C - 미션1 클리어}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''저녁-저녁의 대화 - 1'''}}} || 대사 ||<bgcolor=#D7C2BA,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 D - 미션1 클리어}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''저녁-저녁의 대화 - 2'''}}} || 대사 ||<bgcolor=#D7C2BA,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 C - 미션2 클리어}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''밤-밤의 대화 - 1'''}}} || 대사 ||<bgcolor=#D7C2BA,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 D - 미션2 클리어}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''밤-밤의 대화 - 2'''}}} || 대사 ||<bgcolor=#D7C2BA,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 C - 미션3 클리어}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''밤-굿나잇 - 1'''}}} || 대사 ||<bgcolor=#D7C2BA,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 C - 미션4 클리어}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''일 대화-아이돌 랭크 E - 1'''}}} || 대사 ||<bgcolor=#D7C2BA,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 E - 미션3 클리어}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''일 대화-아이돌 랭크 E - 2'''}}} || 대사 ||<bgcolor=#D7C2BA,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 E - 미션4 클리어}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''라이브 시작 - 1'''}}} || 대사 ||<bgcolor=#D7C2BA,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 E - 미션5 클리어}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''라이브-스킬 발동 - 1'''}}} || 대사 ||<bgcolor=#D7C2BA,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 C - 미션5 클리어}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''일-시작 - 1'''}}} || 대사 ||<bgcolor=#D7C2BA,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 D - 미션4 클리어}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''일-종료 - 1'''}}} || 대사 ||<bgcolor=#D7C2BA,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 D - 미션5 클리어}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''아이돌 랭크 업-랭크D - 1'''}}} || 대사 ||<bgcolor=#D7C2BA,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 D 승급}}}}}} ||
+||<bgcolor=#622d18> {{{#ffffff '''아이돌 랭크 업-랭크C - 1'''}}} || 대사 ||<bgcolor=#D7C2BA,#434448> {{{-2 {{{#373a3c,#dddddd 아이돌 랭크 C 승급}}}}}} ||
+
+== 의상 일람 ==
+||<table width=100%><table bgcolor=#ffffff,#2d2f34><table bordercolor=#5A6964><-3><rowbgcolor=#5A6964> ||
+||<width=33%> {{{#!wiki style="margin: -6px -10px"
+[[파일:이미지 업로드.jpg|width=100%]]}}} ||<width=33%> {{{#!wiki style="margin: -6px -10px"
+[[파일:이미지 업로드.jpg|width=100%]]}}} ||<width=33%> {{{#!wiki style="margin: -6px -10px"
+[[파일:이미지 업로드.jpg|width=100%]]}}} ||
+||<rowbgcolor=#622d18> '''{{{#ffffff 공통 아이돌 의상}}}''' || '''{{{#ffffff MaM 의상}}}''' || '''{{{#ffffff MaM 연습복}}}''' ||
+||<-3><rowbgcolor=#5A6964> ||
+|| {{{#!wiki style="margin: -6px -10px"
+[[파일:이미지 업로드.jpg|width=100%]]}}} || {{{#!wiki style="margin: -6px -10px"
+}}} || {{{#!wiki style="margin: -6px -10px"
+}}} ||
+||<rowbgcolor=#622d18> '''{{{#ffffff 사복}}}''' || '''{{{#ffffff -}}}''' || '''{{{#ffffff -}}}''' ||
+
+== 카드 일람 ==
+ * 카드는 게임 내 추가되는 순서대로 작성 부탁드립니다. 같은 ★등급 카드가 동시에 추가될 경우 댄스-보컬-퍼포먼스 순.
+ * Lv.Max의 기준은 '카드 1장의 아이돌 로드' 전 구역 돌파 완료 기준입니다.
+ * 한계돌파 Lv.Max의 기준은 '최대 레벨에서의 아이돌 로드' 전 구역 돌파 완료 기준입니다.
+ * 문서 편집 시 카드 템플릿은 [[템플릿:앙상블 스타즈!/카드]]를 참고하시길 바랍니다.
+
+=== ★1 ===
+||<table align=center><table bordercolor=#FFD600><table width=100%><-2><:><bgcolor=#FFD600>[[파일:basic_icon_pf_hex.png|width=22]] '''{{{#ffffff [한 명의 아이돌] 미케지마 마다라}}}''' ||
+||<:><rowbgcolor=#FFFFFF,#2d2f34>{{{#!wiki style="margin: -6px -10px"
+[[파일:마다라_한명아이돌_베이직_개화전.png|width=100%]]}}}||<:>{{{#!wiki style="margin: -6px -10px"
+[[파일:.jpg|width=100%]]}}}||
+||<width=50%><:><bgcolor=#FFD600>'''{{{#ffffff {{{-1 원문}}}[br]번역}}}'''||<width=50%><:><bgcolor=#FFD600>'''{{{#ffffff {{{-1 원문}}}[br]번역}}}'''||
+||<-2><:><bgcolor=#ffffff,#2d2f34> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#FFD600><table bgcolor=#ffffff,#2d2f34><bgcolor=#FFD600><width=19%>{{{#FFFFFF '''능력치'''}}}||<-2><bgcolor=#FFD600><width=27%> {{{#FFFFFF '''Lv.1''' }}} ||<-2><bgcolor=#FFD600><width=27%> {{{#FFFFFF '''Lv.Max''' }}} ||<-2><bgcolor=#FFD600><width=27%> {{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}'''}}} ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''Da'''}}}||<-2><rowbgcolor=#fccccc>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''Vo'''}}}||<-2><rowbgcolor=#cef9ff>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#FFD600>{{{#FFFFFF '''Pf'''}}}||<-2><rowbgcolor=#fcf1d2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<-7><bgcolor=#FFD600>{{{#FFFFFF '''아이돌 로드'''}}}||
+||<bgcolor=#FFD600><|2>{{{#FFFFFF '''스킬'''}}}||<-3>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 레슨}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+||<-3>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 라이브}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+||<bgcolor=#FFD600>{{{#FFFFFF '''의상'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 의상명 ||
+||<bgcolor=#FFD600>{{{#FFFFFF '''배경'''}}}||<-6>배경명 ||
+||<bgcolor=#FFD600>{{{#FFFFFF '''스토리'''}}}||<-6>스토리명 / 제1화[br]스토리명 / 제2화 ||
+||<|2><bgcolor=#FFD600> {{{#FFFFFF '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+미니 캐릭터}}}'''}}} ||<-3><bgcolor=#FFD600><:>{{{#FFFFFF '''개화 전'''}}}||<-3><bgcolor=#FFD600><:>{{{#FFFFFF '''개화 후'''}}}||
+||<-3><:> [[파일:개화전스디|width=100]] ||<-3><:> [[파일:개화후스디|width=100]] ||
+||<bgcolor=#FFD600>{{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 이벤트}}}}}}}}}''' '''이벤트명''' 포인트 보상[br]'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:55px ; text-align: center"
+{{{-1 {{{#ffffff 스카우트}}}}}}}}}''' 스카우트명 ||
+}}}||
+||<-2><bgcolor=#FFD600>||
+
+=== ★2 ===
+||<table align=center><table bordercolor=#FF2960><table width=100%><-2><:><bgcolor=#FF2960>[[파일:basic_icon_da_hex.png|width=22]] '''{{{#ffffff [ES의 아이돌] 미케지마 마다라}}}''' ||
+||<:><rowbgcolor=#FFFFFF,#2d2f34>{{{#!wiki style="margin: -6px -10px"
+[[파일:마다라_es아이돌_베이직_개화전.png|width=100%]]}}}||<:>{{{#!wiki style="margin: -6px -10px"
+[[파일:.jpg|width=100%]]}}}||
+||<width=50%><:><bgcolor=#FF2960>'''{{{#ffffff {{{-1 원문}}}[br]번역}}}'''||<width=50%><:><bgcolor=#FF2960>'''{{{#ffffff {{{-1 원문}}}[br]번역}}}'''||
+||<-2><:><bgcolor=#ffffff,#2d2f34> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#FF2960><table bgcolor=#ffffff,#2d2f34><bgcolor=#FF2960><width=19%>{{{#FFFFFF '''능력치'''}}}||<-2><bgcolor=#FF2960><width=27%> {{{#FFFFFF '''Lv.1''' }}} ||<-2><bgcolor=#FF2960><width=27%> {{{#FFFFFF '''Lv.Max''' }}} ||<-2><bgcolor=#FF2960><width=27%> {{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}'''}}} ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''Da'''}}}||<-2><rowbgcolor=#fccccc>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''Vo'''}}}||<-2><rowbgcolor=#cef9ff>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#FFD600>{{{#FFFFFF '''Pf'''}}}||<-2><rowbgcolor=#fcf1d2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<-7><bgcolor=#FF2960>{{{#FFFFFF '''아이돌 로드'''}}}||
+||<bgcolor=#FF2960><|2>{{{#FFFFFF '''스킬'''}}}||<-3>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 레슨}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+||<-3>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 라이브}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''의상'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 의상명 ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''배경'''}}}||<-6>배경명 ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''스토리'''}}}||<-6>스토리명 / 제1화[br]스토리명 / 제2화 ||
+||<|2><bgcolor=#FF2960> {{{#FFFFFF '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+미니 캐릭터}}}'''}}} ||<-3><bgcolor=#FF2960><:>{{{#FFFFFF '''개화 전'''}}}||<-3><bgcolor=#FF2960><:>{{{#FFFFFF '''개화 후'''}}}||
+||<-3><:> [[파일:개화전스디|width=100]] ||<-3><:> [[파일:개화후스디|width=100]] ||
+||<bgcolor=#FF2960>{{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 이벤트}}}}}}}}}''' '''이벤트명''' 포인트 보상[br]'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:55px ; text-align: center"
+{{{-1 {{{#ffffff 스카우트}}}}}}}}}''' 스카우트명 ||
+}}}||
+||<-2><bgcolor=#FF2960>||
+
+-------
+
+||<table align=center><table bordercolor=#ffd600><table width=100%><-2><:><bgcolor=#ffd600>[[파일:basic_icon_pf_hex.png|width=22]] '''{{{#ffffff [es의 신아이돌] 미케지마 마다라}}}''' ||
+||<:><rowbgcolor=#ffffff,#1f2023>{{{#!wiki style="margin: -6px -10px"
+[[파일:마다라_es신아이돌_베이직_개화전.png|width=100%]]}}}||<:>{{{#!wiki style="margin: -6px -10px"
+[[파일:이미지 업로드.jpg|width=100%]]}}}||
+||<width=50%><:><rowbgcolor=#ffd600><rowcolor=#ffffff> {{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+'''{{{-1 원문}}}[br]번역'''}}} ||<width=50%><:> {{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+'''{{{-1 원문}}}[br]번역'''}}} ||
+||<-2><:><bgcolor=#ffffff,#1f2023> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#ffd600><table bgcolor=#ffffff,#1f2023><rowbgcolor=#ffd600><rowcolor=#ffffff><colcolor=#ffffff><width=19%> '''능력치''' ||<-2><width=27%> '''Lv.1'''  ||<-2><width=27%> '''Lv.Max''' ||<-2><width=27%> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}''' ||
+||<bgcolor=#ff2960><rowbgcolor=#fccccc><rowcolor=#373a3c> {{{#ffffff '''Da'''}}} ||<-2> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<bgcolor=#0dc9ff><rowbgcolor=#cef9ff><rowcolor=#373a3c> {{{#ffffff '''Vo'''}}} ||<-2> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<bgcolor=#ffd600><rowbgcolor=#fcf1d2><rowcolor=#373a3c> {{{#ffffff '''Pf'''}}} ||<-2> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<-7><colbgcolor=#ffd600> {{{#ffffff '''아이돌 로드'''}}} ||
+||<|2> '''스킬''' ||<-3>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 레슨}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+||<-3>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 라이브}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+|| '''의상''' ||<-6>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 의상명[br]'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-3 {{{#ffffff 룸/SCR}}}}}}}}}''' 의상명{{{-2 (한계돌파 2회)}}} ||
+|| '''배경''' ||<-6>배경명 ||
+|| '''스토리''' ||<-6>스토리명 / 제1화[br]스토리명 / 제2화 ||
+||<|2> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+미니 캐릭터}}}''' ||<-3><rowbgcolor=#ffd600><rowcolor=#ffffff><:> '''개화 전''' ||<-3><:> '''개화 후''' ||
+||<-3><:> [[파일:개화전스디|width=100]] ||<-3><:> [[파일:개화후스디|width=100]] ||
+|| '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}''' ||<-6>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 이벤트}}}}}}}}}''' '''이벤트명''' 포인트 보상[br]'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:55px ; text-align: center"
+{{{-1 {{{#ffffff 스카우트}}}}}}}}}''' 스카우트명 ||
+}}}||
+||<-2><bgcolor=#ffd600>||
+
+
+=== ★3 ===
+||<table align=center><table bordercolor=#FFD600><table width=100%><-2><:><bgcolor=#FFD600>[[파일:basic_icon_pf_hex.png|width=22]] '''{{{#ffffff [연습 풍경] 미케지마 마다라}}}''' ||
+||<:><rowbgcolor=#FFFFFF,#2d2f34>{{{#!wiki style="margin: -6px -10px"
+[[파일:마다라_연습풍경_베이직_개화전.png|width=100%]]}}}||<:>{{{#!wiki style="margin: -6px -10px"
+[[파일:.jpg|width=100%]]}}}||
+||<width=50%><:><bgcolor=#FFD600>'''{{{#ffffff {{{-1 원문}}}[br]번역}}}'''||<width=50%><:><bgcolor=#FFD600>'''{{{#ffffff {{{-1 원문}}}[br]번역}}}'''||
+||<-2><:><bgcolor=#ffffff,#2d2f34> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#FFD600><table bgcolor=#ffffff,#2d2f34><bgcolor=#FFD600><width=19%>{{{#FFFFFF '''능력치'''}}}||<-2><bgcolor=#FFD600><width=27%> {{{#FFFFFF '''Lv.1''' }}} ||<-2><bgcolor=#FFD600><width=27%> {{{#FFFFFF '''Lv.Max''' }}} ||<-2><bgcolor=#FFD600><width=27%> {{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}'''}}} ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''Da'''}}}||<-2><rowbgcolor=#fccccc>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''Vo'''}}}||<-2><rowbgcolor=#cef9ff>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#FFD600>{{{#FFFFFF '''Pf'''}}}||<-2><rowbgcolor=#fcf1d2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<-7><bgcolor=#FFD600>{{{#FFFFFF '''아이돌 로드'''}}}||
+||<bgcolor=#FFD600><|2>{{{#FFFFFF '''스킬'''}}}||<-3>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 레슨}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+||<-3>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 라이브}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+||<bgcolor=#FFD600>{{{#FFFFFF '''의상'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 의상명 ||
+||<bgcolor=#FFD600>{{{#FFFFFF '''배경'''}}}||<-6>배경명 ||
+||<bgcolor=#FFD600>{{{#FFFFFF '''스토리'''}}}||<-6>스토리명 / 제1화[br]스토리명 / 제2화 ||
+||<|2><bgcolor=#FFD600> {{{#FFFFFF '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+미니 캐릭터}}}'''}}} ||<-3><bgcolor=#FFD600><:>{{{#FFFFFF '''개화 전'''}}}||<-3><bgcolor=#FFD600><:>{{{#FFFFFF '''개화 후'''}}}||
+||<-3><:> [[파일:개화전스디|width=100]] ||<-3><:> [[파일:개화후스디|width=100]] ||
+||<bgcolor=#FFD600>{{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 이벤트}}}}}}}}}''' '''이벤트명''' 포인트 보상[br]'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:55px ; text-align: center"
+{{{-1 {{{#ffffff 스카우트}}}}}}}}}''' 스카우트명 ||
+}}}||
+||<-2><bgcolor=#FFD600>||
+
+-------
+
+||<table align=center><table bordercolor=#FFD600><table width=100%><-2><:><bgcolor=#FFD600>[[파일:basic_icon_pf_hex.png|width=22]] '''{{{#ffffff [의뢰 시합] 미케지마 마다라}}}''' ||
+||<:><rowbgcolor=#FFFFFF,#2d2f34>{{{#!wiki style="margin: -6px -10px"
+[[파일:마다라_어전시합_베이직_개화전.png|width=100%]]}}}||<:>{{{#!wiki style="margin: -6px -10px"
+[[파일:베이직_마다라_어전시합_개화후.png|width=100%]]}}}||
+||<width=50%><:><bgcolor=#FFD600>'''{{{#ffffff {{{-1 원문}}}[br]번역}}}'''||<width=50%><:><bgcolor=#FFD600>'''{{{#ffffff {{{-1 원문}}}[br]번역}}}'''||
+||<-2><:><bgcolor=#ffffff,#2d2f34> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#FFD600><table bgcolor=#ffffff,#2d2f34><bgcolor=#FFD600><width=19%>{{{#FFFFFF '''능력치'''}}}||<-2><bgcolor=#FFD600><width=27%> {{{#FFFFFF '''Lv.1''' }}} ||<-2><bgcolor=#FFD600><width=27%> {{{#FFFFFF '''Lv.Max''' }}} ||<-2><bgcolor=#FFD600><width=27%> {{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}'''}}} ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''Da'''}}}||<-2><rowbgcolor=#fccccc>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''Vo'''}}}||<-2><rowbgcolor=#cef9ff>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#FFD600>{{{#FFFFFF '''Pf'''}}}||<-2><rowbgcolor=#fcf1d2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<-7><bgcolor=#FFD600>{{{#FFFFFF '''아이돌 로드'''}}}||
+||<bgcolor=#FFD600><|2>{{{#FFFFFF '''스킬'''}}}||<-3>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 레슨}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+||<-3>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 라이브}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+||<bgcolor=#FFD600>{{{#FFFFFF '''의상'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 의상명 ||
+||<bgcolor=#FFD600>{{{#FFFFFF '''배경'''}}}||<-6>배경명 ||
+||<bgcolor=#FFD600>{{{#FFFFFF '''스토리'''}}}||<-6>스토리명 / 제1화[br]스토리명 / 제2화 ||
+||<|2><bgcolor=#FFD600> {{{#FFFFFF '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+미니 캐릭터}}}'''}}} ||<-3><bgcolor=#FFD600><:>{{{#FFFFFF '''개화 전'''}}}||<-3><bgcolor=#FFD600><:>{{{#FFFFFF '''개화 후'''}}}||
+||<-3><:> [[파일:개화전스디|width=100]] ||<-3><:> [[파일:개화후스디|width=100]] ||
+||<bgcolor=#FFD600>{{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 이벤트}}}}}}}}}''' '''온고지신／계승의 어전시합''' 포인트 보상 ||
+}}}||
+||<-2><bgcolor=#FFD600>||
+
+-------
+
+||<table align=center><table bordercolor=#0dc9ff><table width=100%><-2><:><bgcolor=#0dc9ff>[[파일:basic_icon_vo_hex.png|width=22]] '''{{{#ffffff [연습맞추기] 미케지마 마다라}}}''' ||
+||<:><rowbgcolor=#ffffff,#1f2023>{{{#!wiki style="margin: -6px -10px"
+[[파일:마다라_연습맞추기_베이직_개화전.png|width=100%]]}}}||<:>{{{#!wiki style="margin: -6px -10px"
+[[파일:이미지 업로드.jpg|width=100%]]}}}||
+||<width=50%><:><rowbgcolor=#0dc9ff><rowcolor=#ffffff> {{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+'''{{{-1 원문}}}[br]번역'''}}} ||<width=50%><:> {{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+'''{{{-1 원문}}}[br]번역'''}}} ||
+||<-2><:><bgcolor=#ffffff,#1f2023> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#0dc9ff><table bgcolor=#ffffff,#1f2023><rowbgcolor=#0dc9ff><rowcolor=#ffffff><colcolor=#ffffff><width=19%> '''능력치''' ||<-2><width=27%> '''Lv.1'''  ||<-2><width=27%> '''Lv.Max''' ||<-2><width=27%> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}''' ||
+||<bgcolor=#ff2960><rowbgcolor=#fccccc><rowcolor=#373a3c> {{{#ffffff '''Da'''}}} ||<-2> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<bgcolor=#0dc9ff><rowbgcolor=#cef9ff><rowcolor=#373a3c> {{{#ffffff '''Vo'''}}} ||<-2> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<bgcolor=#ffd600><rowbgcolor=#fcf1d2><rowcolor=#373a3c> {{{#ffffff '''Pf'''}}} ||<-2> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<-7><colbgcolor=#0dc9ff> {{{#ffffff '''아이돌 로드'''}}} ||
+||<|2> '''스킬''' ||<-3>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 레슨}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+||<-3>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 라이브}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+|| '''의상''' ||<-6>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 의상명[br]'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-3 {{{#ffffff 룸/SCR}}}}}}}}}''' 의상명{{{-2 (한계돌파 2회)}}} ||
+|| '''배경''' ||<-6>배경명 ||
+|| '''스토리''' ||<-6>스토리명 / 제1화[br]스토리명 / 제2화 ||
+||<|2> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+미니 캐릭터}}}''' ||<-3><rowbgcolor=#0dc9ff><rowcolor=#ffffff><:> '''개화 전''' ||<-3><:> '''개화 후''' ||
+||<-3><:> [[파일:개화전스디|width=100]] ||<-3><:> [[파일:개화후스디|width=100]] ||
+|| '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}''' ||<-6>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 이벤트}}}}}}}}}''' '''이벤트명''' 포인트 보상[br]'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:55px ; text-align: center"
+{{{-1 {{{#ffffff 스카우트}}}}}}}}}''' 스카우트명 ||
+}}}||
+||<-2><bgcolor=#0dc9ff>||
+
+-------
+
+||<table align=center><table bordercolor=#0dc9ff><table width=100%><-2><:><bgcolor=#0dc9ff>[[파일:basic_icon_vo_hex.png|width=22]] '''{{{#ffffff [스파이의 의뢰] 미케지마 마다라}}}''' ||
+||<:><rowbgcolor=#ffffff,#1f2023>{{{#!wiki style="margin: -6px -10px"
+[[파일:마다라_스파이_베이직_개화전.png|width=100%]]}}}||<:>{{{#!wiki style="margin: -6px -10px"
+[[파일:마다라_스파이_베이직_개화후.png|width=100%]]}}}||
+||<width=50%><:><rowbgcolor=#0dc9ff><rowcolor=#ffffff> {{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+'''{{{-1 원문}}}[br]번역'''}}} ||<width=50%><:> {{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+'''{{{-1 원문}}}[br]번역'''}}} ||
+||<-2><:><bgcolor=#ffffff,#1f2023> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#0dc9ff><table bgcolor=#ffffff,#1f2023><rowbgcolor=#0dc9ff><rowcolor=#ffffff><colcolor=#ffffff><width=19%> '''능력치''' ||<-2><width=27%> '''Lv.1'''  ||<-2><width=27%> '''Lv.Max''' ||<-2><width=27%> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}''' ||
+||<bgcolor=#ff2960><rowbgcolor=#fccccc><rowcolor=#373a3c> {{{#ffffff '''Da'''}}} ||<-2> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<bgcolor=#0dc9ff><rowbgcolor=#cef9ff><rowcolor=#373a3c> {{{#ffffff '''Vo'''}}} ||<-2> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<bgcolor=#ffd600><rowbgcolor=#fcf1d2><rowcolor=#373a3c> {{{#ffffff '''Pf'''}}} ||<-2> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<-7><colbgcolor=#0dc9ff> {{{#ffffff '''아이돌 로드'''}}} ||
+||<|2> '''스킬''' ||<-3>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 레슨}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+||<-3>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 라이브}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+|| '''의상''' ||<-6>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 의상명[br]'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-3 {{{#ffffff 룸/SCR}}}}}}}}}''' 의상명{{{-2 (한계돌파 2회)}}} ||
+|| '''배경''' ||<-6>배경명 ||
+|| '''스토리''' ||<-6>스토리명 / 제1화[br]스토리명 / 제2화 ||
+||<|2> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+미니 캐릭터}}}''' ||<-3><rowbgcolor=#0dc9ff><rowcolor=#ffffff><:> '''개화 전''' ||<-3><:> '''개화 후''' ||
+||<-3><:> [[파일:개화전스디|width=100]] ||<-3><:> [[파일:개화후스디|width=100]] ||
+|| '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}''' ||<-6>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:55px ; text-align: center"
+{{{-1 {{{#ffffff 스카우트}}}}}}}}}''' 스카우트! 스파이 THE 미션 ||
+}}}||
+||<-2><bgcolor=#0dc9ff>||
+
+-------
+
+||<table align=center><table bordercolor=#ff2960><table width=100%><-2><:><bgcolor=#ff2960>[[파일:basic_icon_da_hex.png|width=22]] '''{{{#ffffff [뒤에서 살펴보기] 미케지마 마다라}}}''' ||
+||<:><rowbgcolor=#ffffff,#1f2023>{{{#!wiki style="margin: -6px -10px"
+[[파일:마다라_피처린네_베이직_개화전.png|width=100%]]}}}||<:>{{{#!wiki style="margin: -6px -10px"
+[[파일:마다라_피처린네_베이직_개화후.png|width=100%]]}}}||
+||<width=50%><:><rowbgcolor=#ff2960><rowcolor=#ffffff> {{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+'''{{{-1 원문}}}[br]번역'''}}} ||<width=50%><:> {{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+'''{{{-1 원문}}}[br]번역'''}}} ||
+||<-2><:><bgcolor=#ffffff,#1f2023> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#ff2960><table bgcolor=#ffffff,#1f2023><rowbgcolor=#ff2960><rowcolor=#ffffff><colcolor=#ffffff><width=19%> '''능력치''' ||<-2><width=27%> '''Lv.1'''  ||<-2><width=27%> '''Lv.Max''' ||<-2><width=27%> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}''' ||
+||<bgcolor=#ff2960><rowbgcolor=#fccccc><rowcolor=#373a3c> {{{#ffffff '''Da'''}}} ||<-2> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<bgcolor=#0dc9ff><rowbgcolor=#cef9ff><rowcolor=#373a3c> {{{#ffffff '''Vo'''}}} ||<-2> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<bgcolor=#ffd600><rowbgcolor=#fcf1d2><rowcolor=#373a3c> {{{#ffffff '''Pf'''}}} ||<-2> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<-7><colbgcolor=#ff2960> {{{#ffffff '''아이돌 로드'''}}} ||
+||<|2> '''스킬''' ||<-3>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 레슨}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+||<-3>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 라이브}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+|| '''의상''' ||<-6>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 의상명[br]'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-3 {{{#ffffff 룸/SCR}}}}}}}}}''' 의상명{{{-2 (한계돌파 2회)}}} ||
+|| '''배경''' ||<-6>배경명 ||
+|| '''스토리''' ||<-6>스토리명 / 제1화[br]스토리명 / 제2화 ||
+||<|2> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+미니 캐릭터}}}''' ||<-3><rowbgcolor=#ff2960><rowcolor=#ffffff><:> '''개화 전''' ||<-3><:> '''개화 후''' ||
+||<-3><:> [[파일:개화전스디|width=100]] ||<-3><:> [[파일:개화후스디|width=100]] ||
+|| '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}''' ||<-6>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:55px ; text-align: center"
+{{{-1 {{{#ffffff 스카우트}}}}}}}}}''' 피처 스카우트 린네 편 ||
+}}}||
+||<-2><bgcolor=#ff2960>||
+
+=== ★4 ===
+||<table align=center><table bordercolor=#FFD600><table width=100%><-2><:><bgcolor=#FFD600>[[파일:basic_icon_pf_hex.png|width=22]] '''{{{#ffffff [혼자의 일등성] 미케지마 마다라}}}''' ||
+||<:><rowbgcolor=#FFFFFF,#2d2f34>{{{#!wiki style="margin: -6px -10px"
+[[파일:마다라_피처타츠미_베이직_개화전.png|width=100%]]}}}||<:>{{{#!wiki style="margin: -6px -10px"
+[[파일:마다라피처타츠미개화후2.png|width=100%]]}}}||
+||<width=50%><:><bgcolor=#FFD600>'''{{{#ffffff {{{-1 원문}}}[br]번역}}}'''||<width=50%><:><bgcolor=#FFD600>'''{{{#ffffff {{{-1 원문}}}[br]번역}}}'''||
+
+||<table align=center><table bordercolor=#FFD600><-4><table width=100%><:><bgcolor=#ffffff,#2d2f34> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#FFD600><table bgcolor=#ffffff,#2d2f34><bgcolor=#FFD600><width=19%>{{{#FFFFFF '''능력치'''}}}||<-2><bgcolor=#FFD600><width=27%> {{{#FFFFFF '''Lv.1''' }}} ||<-2><bgcolor=#FFD600><width=27%> {{{#FFFFFF '''Lv.Max''' }}} ||<-2><bgcolor=#FFD600><width=27%> {{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}'''}}} ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''Da'''}}}||<-2><rowbgcolor=#fccccc>{{{#373A3C }}}||<-2>{{{#373A3C 12,368}}}||<-2>{{{#373A3C }}}||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''Vo'''}}}||<-2><rowbgcolor=#cef9ff>{{{#373A3C }}}||<-2>{{{#373A3C 12,567}}}||<-2>{{{#373A3C }}}||
+||<bgcolor=#FFD600>{{{#FFFFFF '''Pf'''}}}||<-2><rowbgcolor=#fcf1d2>{{{#373A3C }}}||<-2>{{{#373A3C 23,906}}}||<-2>{{{#373A3C }}}||
+||<-7><bgcolor=#FFD600>{{{#FFFFFF '''아이돌 로드'''}}}||
+||<bgcolor=#FFD600><|2>{{{#FFFFFF '''스킬'''}}}||<-3>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 레슨}}}}}}}}}''' 대접의 차 ||<-3>자신의 Pf. 상당히 up ||
+||<-3>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 라이브}}}}}}}}}''' 미래의 길잡이 ||<-3>피퍼 상승 비율 상당히 up ||
+||<bgcolor=#FFD600>{{{#FFFFFF '''의상'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 사복 (봄~여름) ||
+||<bgcolor=#FFD600>{{{#FFFFFF '''스토리'''}}}||<-6>뉴 사무원 씨 ||
+||<bgcolor=#FFD600>{{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(255, 214, 0); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:55px ; text-align: center"
+{{{-1 {{{#ffffff 스카우트}}}}}}}}}''' 피처 스카우트 타츠미 편 ||
+}}}||
+
+-------
+
+||<table align=center><table bordercolor=#0dc9ff><table width=100%><-2><:><bgcolor=#0dc9ff>[[파일:basic_icon_vo_hex.png|width=22]] '''{{{#ffffff [뉴디의 연회] 미케지마 마다라}}}''' ||
+||<:><rowbgcolor=#ffffff,#1f2023>{{{#!wiki style="margin: -6px -10px"
+[[파일:마다라_5주년_베이직_개화전.png|width=100%]]}}}||<:>{{{#!wiki style="margin: -6px -10px"
+[[파일:마다라_5주년_베이직_개화후.png|width=100%]]}}}||
+||<width=50%><:><rowbgcolor=#0dc9ff><rowcolor=#ffffff> {{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+'''{{{-1 원문}}}[br]번역'''}}} ||<width=50%><:> {{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+'''{{{-1 원문}}}[br]번역'''}}} ||
+||<-2><:><bgcolor=#ffffff,#1f2023> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#0dc9ff><table bgcolor=#ffffff,#1f2023><rowbgcolor=#0dc9ff><rowcolor=#ffffff><colcolor=#ffffff><width=19%> '''능력치''' ||<-2><width=27%> '''Lv.1'''  ||<-2><width=27%> '''Lv.Max''' ||<-2><width=27%> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}''' ||
+||<bgcolor=#ff2960><rowbgcolor=#fccccc><rowcolor=#373a3c> {{{#ffffff '''Da'''}}} ||<-2> 수치 ||<-2> 11,962 ||<-2> 수치 ||
+||<bgcolor=#0dc9ff><rowbgcolor=#cef9ff><rowcolor=#373a3c> {{{#ffffff '''Vo'''}}} ||<-2> 수치 ||<-2> 24,643 ||<-2> 수치 ||
+||<bgcolor=#ffd600><rowbgcolor=#fcf1d2><rowcolor=#373a3c> {{{#ffffff '''Pf'''}}} ||<-2> 수치 ||<-2> 13,855 ||<-2> 수치 ||
+||<-7><colbgcolor=#0dc9ff> {{{#ffffff '''아이돌 로드'''}}} ||
+||<|2> '''스킬''' ||<-3>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 레슨}}}}}}}}}''' 축복의 수호 ||<-3>스테이터스 피스(블루/중) 획득수 굉장히 up ||
+||<-3>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 라이브}}}}}}}}}''' 호걸의 억제력 ||<-3>자신의 Vo. 굉장히 up ||
+|| '''의상''' ||<-6>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 새로운 색의 애니버서리 수트 ||
+||<|2> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+미니 캐릭터}}}''' ||<-3><rowbgcolor=#0dc9ff><rowcolor=#ffffff><:> '''개화 전''' ||<-3><:> '''개화 후''' ||
+||<-3><:> [[파일:개화전스디|width=100]] ||<-3><:> [[파일:개화후스디|width=100]] ||
+|| '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}''' ||<-6>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:55px ; text-align: center"
+{{{-1 {{{#ffffff 스카우트}}}}}}}}}''' 5주년 기념! 소속사별 스카우트 뉴디편 그룹A ||
+}}}||
+||<-2><bgcolor=#0dc9ff>||
+
+-------
+
+||<table align=center><table bordercolor=#ff2960><table width=100%><-2><:><bgcolor=#ff2960>[[파일:basic_icon_da_hex.png|width=22]] '''{{{#ffffff [감춘 기담] 미케지마 마다라}}}''' ||
+||<:><rowbgcolor=#ffffff,#1f2023>{{{#!wiki style="margin: -6px -10px"
+[[파일:마다라_골동품기담_베이직_개화전.png|width=100%]]}}}||<:>{{{#!wiki style="margin: -6px -10px"
+[[파일:마다라_골동품기담_베이직_개화후.png|width=100%]]}}}||
+||<width=50%><:><rowbgcolor=#ff2960><rowcolor=#ffffff> {{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+'''{{{-1 원문}}}[br]번역'''}}} ||<width=50%><:> {{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+'''{{{-1 원문}}}[br]번역'''}}} ||
+||<-2><:><bgcolor=#ffffff,#1f2023> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#ff2960><table bgcolor=#ffffff,#1f2023><rowbgcolor=#ff2960><rowcolor=#ffffff><colcolor=#ffffff><width=19%> '''능력치''' ||<-2><width=27%> '''Lv.1'''  ||<-2><width=27%> '''Lv.Max''' ||<-2><width=27%> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}''' ||
+||<bgcolor=#ff2960><rowbgcolor=#fccccc><rowcolor=#373a3c> {{{#ffffff '''Da'''}}} ||<-2> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<bgcolor=#0dc9ff><rowbgcolor=#cef9ff><rowcolor=#373a3c> {{{#ffffff '''Vo'''}}} ||<-2> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<bgcolor=#ffd600><rowbgcolor=#fcf1d2><rowcolor=#373a3c> {{{#ffffff '''Pf'''}}} ||<-2> 수치 ||<-2> 수치 ||<-2> 수치 ||
+||<-7><colbgcolor=#ff2960> {{{#ffffff '''아이돌 로드'''}}} ||
+||<|2> '''스킬''' ||<-3>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 레슨}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+||<-3>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 라이브}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+|| '''의상''' ||<-6>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 의상명[br]'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-3 {{{#ffffff 룸/SCR}}}}}}}}}''' 의상명{{{-2 (한계돌파 2회)}}} ||
+|| '''배경''' ||<-6>배경명 ||
+|| '''스토리''' ||<-6>스토리명 / 제1화[br]스토리명 / 제2화 ||
+||<|2> '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+미니 캐릭터}}}''' ||<-3><rowbgcolor=#ff2960><rowcolor=#ffffff><:> '''개화 전''' ||<-3><:> '''개화 후''' ||
+||<-3><:> [[파일:개화전스디|width=100]] ||<-3><:> [[파일:개화후스디|width=100]] ||
+|| '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}''' ||<-6>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 이벤트}}}}}}}}}''' '''비보를 풀어나가는／골동품기담''' 포인트 보상 ||
+}}}||
+||<-2><bgcolor=#ff2960>||
+
+=== ★5 ===
+||<table align=center><table bordercolor=#0DC9FF><table width=100%><-2><:><bgcolor=#0DC9FF>[[파일:basic_icon_vo_hex.png|width=22]] '''{{{#ffffff [축제의 리더] 미케지마 마다라}}}''' ||
+||<:><rowbgcolor=#FFFFFF,#2d2f34>{{{#!wiki style="margin: -6px -10px"
+[[파일:.jpg|width=100%]]}}}||<:>{{{#!wiki style="margin: -6px -10px"
+[[파일:.jpg|width=100%]]}}}||
+||<width=50%><:><bgcolor=#0DC9FF>'''{{{#ffffff {{{-1 원문}}}[br]번역}}}'''||<width=50%><:><bgcolor=#0DC9FF>'''{{{#ffffff {{{-1 원문}}}[br]번역}}}'''||
+||<-2><:><bgcolor=#ffffff,#2d2f34> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#0DC9FF><table bgcolor=#ffffff,#2d2f34><bgcolor=#0DC9FF><width=19%>{{{#FFFFFF '''능력치'''}}}||<-2><bgcolor=#0DC9FF><width=27%> {{{#FFFFFF '''Lv.1''' }}} ||<-2><bgcolor=#0DC9FF><width=27%> {{{#FFFFFF '''Lv.Max''' }}} ||<-2><bgcolor=#0DC9FF><width=27%> {{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}'''}}} ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''Da'''}}}||<-2><rowbgcolor=#fccccc>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''Vo'''}}}||<-2><rowbgcolor=#cef9ff>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#FFD600>{{{#FFFFFF '''Pf'''}}}||<-2><rowbgcolor=#fcf1d2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 수치}}}||
+||<-7><bgcolor=#0DC9FF>{{{#FFFFFF '''아이돌 로드'''}}}||
+||<bgcolor=#0DC9FF><|2>{{{#FFFFFF '''스킬'''}}}||<-3>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 레슨}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+||<-3>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 라이브}}}}}}}}}''' 스킬명 ||<-3>효과 ||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''의상'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' 의상명 ||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''배경'''}}}||<-6>배경명 ||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''스토리'''}}}||<-6>스토리명 / 제1화[br]스토리명 / 제2화 ||
+||<|2><bgcolor=#0DC9FF> {{{#FFFFFF '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+미니 캐릭터}}}'''}}} ||<-3><bgcolor=#0DC9FF><:>{{{#FFFFFF '''개화 전'''}}}||<-3><bgcolor=#0DC9FF><:>{{{#FFFFFF '''개화 후'''}}}||
+||<-3><:> [[파일:개화전스디|width=100]] ||<-3><:> [[파일:개화후스디|width=100]] ||
+||<bgcolor=#0DC9FF>{{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 이벤트}}}}}}}}}''' '''이벤트명''' 포인트 보상[br]'''{{{#!wiki style="background-color:rgb(13, 201, 255); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:55px ; text-align: center"
+{{{-1 {{{#ffffff 스카우트}}}}}}}}}''' 스카우트명 ||
+}}}||
+||<-2><bgcolor=#0DC9FF>||
+
+-------
+
+||<table align=center><table bordercolor=#FF2960><table width=100%><-2><:><bgcolor=#FF2960>[[파일:basic_icon_da_hex.png|width=22]] '''{{{#ffffff [녹안의 징계인] 미케지마 마다라}}}''' ||
+||<:><rowbgcolor=#FFFFFF,#2d2f34>{{{#!wiki style="margin: -6px -10px"
+[[파일:베이직_마다라_암야행로_개화전.png|width=100%]]}}}||<:>{{{#!wiki style="margin: -6px -10px"
+[[파일:베이직_마다라_암야행로_개화후.png|width=100%]]}}}||
+||<width=50%><:><bgcolor=#FF2960>'''{{{#ffffff {{{-1 원문}}}[br]번역}}}'''||<width=50%><:><bgcolor=#FF2960>'''{{{#ffffff {{{-1 원문}}}[br]번역}}}'''||
+||<-2><:><bgcolor=#ffffff,#2d2f34> {{{#!folding [ 상세정보 펼치기 · 접기 ]
+||<table width=100%><table align=center><table bordercolor=#FF2960><table bgcolor=#ffffff,#2d2f34><bgcolor=#FF2960><width=19%>{{{#FFFFFF '''능력치'''}}}||<-2><bgcolor=#FF2960><width=27%> {{{#FFFFFF '''Lv.1''' }}} ||<-2><bgcolor=#FF2960><width=27%> {{{#FFFFFF '''Lv.Max''' }}} ||<-2><bgcolor=#FF2960><width=27%> {{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+한계돌파 Lv.Max}}}'''}}} ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''Da'''}}}||<-2><rowbgcolor=#fccccc>{{{#373A3C 수치}}}||<-2>{{{#373A3C 40,988}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#0DC9FF>{{{#FFFFFF '''Vo'''}}}||<-2><rowbgcolor=#cef9ff>{{{#373A3C 수치}}}||<-2>{{{#373A3C 21,216}}}||<-2>{{{#373A3C 수치}}}||
+||<bgcolor=#FFD600>{{{#FFFFFF '''Pf'''}}}||<-2><rowbgcolor=#fcf1d2>{{{#373A3C 수치}}}||<-2>{{{#373A3C 20,830}}}||<-2>{{{#373A3C 수치}}}||
+||<-7><bgcolor=#FF2960>{{{#FFFFFF '''아이돌 로드'''}}}||
+||<bgcolor=#FF2960><|2>{{{#FFFFFF '''스킬'''}}}||<-3>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 레슨}}}}}}}}}''' 사냥의 방법 ||<-3>모든 스테이터스 피스(중) 획득수 굉장히 up ||
+||<-3>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 라이브}}}}}}}}}''' 우연의 공동전선 ||<-3>자신의 Da. up ||
+||<bgcolor=#FF2960>{{{#FFFFFF '''의상'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' Double Face 의상[br]'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 룸}}}}}}}}}''' Double Face 의상(SCR) ||
+||<|2><bgcolor=#FF2960> {{{#FFFFFF '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+미니 캐릭터}}}'''}}} ||<-3><bgcolor=#FF2960><:>{{{#FFFFFF '''개화 전'''}}}||<-3><bgcolor=#FF2960><:>{{{#FFFFFF '''개화 후'''}}}||
+||<-3><:> [[파일:개화전스디|width=100]] ||<-3><:> [[파일:개화후스디|width=100]] ||
+||<bgcolor=#FF2960>{{{#ffffff '''{{{#!wiki style="margin: 0px -10px; word-break: keep-all;"
+획득 방법}}}'''}}}||<-6>'''{{{#!wiki style="background-color:rgb(255, 41, 96); margin : 1px ; border-radius : 5px ; display:inline-block ; color :#ffffff; font-style: normal ; width:45px ; text-align: center"
+{{{-1 {{{#ffffff 이벤트}}}}}}}}}''' '''신참! 각성의 암야행로''' 포인트 보상 ||
+}}}||
+||<-2><bgcolor=#FF2960>||
+
+
+[[분류:앙상블 스타즈!!]]

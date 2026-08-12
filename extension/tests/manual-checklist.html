@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>E1~E14 실브라우저 수동 검증 체크리스트 (v10)</title>
+<style>
+  :root { color-scheme: light dark; font-family: system-ui, "Malgun Gothic", sans-serif; }
+  body { max-width: 880px; margin: 2rem auto; padding: 0 1.2rem; line-height: 1.65; }
+  h1 { font-size: 1.35rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.4rem; border-bottom: 1px solid #8885; padding-bottom: .3rem; }
+  code { background: #8882; padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  pre { background: #8882; padding: .6rem .8rem; border-radius: 5px; overflow-x: auto; font-size: .88em; }
+  ol li, ul li { margin: .35rem 0; }
+  .muted { color: #888; font-size: .88rem; }
+  .crit { background: #8881; border-left: 4px solid #e6a23c; padding: .5rem .8rem; margin: .6rem 0; }
+  .auto { background: #8881; border-left: 4px solid #1a8f4a; padding: .4rem .8rem; margin: .5rem 0; font-size: .9rem; }
+  textarea { width: 100%; box-sizing: border-box; min-height: 2.4rem; }
+  label { margin-right: 1rem; }
+  button { padding: .45rem 1rem; margin-right: .6rem; cursor: pointer; }
+  footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #8885; }
+  kbd { border: 1px solid #8886; border-radius: 3px; padding: 0 .3rem; font-size: .85em; }
+</style>
+</head>
+<body>
+
+<h1>나무위키 개인화 추천 v10 — E1~E14 실브라우저 수동 검증</h1>
+<p class="muted">명세 §5 확장프로그램 수용 기준. 코드 레벨 검증이 있는 항목은 초록 박스로
+표기(<code>node --test extension/tests/logic.test.js extension/tests/content.test.js</code>) —
+그래도 실브라우저 판정이 규범이다. 입력은 자동 저장되며, 완료 후
+「검증 기록 다운로드」로 JSON을 받아 <code>review/</code>에 커밋한다.</p>
+
+<h2>0. 사전 준비 (공통)</h2>
+<ol>
+  <li><code>chrome://extensions</code> → 우측 상단 「개발자 모드」 켜기 →
+      「압축해제된 확장 프로그램을 로드합니다」 → 저장소 <code>extension</code> 폴더 선택.</li>
+  <li>확장 카드의 「서비스 워커」 링크 클릭 → SW DevTools. 「Application」 탭 →
+      Storage → IndexedDB → <code>namu_reco</code>. <span class="crit">IndexedDB 화면은 자동
+      갱신되지 않는다 — 확인 전마다 새로고침(⟳) 아이콘을 누를 것.</span></li>
+  <li>미니배치를 기다리지 않고 당기려면 SW 콘솔에서:
+      <pre>chrome.alarms.create("minibatch", { periodInMinutes: 5, when: Date.now() + 1000 })</pre>
+      (1초 뒤 발화, 이후 5분 주기 유지 — 테스트 전용 조작임을 기록에 남길 것)</li>
+  <li>주의: 배포 전이면 <code>SHARD_BASE</code> 원점이 404다 — E8·E10·E11은
+      gold 배포(또는 로컬 정적 서버로 <code>common.js</code>의 SHARD_BASE 임시 변경) 후 수행.</li>
+</ol>
+
+<h2>E1 — view 단위 upsert (5문서 = 5행, dwell ±10%)</h2>
+<ol>
+  <li>IndexedDB에서 <code>events</code>를 비운 상태로 시작(우클릭 → Clear).</li>
+  <li>나무위키 문서 5개를 각각 다른 체류시간(예: 35초/70초/100초/130초/160초 — 30초
+      heartbeat를 넘기도록)으로 열람하고, 각 문서마다 다른 문서로 이동해 이탈을 만든다.</li>
+  <li>판정: <code>events</code>에 <strong>정확히 5행</strong>(heartbeat가 행을 늘리지 않음),
+      각 행 <code>dwell_ms</code>가 실측 체류시간 대비 오차 ±10% 이내, <code>ended=1</code>.</li>
+</ol>
+<label>결과 <select data-k="E1"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E1m" placeholder="실측값 메모"></textarea>
+
+<h2>E2 — 백그라운드 dwell 미포함</h2>
+<ol>
+  <li>문서 X를 연 뒤 즉시 다른 탭으로 전환해 5분 방치.</li>
+  <li>X 탭으로 돌아와 10초 머문 뒤 이탈.</li>
+  <li>판정: X 행의 <code>dwell_ms</code>가 백그라운드 5분을 포함하지 않음(≈10초 + 전환 전 구간).</li>
+</ol>
+<label>결과 <select data-k="E2"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E2m" placeholder="실측값 메모"></textarea>
+
+<h2>E3 — idle 알람 비용 상한</h2>
+<ol>
+  <li>전제: 처리 대상 이벤트 0건(모두 processed=1), <code>kv.dirty</code> 없음,
+      <code>kv.popular</code> 채워짐, <code>kv.last_prune</code>이 24h 이내.</li>
+  <li>SW DevTools Network 패널을 연 채 알람 발화(§0-3)를 관측.</li>
+  <li>판정: fetch 요청 0건, 추천 재계산 없음(recommendations의 <code>computed_at</code> 불변).
+      허용 예외: 콜드스타트(popular 부재) fetch 1회 / dirty 시 rebuild 1회(E12) /
+      last_prune 24h 경과 시 prune 1회.</li>
+</ol>
+<label>결과 <select data-k="E3"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E3m" placeholder="관측 메모"></textarea>
+
+<h2>E4 — 캐시 150MB LRU</h2>
+<div class="auto">로직 레벨: logic.test.js「E4 로직: LRU 퇴출」·상수 150MB 검증 통과.</div>
+<ol>
+  <li>SW 콘솔에서 가짜 대형 샤드를 주입해 총량을 150MB 초과시킨다:
+<pre>for (let i = 0; i < 8; i++)
+  await db.txn(["nbr_cache"], "readwrite", tx => tx.put("nbr_cache",
+    { shard_id: 9000 + i, payload: {}, version: null,
+      size_bytes: 25 * 2**20, last_used: i }));   // §4.5 정의의 해제 후 바이트 회계</pre></li>
+  <li>신규 이벤트 1건을 만들고(아무 문서 열람·이탈) 알람 발화 → <code>evictCache</code> 경유.</li>
+  <li>판정: <code>nbr_cache</code>의 <code>size_bytes</code> 합 ≤ 150MB,
+      <code>last_used</code> 오래된 행(작은 값)부터 삭제됨.</li>
+</ol>
+<label>결과 <select data-k="E4"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E4m" placeholder="퇴출 전/후 합계 메모"></textarea>
+
+<h2>E5 — 리로드 후 유지</h2>
+<ol>
+  <li>profile·recommendations에 데이터가 있는 상태에서 <code>chrome://extensions</code> → 확장 새로고침(⟳).</li>
+  <li>판정: IndexedDB의 profile/recommendations가 그대로, 팝업 표시 정상.</li>
+</ol>
+<label>결과 <select data-k="E5"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E5m" placeholder="메모"></textarea>
+
+<h2>E6 — 링크 폴백 + 유령 제목/비본문 오염 차단</h2>
+<div class="auto">로직 레벨: content.test.js — pathname 기준 선별·URIError skip·네임스페이스
+제외·중복 제거·상한 40·컨테이너 LCA. 실브라우저에서 실DOM 판정이 규범.</div>
+<ol>
+  <li>전제: 깨끗한 신규 프로필(§0에서 IndexedDB 전체 Clear 후 시작).</li>
+  <li>gold 샤드에 없는 제목(2021년 이후 신설 문서)을 충분히(수 분) 열람 후 이탈.</li>
+  <li>판정 1: 예외 없이 <code>local_nbr</code>에 그 문서의 links 저장.</li>
+  <li>알람 발화 → 판정 2: 그 링크들이 recommendations에
+      <strong><code>source='fallback'</code>, <code>sim=0.4</code></strong> 행으로 존재.</li>
+  <li>판정 3 [H3]: 열람 페이지 본문에 문단 링크(<code>/w/X#s-2</code>)·query 링크
+      (<code>/w/X?from=Y</code>)가 있는 상태에서 <code>local_nbr</code>에 <code>X</code>가
+      정확히 1건 — <code>X#s-2</code>류 유령 제목 0건.</li>
+  <li>판정 4 [J4]: 사이드바(최근 변경·인기 문서)에만 노출된 제목이 links에 유입되지 않음.</li>
+</ol>
+<label>결과 <select data-k="E6"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E6m" placeholder="사용 문서·관측 메모"></textarea>
+
+<h2>E7 — 감쇠 검증 (14일 → 1/4)</h2>
+<div class="auto">로직 레벨: logic.test.js「E7 로직」·「[M2] 점화식」 통과.</div>
+<ol>
+  <li>SW 콘솔에서 profile 행 하나의 <code>last_seen</code>을 14일 전으로 조작:
+<pre>await db.txn(["profile"], "readwrite", async tx => {
+  const r = await tx.get("profile", "문서제목");
+  r.last_seen -= 14 * 86400000; await tx.put("profile", r); });</pre></li>
+  <li>신규 이벤트 1건 후 알람 발화 → 추천 재계산.</li>
+  <li>판정: 그 문서 기여의 유효 가중치가 조작 전의 1/4 (±5%) — 기여 추천 행의
+      score 변화로 간접 확인.</li>
+</ol>
+<label>결과 <select data-k="E7"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E7m" placeholder="메모"></textarea>
+
+<h2>E8 — 콜드스타트</h2>
+<ol>
+  <li>확장 제거 후 재설치(빈 profile). 첫 알람 발화까지 대기(§0-3 가능).</li>
+  <li>판정: <code>popular.json</code> 상위 문서가 recommendations에 노출,
+      <code>reason_title=null</code>, <code>source='popular'</code> — 이벤트 0건이어도 성립.
+      오프라인 설치면 네트워크 복구 후 다음 알람에서 성립(자가 치유).</li>
+</ol>
+<label>결과 <select data-k="E8"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E8m" placeholder="메모"></textarea>
+
+<h2>E9 — 네임스페이스 차단</h2>
+<div class="auto">로직 레벨: content.test.js「E9 로직」 통과 (대문 view 불가·Re:제로 오탐 없음).</div>
+<ol>
+  <li>일반 문서 X 열람 중 <code>나무위키:대문</code>으로 이동해 5분 체류.</li>
+  <li>판정: <code>events</code>에 대문 행 0, <code>local_nbr</code>에 대문 미기록,
+      X의 view는 정상 마감(ended=1, dwell이 대문 체류를 포함하지 않음 [I8]),
+      추천·콜드스타트 목록에 콜론 네임스페이스 제목 없음.</li>
+</ol>
+<label>결과 <select data-k="E9"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E9m" placeholder="메모"></textarea>
+
+<h2>E10 — 정상 경로 (샤드 조회 비강등)</h2>
+<ol>
+  <li>전제: 깨끗한 신규 프로필 + gold 배포 상태.</li>
+  <li><code>popular.json</code> 상위 문서 1건만 열람·이탈 → 알람 발화.</li>
+  <li>기대 샤드 id를 <strong>검증 대상이 아닌</strong> Python 레퍼런스로 별도 계산:
+<pre>python -c "import sys; sys.path.insert(0,'etl'); \
+import importlib.util; s=importlib.util.spec_from_file_location('j','etl/jobs/05_build_shards.py'); \
+m=importlib.util.module_from_spec(s); s.loader.exec_module(m); print(m.fnv1a32('문서제목')%1024)"</pre></li>
+  <li>판정: (a) <code>nbr_cache</code>에 그 샤드 1건 적재(id 일치),
+      (b) 이웃이 <code>source='shard'</code>, <code>sim≠0.4</code> 행으로 기여,
+      (c) 그 행들의 <code>reason_title</code>=방문 문서.
+      <code>source='fallback'</code>으로 관측되면 어느 단계든 침묵 강등 — FAIL.</li>
+</ol>
+<label>결과 <select data-k="E10"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E10m" placeholder="샤드 id·관측 메모"></textarea>
+
+<h2>E11 — 배포 purge 후 비강등</h2>
+<ol>
+  <li>전제: profile 채워짐 + 후보 정상 산출 상태(프로필 상위 문서가 샤드에 실존).</li>
+  <li>SW 콘솔: <code>await db.kvSet("manifest_version", -1)</code> (배포 모사 — purge 트리거 검증).</li>
+  <li>신규 이벤트 1건 이상 만든 뒤 알람 발화.</li>
+  <li>판정: (a) purge 발화 — <code>nbr_cache</code> 비워지고 <code>kv.popular</code> 삭제,
+      <code>kv.dirty</code>·<code>kv.last_prune</code> 보존 [I4], (b) 그 사이클 rebuild 정상,
+      (c) 다음 알람에서 <code>kv.popular</code> 재적재, recommendations가
+      <code>source='popular'</code> 전량 교체로 덮이지 않음(개인화 행 유지).</li>
+</ol>
+<label>결과 <select data-k="E11"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E11m" placeholder="메모"></textarea>
+
+<h2>E12 — 마킹 후 크래시 복구 (dirty)</h2>
+<ol>
+  <li>SW 콘솔: <code>await db.kvSet("dirty", 1)</code> (마킹 직후·rebuild 이전 크래시 모사),
+      recommendations는 구버전 그대로 둔다.</li>
+  <li>신규 이벤트 <strong>0건</strong>인 상태로 알람 발화.</li>
+  <li>판정: prefetch→rebuild 수행, <code>kv.dirty</code> 해제, recommendations의
+      <code>computed_at</code> 갱신.</li>
+</ol>
+<label>결과 <select data-k="E12"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E12m" placeholder="메모"></textarea>
+
+<h2>E13 — SPA 경로 스코프</h2>
+<div class="auto">로직 레벨: content.test.js「E13 로직」 통과 (비-/w/ 유령 제목 차단).</div>
+<ol>
+  <li>(a) <code>/w/X</code> 열람 중 사이트 로고로 대문(<code>/</code>) 소프트 전환 →
+      <code>events</code>에 <code>"/"</code>류 유령 제목 0행, X는 정상 마감.</li>
+  <li>(b) 주소창에 <code>namu.wiki</code> 입력해 대문 최초 진입 → <code>/w/Y</code>로 소프트 전환 →
+      Y의 view가 정상 시작·수집 (matches가 <code>/w/*</code> 한정이면 여기서 실패).</li>
+  <li>(c) [J3] (a) 전환 후 X의 <code>local_nbr</code>에 대문·차기 문서에만 있는 링크가
+      유입되지 않고 X 본문 링크가 유지됨.</li>
+</ol>
+<label>결과 <select data-k="E13"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E13m" placeholder="메모"></textarea>
+
+<h2>E14 — 고아 콘텐츠 스크립트 정지</h2>
+<ol>
+  <li><code>/w/X</code> 열람 중(탭 DevTools 콘솔 열어둠) <code>chrome://extensions</code>에서
+      확장 리로드(스토어 자동 업데이트 모사).</li>
+  <li>판정: 기존 탭에서 (a) uncaught 예외가 반복 적재되지 않음(<code>console.warn</code> 1회 허용),
+      (b) 이후 폴링·heartbeat 발화 없음 — 1분 이상 관측(수집 정지),
+      (c) 탭 새로고침 후 새 view 정상 시작·수집.</li>
+</ol>
+<label>결과 <select data-k="E14"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E14m" placeholder="메모"></textarea>
+
+<footer>
+  <button id="dl">검증 기록 다운로드 (JSON)</button>
+  <span class="muted">받은 파일을 <code>review/</code>에 커밋해 수행 기록을 남긴다.</span>
+</footer>
+
+<script>
+  const KEY = "namu-e-gates-v10";
+  const saved = JSON.parse(localStorage.getItem(KEY) || "{}");
+  for (const el of document.querySelectorAll("[data-k]")) {
+    if (saved[el.dataset.k] !== undefined) el.value = saved[el.dataset.k];
+    el.addEventListener("input", () => {
+      saved[el.dataset.k] = el.value;
+      localStorage.setItem(KEY, JSON.stringify(saved));
+    });
+  }
+  document.getElementById("dl").addEventListener("click", () => {
+    const blob = new Blob(
+      [JSON.stringify({ recorded_at: new Date().toISOString(), results: saved }, null, 2)],
+      { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `e-gates-record-${new Date().toISOString().slice(0, 10)}.json`;
+    a.click();
+  });
+</script>
+</body>
+</html>
