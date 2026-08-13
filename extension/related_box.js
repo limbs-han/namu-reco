@@ -82,11 +82,11 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
       if (child !== head && child !== ul) child.remove();
     }
     box.querySelectorAll("progress, [role=progressbar]").forEach((el) => el.remove());
-    if (head) {                                    // 헤더: 타이포 클래스는 유지, 내용만 교체
-      while (head.firstChild) head.firstChild.remove();
-      head.append(document.createTextNode("연관 문서"));
-      head.removeAttribute("href");
-      head.style.cursor = "default";
+    if (head) {                                  // [n3] 링크가 아닌 헤더 — a를 span으로 교체
+      const h = document.createElement("span");  //      (스크린리더에 죽은 링크로 안 읽히게)
+      h.setAttribute("class", head.getAttribute("class") || "");   // 타이포 클래스 유지
+      h.textContent = "연관 문서";
+      head.replaceWith(h);
     }
     const tpl = ul && ul.querySelector("li");
     if (!ul || !tpl) return null;                  // 구조 상이 — 표시 포기
@@ -101,6 +101,8 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
       a.querySelector("time")?.remove();           // 시각 자리 제거 (연관도엔 불필요)
       const label = a.querySelector("span") || a;
       label.textContent = r.title;
+      a.style.display = "inline-block";          // [m3] 클릭 영역 = 텍스트 폭 (행 전체 오클릭 방지)
+      a.style.maxWidth = "100%";
       ul.append(li);
     }
     const content = globalThis.namuContent

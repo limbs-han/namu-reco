@@ -12,6 +12,13 @@ const TAB_ID = "namu-reco-tab";
 const PANEL_ID = "namu-reco-panel";
 const RECHECK_MS = 1000;              // SPA 재렌더 생존: 존재 확인 후 재주입
 
+// 문서 글리프 svg — 사이트 아이콘 문법과 동일한 solid fill·currentColor. 탭·패널 항목 공용.
+const DOC_GLYPH =
+  '<svg width="16" height="16" viewBox="0 0 448 512" aria-hidden="true">' +
+  '<path fill="currentColor" fill-rule="evenodd" d="M80 0C44.7 0 16 28.7 16 64v384' +
+  'c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V160H288c-17.7 0-32-14.3-32-32V0H80z' +
+  'M288 0v128h144L288 0zM112 240h224v40H112v-40zm0 104h224v40H112v-40z"/></svg>';
+
 const recoTab = {
   // 메뉴 컨테이너 = "최근 변경"(/RecentChanges) 앵커의 부모. 사이트 변형 대비
   // /RecentDiscuss 폴백. 미발견 시 null (좁은 창의 반응형 헤더는 메뉴 자체가 숨음).
@@ -74,18 +81,27 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
     for (const r of rows) {
       const a = document.createElement("a");
       a.href = recoTab.itemHref(r.title);            // 일반 앵커 — 이동이 곧 새 view 수집
-      Object.assign(a.style, {                       // 항목 실측: 6px 12px / 15px / flex
-        display: "flex", flexDirection: "column", padding: "6px 12px",
+      Object.assign(a.style, {                       // 항목 실측: 6px 12px / 15px
+        display: "flex", alignItems: "flex-start", padding: "6px 12px",
         fontSize: "15px", color: p.color, textDecoration: "none", lineHeight: "1.35",
       });
-      a.textContent = r.title;
+      const holder = document.createElement("span"); // [n2] 네이티브 메뉴처럼 항목 아이콘
+      holder.innerHTML = DOC_GLYPH;
+      const icon = holder.firstChild;
+      Object.assign(icon.style, { flexShrink: "0", marginRight: "8px", marginTop: "2px" });
+      const col = document.createElement("span");
+      Object.assign(col.style, { display: "flex", flexDirection: "column", minWidth: "0" });
+      const t = document.createElement("span");
+      t.textContent = r.title;
+      col.append(t);
       const why = reasonText(r);      // §4.7 [J8] 단일 진실원 — common.js
       if (why) {
         const sub = document.createElement("span");
         sub.textContent = why;
         Object.assign(sub.style, { fontSize: "10.5px", color: p.sub, marginTop: "1px" });
-        a.append(sub);
+        col.append(sub);
       }
+      a.append(icon, col);
       a.addEventListener("mouseenter", () => { a.style.background = dark() ? "rgba(255,255,255,.06)" : "rgba(0,0,0,.045)"; });
       a.addEventListener("mouseleave", () => { a.style.background = "transparent"; });
       panel.append(a);
@@ -141,11 +157,7 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
     const label = root.querySelector("span") || toggle;
     label.textContent = "추천 문서";
     const holder = document.createElement("div");
-    holder.innerHTML =
-      '<svg width="16" height="16" viewBox="0 0 448 512" aria-hidden="true">' +
-      '<path fill="currentColor" fill-rule="evenodd" d="M80 0C44.7 0 16 28.7 16 64v384' +
-      'c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V160H288c-17.7 0-32-14.3-32-32V0H80z' +
-      'M288 0v128h144L288 0zM112 240h224v40H112v-40zm0 104h224v40H112v-40z"/></svg>';
+    holder.innerHTML = DOC_GLYPH;
     const ic = holder.firstChild;
     if (iconCls) ic.setAttribute("class", iconCls);  // 사이트 아이콘과 동일 크기·간격 상속
     if (label === toggle) toggle.prepend(ic);
