@@ -266,8 +266,11 @@ m=importlib.util.module_from_spec(s); s.loader.exec_module(m); print(m.fnv1a32('
 <ol>
   <li>행 클릭 → 해당 문서로 이동. SW DevTools에서 <code>nbr_cache</code>에 현재 문서 샤드가
       적재됨(온디맨드 fetch — 캐시 미스 문서당 최대 1회, 상한 150MB LRU 회계 편입).</li>
-  <li>gold에 없는 문서(2021 이후 신설) 열람 → 박스가 표시되지 않고 예외 0건.</li>
+  <li>gold에 없는 문서(2021 이후 신설) 열람 → 수 초 내 <strong>본문 링크 기반 폴백</strong>으로
+      박스 표시(§4.6 의미론 — 본문에 링크가 없으면 미표시), 예외 0건.</li>
   <li>대문·네임스페이스 문서(<code>나무위키:대문</code>) → 박스 없음.</li>
+  <li>박스에 자동 새로고침 진행바(회색 바) 잔재 없음. 스크롤을 내리면 박스가
+      <code>top 12px</code>에 고정되어 따라옴(sticky), 좁은 창(반응형)에서는 미적용이어도 무해.</li>
 </ol>
 <label>결과 <select data-k="E20"><option></option><option>PASS</option><option>FAIL</option></select></label>
 <textarea data-k="E20m" placeholder="메모"></textarea>

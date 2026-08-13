@@ -59,6 +59,13 @@ const swLogic = {
       .slice(0, n);                               // [H8] N=20 확정
   },
 
+  // v11 §4.9 폴백: 신설 문서(샤드 미보유)의 연관 목록 = 본문 링크(local_nbr).
+  // §4.6과 동일 의미론 — sim은 FALLBACK_SIM 고정, pr_pct 0, 자기 자신 제외.
+  localToEntries(links, selfTitle, n = 10) {
+    return links.filter((t) => t !== selfTitle).slice(0, n)
+      .map((t) => [t, FALLBACK_SIM, 0]);
+  },
+
   // [M6] LRU: last_used 오래된 순으로 총량이 상한 이하가 될 때까지 퇴출 대상 선정
   pickEvictions(metas, cap) {
     let total = metas.reduce((s, m) => s + m.size_bytes, 0);
@@ -237,7 +244,13 @@ async function getRelated(title) {
     await evictCache();
   }
   const entries = row.payload[title];
-  return entries ? entries.slice(0, 10) : [];
+  if (entries) return entries.slice(0, 10);
+  // v11 §4.9 폴백: 덤프 이후 신설 문서 — 현재 문서 본문 링크(local_nbr)로 대체
+  const local = await db.txn(["local_nbr"], "readonly", (tx) => tx.get("local_nbr", title));
+  if (local && Array.isArray(local.links) && local.links.length) {
+    return swLogic.localToEntries(local.links, title);
+  }
+  return [];
 }
 
 // [G10·I3·J1] prefetchShards — 절대 예외를 전파하지 않는다.

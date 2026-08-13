@@ -47,6 +47,7 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
   let timer = null;
   let warned = false;
   let lastTitle = null;
+  let retry = { title: null, left: 0 };            // 빈 응답 재시도 예산 (문서당 3회)
 
   const stop = () => {
     if (orphaned) return;
@@ -62,14 +63,20 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
     const box = widget.cloneNode(true);            // 리스너 미복사 — 유령 내비 없음
     box.id = RELATED_BOX_ID;
     box.style.marginTop = "14px";
-    const head = box.querySelector("a");
+    // 위젯 부속물 제거 — 자동 새로고침 진행바(회색 바) 등 헤더·목록 외 요소는
+    // 클론에 딸려오면 죽은 채 남는다. 직계 자식은 헤더 A + UL만 유지(화이트리스트).
+    const head = [...box.children].find((c) => c.tagName === "A");
+    const ul = [...box.children].find((c) => c.tagName === "UL");
+    for (const child of [...box.children]) {
+      if (child !== head && child !== ul) child.remove();
+    }
+    box.querySelectorAll("progress, [role=progressbar]").forEach((el) => el.remove());
     if (head) {                                    // 헤더: 타이포 클래스는 유지, 내용만 교체
       while (head.firstChild) head.firstChild.remove();
       head.append(document.createTextNode("연관 문서"));
       head.removeAttribute("href");
       head.style.cursor = "default";
     }
-    const ul = box.querySelector("ul");
     const tpl = ul && ul.querySelector("li");
     if (!ul || !tpl) return null;                  // 구조 상이 — 표시 포기
     const blank = tpl.cloneNode(true);
@@ -85,6 +92,10 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
       label.textContent = r.title;
       ul.append(li);
     }
+    // 스크롤 추종(사용자 요구): 레일이 본문 전체 높이(실측 50,762px·flex·overflow
+    // visible)라 sticky가 성립한다. 고정 헤더 없음 → top 12px. 사이트 위젯과 같은
+    // 마크업이라 이질감 없음 — 최근 변경은 스크롤에 밀려 올라가고 이 박스만 남아 따라온다.
+    Object.assign(box.style, { position: "sticky", top: "12px" });
     widget.parentElement.insertBefore(box, widget.nextSibling);   // "최근 변경 바로 밑"
     return box;
   };
@@ -104,6 +115,7 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
       removeBox();
       return;
     }
+    if (title !== retry.title) retry = { title, left: 3 };   // 새 문서 — 재시도 예산 리셋
     lastTitle = title;                             // 응답 대기 중 재요청 방지
     try {
       chrome.runtime.sendMessage({ type: "get_related", title }, (entries) => {
@@ -111,7 +123,15 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
         removeBox();
         const now = namuContent.viewTitleFor(location.pathname);
         if (now !== title) return;                 // 응답 전 전환 — 폐기
-        if (!Array.isArray(entries) || !entries.length) return;   // 미보유 — 박스 없음
+        if (!Array.isArray(entries) || !entries.length) {
+          // 신설 문서 폴백(local_nbr)은 view 메시지 도착 후에야 채워진다 —
+          // 잠시 뒤 재시도(최대 3회), 그래도 없으면 박스 미표시로 확정
+          if (retry.left > 0) {
+            retry.left--;
+            lastTitle = null;                      // 다음 1초 틱이 재요청
+          }
+          return;
+        }
         build(widget, relatedBox.rowData(entries));
       });
     } catch (e) {
