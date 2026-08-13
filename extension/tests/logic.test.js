@@ -72,6 +72,27 @@ test("[H8] N=20 절단 + 산출 0건이면 빈 배열(폴백 판단은 호출측
   assert.deepEqual(swLogic.scoreCandidates([], new Set()), []);
 });
 
+test("[M2] topProfile은 dwell_ms_total을 dwell로 전달 (부재 시 0)", () => {
+  const now = Date.now();
+  const top = swLogic.topProfile([
+    { title: "A", score: 5, last_seen: now, dwell_ms_total: 421000 },
+    { title: "B", score: 1, last_seen: now },
+  ], now, 2);
+  assert.equal(top[0].dwell, 421000);
+  assert.equal(top[1].dwell, 0);
+});
+
+test("[M2] reason_dwell_ms = 최대 기여 출처의 누적 체류, dwell 부재는 null", () => {
+  const out = swLogic.scoreCandidates([
+    { title: "V1", w: 1, dwell: 30000, nbrs: [["C", 0.5, 0]], source: "shard" },
+    { title: "V2", w: 3, dwell: 400000, nbrs: [["C", 0.4, 0]], source: "fallback" },
+  ], new Set());
+  assert.equal(out.find((o) => o.title === "C").reason_dwell_ms, 400000);  // V2가 최대 기여
+  const legacy = swLogic.scoreCandidates(
+    [{ title: "V", w: 1, nbrs: [["D", 0.5, 0]], source: "shard" }], new Set());
+  assert.equal(legacy.find((o) => o.title === "D").reason_dwell_ms, null);
+});
+
 test("E4 로직: LRU 퇴출 — last_used 오래된 순, 상한 이하까지만", () => {
   const metas = [
     { shard_id: 1, size_bytes: 60, last_used: 300 },

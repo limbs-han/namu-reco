@@ -23,7 +23,8 @@ const swLogic = {
   // w(v) 상위 n 프로필 (동률은 제목순 — 결정적)
   topProfile(rows, now, n = 50) {
     return rows
-      .map((r) => ({ title: r.title, w: swLogic.effectiveWeight(r.score, r.last_seen, now) }))
+      .map((r) => ({ title: r.title, w: swLogic.effectiveWeight(r.score, r.last_seen, now),
+                     dwell: r.dwell_ms_total || 0 }))   // [M2] 사유 문구 계층 입력
       .sort((a, b) => b.w - a.w || (a.title < b.title ? -1 : 1))
       .slice(0, n);
   },
@@ -46,6 +47,7 @@ const swLogic = {
         a.pr = Math.max(a.pr, pr);
         if (contrib > a.best) {
           a.best = contrib; a.reason = v.title; a.sim = sim; a.source = v.source;
+          a.reasonDwell = v.dwell ?? null;      // [M2] 사유 문구 계층 입력 [G7]
         }
         acc.set(title, a);
       }
@@ -54,6 +56,7 @@ const swLogic = {
       .map(([title, a]) => ({
         title, score: a.score + 0.1 * a.pr,
         sim: a.sim, source: a.source, reason_title: a.reason,
+        reason_dwell_ms: a.reasonDwell ?? null,
       }))
       .sort((x, y) => y.score - x.score || (x.title < y.title ? -1 : 1))
       .slice(0, n);                               // [H8] N=20 확정
@@ -148,7 +151,11 @@ async function updateProfile(tx, events) {        // [M2]
     const score = row
       ? swLogic.nextScore(row.score, row.last_seen, dwells, T)
       : swLogic.nextScore(0, T, dwells, T);
-    await tx.put("profile", { title, score, last_seen: T });
+    await tx.put("profile", {
+      title, score, last_seen: T,
+      // [M2] 원시 체류 무감쇠 누적 — ended 이벤트는 processed 마킹으로 1회만 집계
+      dwell_ms_total: ((row && row.dwell_ms_total) || 0) + dwells.reduce((s, d) => s + d, 0),
+    });
   }
 }
 
@@ -172,7 +179,7 @@ async function coldStartIfNeeded() {              // [G2·B2·H1·I7] 콜드스�
     if (await db.profileIsEmpty()) {              // [H1] 재적재는 추천을 건드리지 않는다
       await writeRecommendations(popular.slice(0, 20).map((title, i) => ({
         rank: i + 1, title, score: 0, sim: null,
-        source: "popular", reason_title: null, computed_at: Date.now(),
+        source: "popular", reason_title: null, reason_dwell_ms: null, computed_at: Date.now(),
       })));
     }
     await db.kvSet("popular", popular);           // [I7] 커밋 마커는 마지막
@@ -292,7 +299,7 @@ function rebuildRecommendations() {
           }
         }
         if (!nbrs) continue;                      // 어디에도 없으면 기여 0으로 조용히 skip
-        perSource.push({ title: v.title, w: v.w, nbrs, source });
+        perSource.push({ title: v.title, w: v.w, dwell: v.dwell, nbrs, source });
       }
       const list = swLogic.scoreCandidates(perSource, visited, 20);
       if (!list.length) {                         // [H8] 산출 0건 → popular 폴백
@@ -302,7 +309,7 @@ function rebuildRecommendations() {
         for (const [i, title] of popular.slice(0, 20).entries()) {
           await tx.put("recommendations", {
             rank: i + 1, title, score: 0, sim: null,
-            source: "popular", reason_title: null, computed_at: now,
+            source: "popular", reason_title: null, reason_dwell_ms: null, computed_at: now,
           });
         }
         return true;
