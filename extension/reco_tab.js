@@ -145,15 +145,25 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
     label.textContent = "추천 문서";
     const ic = document.createElement("span");
     ic.innerHTML =
-      '<svg width="1em" height="1em" viewBox="0 0 384 512" aria-hidden="true">' +
-      '<path fill="currentColor" fill-rule="evenodd" d="M96 0C60.7 0 32 28.7 32 64v384' +
-      'c0 35.3 28.7 64 64 64h192c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H96z' +
-      'M256 0v128h96L256 0zM112 236h160v36H112v-36zm0 100h160v36H112v-36z"/></svg>';
+      '<svg width="1em" height="1em" viewBox="0 0 448 512" aria-hidden="true">' +
+      '<path fill="currentColor" fill-rule="evenodd" d="M80 0C44.7 0 16 28.7 16 64v384' +
+      'c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V160H288c-17.7 0-32-14.3-32-32V0H80z' +
+      'M288 0v128h144L288 0zM112 240h224v40H112v-40zm0 104h224v40H112v-40z"/></svg>';
     Object.assign(ic.style, {
       marginRight: "6px", display: "inline-flex", verticalAlign: "-0.125em",
     });
     if (label === toggle) toggle.prepend(ic);
     else label.before(ic);
+    // 특수 기능과 같은 드롭다운 캐럿(▾) — solid currentColor
+    const caret = document.createElement("span");
+    caret.innerHTML =
+      '<svg width="0.62em" height="0.62em" viewBox="0 0 16 16" aria-hidden="true">' +
+      '<path fill="currentColor" d="M2.4 5.2h11.2c.9 0 1.35 1.05.72 1.68L8.7 12.5' +
+      'c-.4.4-1 .4-1.4 0L1.68 6.88C1.05 6.25 1.5 5.2 2.4 5.2z"/></svg>';
+    Object.assign(caret.style, {
+      marginLeft: "5px", display: "inline-flex", verticalAlign: "-0.05em",
+    });
+    toggle.append(caret);
     if (getComputedStyle(template).position === "static") root.style.position = "relative";
     toggle.addEventListener("click", (e) => {
       e.preventDefault();
