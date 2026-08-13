@@ -152,9 +152,8 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
     else label.before(ic);
     if (getComputedStyle(template).position === "static") root.style.position = "relative";
     toggle.addEventListener("click", (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      togglePanel(root);
+      e.preventDefault();       // [M4] stopPropagation 금지 — 클릭이 document까지 전파돼야
+      togglePanel(root);        // 사이트 outside-click 핸들러가 열린 네이티브 메뉴를 닫는다
     });
     container.append(root);
   };
@@ -162,7 +161,7 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
   document.addEventListener("click", (e) => {        // 바깥 클릭 시 닫힘
     const tab = document.getElementById(TAB_ID);
     if (tab && !tab.contains(e.target)) closePanel();
-  });
+  }, true);   // [M4] 캡처 — 사이트 메뉴가 전파를 끊어도 우리 패널은 닫힌다
 
   timer = setInterval(() => {                        // 재렌더 생존: O(1) 존재 확인
     if (!chrome.runtime?.id) { stop(); return; }     // [K3]
