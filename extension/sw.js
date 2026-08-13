@@ -80,7 +80,15 @@ if (typeof chrome !== "undefined" && chrome.runtime) {
 
   // [B3·F6·J5] view 메시지: get→processed 검사→put을 단일 readwrite 트랜잭션으로.
   // local_nbr 갱신(§4.6 — 항상 최신 방문 덮어쓰기)도 같은 트랜잭션에서 수행한다.
-  chrome.runtime.onMessage.addListener((msg) => {
+  // v11 §4.8: 추천 탭(reco_tab.js)의 조회 요청 — content script는 확장 origin의
+  // IndexedDB를 직접 읽지 못하므로 메시징으로 제공한다.
+  chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
+    if (msg && msg.type === "get_recommendations") {
+      db.txn(["recommendations"], "readonly", (tx) => tx.getAll("recommendations"))
+        .then((rows) => sendResponse(rows.sort((a, b) => a.rank - b.rank)))
+        .catch(() => sendResponse([]));
+      return true;                                  // 비동기 sendResponse 유지
+    }
     if (!msg || msg.type !== "view") return;
     db.txn(["events", "local_nbr"], "readwrite", async (tx) => {
       const prev = await tx.get("events", msg.view_id);

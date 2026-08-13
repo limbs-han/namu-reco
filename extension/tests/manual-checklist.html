@@ -214,6 +214,43 @@ m=importlib.util.module_from_spec(s); s.loader.exec_module(m); print(m.fnv1a32('
 <label>결과 <select data-k="E14"><option></option><option>PASS</option><option>FAIL</option></select></label>
 <textarea data-k="E14m" placeholder="메모"></textarea>
 
+<h2>E15 — 추천 탭 주입·스타일 상속 (v11 §4.8)</h2>
+<div class="auto">로직 레벨: reco_tab.test.js — 컨테이너 발견(pathname 기준)·사유 문구·테마 판별·href 규칙.</div>
+<ol>
+  <li><code>/w/</code> 문서에서 상단 메뉴 "특수 기능" 우측에 <strong>추천 문서</strong> 탭이 표시됨.</li>
+  <li>판정: 폰트·색·간격이 이웃 탭("최근 변경")과 동일(육안), 다크 테마 전환 시에도 탭 룩 유지
+      + 드롭다운 패널 배경·글자색이 어둡게 전환.</li>
+  <li>코드 검사: reco_tab.js에 난독화 클래스 문자열(cvuNzboy 등) 하드코딩 0건.</li>
+</ol>
+<label>결과 <select data-k="E15"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E15m" placeholder="메모"></textarea>
+
+<h2>E16 — SPA 재렌더 생존</h2>
+<ol>
+  <li>문서 A → 문서 B 소프트 전환(본문 링크 클릭) 후 1초 이내 탭 재출현, 대문 전환에서도 동일.</li>
+  <li>판정: 탭 중복 주입 0건(요소 검사에서 <code>#namu-reco-tab</code> 1개), 전환 시 열린 패널 정리.</li>
+</ol>
+<label>결과 <select data-k="E16"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E16m" placeholder="메모"></textarea>
+
+<h2>E17 — 드롭다운 동작</h2>
+<ol>
+  <li>탭 클릭 → 특수 기능 스타일의 드롭다운에 recommendations가 rank순으로 제목+사유와 함께 표시.</li>
+  <li>빈 상태(추천 0행)면 안내 문구 표시. 바깥 클릭 시 닫힘.</li>
+  <li>항목 클릭 → 해당 문서로 이동. 특수 제목(<code>C#</code>·<code>A/B</code>)이 추천에 있으면 정확한 문서로 이동.</li>
+</ol>
+<label>결과 <select data-k="E17"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E17m" placeholder="메모"></textarea>
+
+<h2>E18 — 미발견 환경 무해성</h2>
+<ol>
+  <li>메뉴바가 없는 변형 화면(모바일 레이아웃 폭으로 축소 등)에서 예외 0건, 페이지 기능 무영향,
+      콘솔 warn 최대 1회.</li>
+  <li>판정: 이 경우에도 확장 아이콘 팝업은 정상 동작(폴백 유지).</li>
+</ol>
+<label>결과 <select data-k="E18"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E18m" placeholder="메모"></textarea>
+
 <footer>
   <button id="dl">검증 기록 다운로드 (JSON)</button>
   <span class="muted">받은 파일을 <code>review/</code>에 커밋해 수행 기록을 남긴다.</span>
