@@ -66,7 +66,7 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
     const panel = document.createElement("div");
     panel.id = PANEL_ID;
     Object.assign(panel.style, {                     // 실측 재현 (설계 §D2 표)
-      position: "absolute", top: "100%", right: "0", zIndex: "520",
+      position: "absolute", top: "100%", left: "0", zIndex: "520",   // [n1] 네이티브 메뉴와 같은 왼쪽 정렬
       minWidth: "220px", maxWidth: "300px", padding: "4px 0",
       background: p.bg, border: p.border, borderRadius: "6px",
       boxShadow: "0 10px 15px -3px rgba(0,0,0,.165), 0 4px 6px -4px rgba(0,0,0,.165)",
@@ -107,6 +107,10 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
       panel.append(a);
     }
     wrapper.append(panel);
+    const rect = panel.getBoundingClientRect();  // [n1] 오른쪽 끝 탭 + 좁은 창에서 뷰포트를
+    if (rect.right > document.documentElement.clientWidth) {         // 넘치면 우측 정렬 폴백
+      Object.assign(panel.style, { left: "auto", right: "0" });
+    }
   };
 
   const togglePanel = (wrapper) => {
