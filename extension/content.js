@@ -120,7 +120,7 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
     const links = namuContent.collectLinks(namuContent.findContentRoot(document));
     if (links === null) {
       if (!view.warnedLinks) {
-        console.warn("namu-reco: 본문 컨테이너 미발견 — links 수집 skip");
+        console.debug("namu-reco: 본문 컨테이너 미발견 — links 수집 이번엔 skip (재시도함)");
         view.warnedLinks = true;
       }
     } else {

@@ -138,7 +138,7 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
   const inject = () => {
     const container = recoTab.findMenuContainer([...document.querySelectorAll("a")]);
     if (!container) {                                // 미발견(개편·모바일) — 조용히 스킵
-      if (!warned) { console.warn("namu-reco: 메뉴바 미발견 — 탭 미표시(팝업 사용)"); warned = true; }
+      if (!warned) { console.debug("namu-reco: 메뉴바 미발견 — 탭 미표시(팝업 사용)"); warned = true; }
       return;
     }
     // 템플릿: 마지막 자식(특수 기능 래퍼 DIV — 드롭다운 구조·화살표까지 상속)

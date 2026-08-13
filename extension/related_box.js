@@ -143,7 +143,7 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
     }
     const widget = relatedBox.findWidgetBox([...document.querySelectorAll("a")]);
     if (!widget) {                                 // 사이드바 없음(좁은 화면 등) — 스킵
-      if (!warned) { console.warn("namu-reco: 최근 변경 위젯 미발견 — 연관 문서 미표시"); warned = true; }
+      if (!warned) { console.debug("namu-reco: 최근 변경 위젯 이번 틱 미발견 — 재시도함"); warned = true; }
       removeBox();
       return;
     }
