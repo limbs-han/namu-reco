@@ -136,34 +136,26 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
     const toggle = root.tagName === "A" ? root : (root.querySelector("a") || root);
     toggle.removeAttribute("href");
     toggle.style.cursor = "pointer";
-    // 복제로 딸려온 특수 기능 아이콘(svg) 제거 후, 사이트 아이콘과 동일 문법으로 교체.
-    // 실측(2026-08-13): 사이트 메뉴 아이콘은 전부 solid fill 글리프(stroke 없음,
-    // fill=currentColor 상속, 높이 ~16px) — 선 아이콘·컬러 이모지는 이질적.
-    // 모양은 접힌 모서리 문서 + 본문 라인 2개 (겹친 두 장은 '복사'로 읽혀 배제).
-    root.querySelectorAll("svg").forEach((el) => el.remove());
+    // 실측 구조(2026-08-13): 특수 기능 A = [기능 아이콘 svg][라벨 span][캐럿 svg].
+    // 캐럿은 실물을 그대로 살리고(전용 클래스가 크기 10×16·간격을 부여 — 픽셀 동일),
+    // 앞의 기능 아이콘 1개만 우리 글리프로 교체한다. 글리프는 사이트 문법과 동일한
+    // solid fill·currentColor(접힌 모서리 문서 + 본문 라인 — 테마 자동 추종),
+    // 클래스도 원본 아이콘 것을 물려받아 크기·마진이 사이트 CSS로 통일된다.
+    const svgs = [...root.querySelectorAll("svg")];
+    const iconCls = svgs.length ? svgs[0].getAttribute("class") : null;
+    if (svgs.length) svgs[0].remove();               // 기능 아이콘만 제거 — 캐럿 유지
     const label = root.querySelector("span") || toggle;
     label.textContent = "추천 문서";
-    const ic = document.createElement("span");
-    ic.innerHTML =
-      '<svg width="1em" height="1em" viewBox="0 0 448 512" aria-hidden="true">' +
+    const holder = document.createElement("div");
+    holder.innerHTML =
+      '<svg width="16" height="16" viewBox="0 0 448 512" aria-hidden="true">' +
       '<path fill="currentColor" fill-rule="evenodd" d="M80 0C44.7 0 16 28.7 16 64v384' +
       'c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V160H288c-17.7 0-32-14.3-32-32V0H80z' +
       'M288 0v128h144L288 0zM112 240h224v40H112v-40zm0 104h224v40H112v-40z"/></svg>';
-    Object.assign(ic.style, {
-      marginRight: "6px", display: "inline-flex", verticalAlign: "-0.125em",
-    });
+    const ic = holder.firstChild;
+    if (iconCls) ic.setAttribute("class", iconCls);  // 사이트 아이콘과 동일 크기·간격 상속
     if (label === toggle) toggle.prepend(ic);
     else label.before(ic);
-    // 특수 기능과 같은 드롭다운 캐럿(▾) — solid currentColor
-    const caret = document.createElement("span");
-    caret.innerHTML =
-      '<svg width="0.62em" height="0.62em" viewBox="0 0 16 16" aria-hidden="true">' +
-      '<path fill="currentColor" d="M2.4 5.2h11.2c.9 0 1.35 1.05.72 1.68L8.7 12.5' +
-      'c-.4.4-1 .4-1.4 0L1.68 6.88C1.05 6.25 1.5 5.2 2.4 5.2z"/></svg>';
-    Object.assign(caret.style, {
-      marginLeft: "5px", display: "inline-flex", verticalAlign: "-0.05em",
-    });
-    toggle.append(caret);
     if (getComputedStyle(template).position === "static") root.style.position = "relative";
     toggle.addEventListener("click", (e) => {
       e.preventDefault();
