@@ -109,12 +109,19 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
   };
 
   // [J3] links 스냅숏 재수집 — view 시작 직후·heartbeat·pagehide 직전.
-  //      컨테이너 미발견이면 직전 스냅숏 유지(수집 skip).
+  //      컨테이너 미발견이면 직전 스냅숏 유지(수집 skip). 경고는 view당 1회 —
+  //      SPA 렌더 지연·섹션 없는 짧은 문서에서 매 시점 도배 방지.
   const recollect = () => {
     if (!view) return;
     const links = namuContent.collectLinks(namuContent.findContentRoot(document));
-    if (links === null) console.warn("namu-reco: 본문 컨테이너 미발견 — links 수집 skip");
-    else view.links = links;
+    if (links === null) {
+      if (!view.warnedLinks) {
+        console.warn("namu-reco: 본문 컨테이너 미발견 — links 수집 skip");
+        view.warnedLinks = true;
+      }
+    } else {
+      view.links = links;
+    }
   };
 
   const startView = () => {

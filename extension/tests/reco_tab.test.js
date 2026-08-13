@@ -19,6 +19,13 @@ test("메뉴 컨테이너 발견 — a.pathname === /RecentChanges 기준, 난�
   assert.equal(recoTab.findMenuContainer([]), null);   // 미발견 → null (조용히 스킵)
 });
 
+test("메뉴 컨테이너 발견 — /RecentChanges 부재 시 /RecentDiscuss 폴백", () => {
+  const bar = { name: "menubar" };
+  assert.equal(recoTab.findMenuContainer([
+    { pathname: "/RecentDiscuss", parentElement: bar },
+  ]), bar);
+});
+
 test("사유 문구 — §4.7 [J8] 규칙 재사용", () => {
   assert.equal(recoTab.reasonText({ reason_title: "하츠네 미쿠" }),
                "「하츠네 미쿠」를 오래 읽으셔서");

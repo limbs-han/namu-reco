@@ -13,10 +13,13 @@ const PANEL_ID = "namu-reco-panel";
 const RECHECK_MS = 1000;              // SPA 재렌더 생존: 존재 확인 후 재주입
 
 const recoTab = {
-  // 메뉴 컨테이너 = "최근 변경"(/RecentChanges) 앵커의 부모. 미발견 시 null.
+  // 메뉴 컨테이너 = "최근 변경"(/RecentChanges) 앵커의 부모. 사이트 변형 대비
+  // /RecentDiscuss 폴백. 미발견 시 null (좁은 창의 반응형 헤더는 메뉴 자체가 숨음).
   findMenuContainer(anchors) {
-    for (const a of anchors) {
-      if (a.pathname === "/RecentChanges") return a.parentElement || null;
+    for (const path of ["/RecentChanges", "/RecentDiscuss"]) {
+      for (const a of anchors) {
+        if (a.pathname === path) return a.parentElement || null;
+      }
     }
     return null;
   },
