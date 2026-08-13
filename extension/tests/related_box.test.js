@@ -42,6 +42,12 @@ test("행 실질 검증 — 3행 미만·비-/w/ 행은 위젯이 아님", () =>
   assert.equal(relatedBox.findWidgetBox([{ pathname: "/w/x", parentElement: el(docRows(5)) }]), null);
 });
 
+test("[m2] 레이아웃 판정 — 가로 분리(사이드바)면 true, 세로 적층(좁은 창)이면 false", () => {
+  assert.equal(relatedBox.isSideBySide({ left: 1000, right: 1300 }, { left: 100, right: 900 }), true);
+  assert.equal(relatedBox.isSideBySide({ left: 100, right: 900 }, { left: 100, right: 900 }), false);
+  assert.equal(relatedBox.isSideBySide({ left: 100, right: 900 }, { left: 950, right: 1300 }), true);
+});
+
 test("행 데이터 — 본문 링크를 자기 제외·상위 10개 {title, href}로", () => {
   const links = ["현재문서", ...Array.from({ length: 15 }, (_, i) => `문서${i}`)];
   const rows = relatedBox.rowData(links, "현재문서");
