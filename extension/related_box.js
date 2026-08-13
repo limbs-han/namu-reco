@@ -14,14 +14,23 @@ const RELATED_POLL_MS = 1000;
 const RELATED_TOP_N = 10;
 
 const relatedBox = {
-  // 사이드바 위젯 = /RecentChanges 앵커의 조상 중 ul li a(행 목록)를 가진 첫 요소
+  // 사이드바 위젯 = /RecentChanges 앵커의 부모(±1단계) 중 **직계 UL 행 목록**
+  // (:scope > ul > li > a, /w/ 행 3개 이상)을 가진 박스. 실측 구조: 박스 = [헤더A, UL].
+  // 얕은 상승 + 직계 조건이어야 함 — 깊은 상승("어딘가에 ul li a")은 상단 메뉴 앵커의
+  // 조상인 페이지 전체 래퍼를 위젯으로 오인해 페이지 통째 clone 사고를 낸다(회귀 테스트).
   findWidgetBox(anchors) {
     for (const a of anchors) {
       if (a.pathname !== "/RecentChanges") continue;
-      let n = a.parentElement;
-      for (let i = 0; i < 4 && n; i++) {
-        if (n.querySelector && n.querySelector("ul li a")) return n;
-        n = n.parentElement;
+      let box = a.parentElement;
+      for (let i = 0; i < 2 && box; i++) {
+        if (box.querySelectorAll) {
+          const rows = [...box.querySelectorAll(":scope > ul > li > a")];
+          if (rows.length >= 3 &&
+              rows.some((r) => typeof r.pathname === "string" && r.pathname.startsWith("/w/"))) {
+            return box;
+          }
+        }
+        box = box.parentElement;
       }
     }
     return null;
