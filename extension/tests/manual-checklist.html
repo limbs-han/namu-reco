@@ -245,7 +245,7 @@ m=importlib.util.module_from_spec(s); s.loader.exec_module(m); print(m.fnv1a32('
 <h2>E18 — 미발견 환경 무해성</h2>
 <ol>
   <li>메뉴바가 없는 변형 화면(모바일 레이아웃 폭으로 축소 등)에서 예외 0건, 페이지 기능 무영향,
-      콘솔 warn 최대 1회.</li>
+      콘솔 warn 0건(발견 실패는 v0.6.0부터 debug 레벨 — Verbose에서만 노출, 최대 1회).</li>
   <li>판정: 이 경우에도 확장 아이콘 팝업은 정상 동작(폴백 유지).</li>
 </ol>
 <label>결과 <select data-k="E18"><option></option><option>PASS</option><option>FAIL</option></select></label>
@@ -285,6 +285,20 @@ m=importlib.util.module_from_spec(s); s.loader.exec_module(m); print(m.fnv1a32('
 </ol>
 <label>결과 <select data-k="E21"><option></option><option>PASS</option><option>FAIL</option></select></label>
 <textarea data-k="E21m" placeholder="메모"></textarea>
+
+<h2>E22 — v0.6.0 재검증 (적대적 리포트 11건)</h2>
+<div class="auto">로직 레벨: content(빈도·table 제외)·logic(dwell·interleave)·common(조사·문구)·related_box(레이아웃 판정) 테스트.</div>
+<ol>
+  <li>M1: 김치·C#·숙채·사족보행에서 연관 문서 상위에 틀 알파벳 나열·한자 낱글자가 없는지.</li>
+  <li>M2: 20~30초 열람 문서의 사유가 "읽으셔서"(오래 없이)로 뜨는지, 5분+ 문서만 "오래 읽으셔서"인지.</li>
+  <li>M3: 드롭다운 상위 5개가 서로 다른 출처 사유를 갖는지(라운드로빈), 낱글자 부재.</li>
+  <li>M4: 특수 기능 열고 추천 문서 클릭 → 겹침 없이 상호배타. 역방향 동일.</li>
+  <li>m1: 「사족보행」을 / 「대한민국」을 표기. m2: ~910px 창에서 위젯이 본문 끝 직후.</li>
+  <li>m3: 행 여백 클릭 무반응. m4: 정상 로드 콘솔에 warn 0건. n1: 왼쪽 정렬. n2: 항목 아이콘. n3: 헤더 비링크.</li>
+  <li>구버전 데이터 공존: 갱신 직후(재열람 전) 드롭다운이 에러 없이 뜨고, 사유는 "읽으셔서"로 표기(reason_dwell_ms 부재 폴백).</li>
+</ol>
+<label>결과 <select data-k="E22"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E22m" placeholder="메모"></textarea>
 
 <footer>
   <button id="dl">검증 기록 다운로드 (JSON)</button>
