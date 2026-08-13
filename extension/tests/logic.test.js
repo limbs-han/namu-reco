@@ -93,6 +93,22 @@ test("[M2] reason_dwell_ms = 최대 기여 출처의 누적 체류, dwell 부재
   assert.equal(legacy.find((o) => o.title === "D").reason_dwell_ms, null);
 });
 
+test("[M3] 출처 라운드로빈 — 상위가 한 출처 파생 5개로 뭉치지 않는다", () => {
+  const list = [
+    { title: "a1", reason_title: "A" }, { title: "a2", reason_title: "A" },
+    { title: "a3", reason_title: "A" }, { title: "b1", reason_title: "B" },
+    { title: "b2", reason_title: "B" }, { title: "c1", reason_title: null },
+  ];
+  assert.deepEqual(swLogic.interleaveBySource(list).map((r) => r.title),
+    ["a1", "b1", "c1", "a2", "b2", "a3"]);
+});
+
+test("[M3] 빈 배열·단일 그룹은 순서 그대로", () => {
+  assert.deepEqual(swLogic.interleaveBySource([]), []);
+  const one = [{ title: "x", reason_title: "A" }, { title: "y", reason_title: "A" }];
+  assert.deepEqual(swLogic.interleaveBySource(one).map((r) => r.title), ["x", "y"]);
+});
+
 test("E4 로직: LRU 퇴출 — last_used 오래된 순, 상한 이하까지만", () => {
   const metas = [
     { shard_id: 1, size_bytes: 60, last_used: 300 },

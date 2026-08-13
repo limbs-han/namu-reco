@@ -62,6 +62,24 @@ const swLogic = {
       .slice(0, n);                               // [H8] N=20 확정
   },
 
+  // [M3] 사유(출처) 그룹 라운드로빈 — 출처당 상한 5 구조상 상위가 한 출처 파생으로
+  // 뭉치는 클럼핑 해소. 그룹 순서 = 그룹 최고 score 순(입력 첫 등장 순 = Map 삽입 순),
+  // 그룹 내부 순서 = score 순 유지. 행 내용·개수 불변 — 표시 순서만 바꾼다.
+  interleaveBySource(list) {
+    const groups = new Map();
+    for (const r of list) {
+      const k = r.reason_title ?? "";
+      if (!groups.has(k)) groups.set(k, []);
+      groups.get(k).push(r);
+    }
+    const qs = [...groups.values()];
+    const out = [];
+    for (let i = 0; out.length < list.length; i++) {
+      for (const q of qs) if (i < q.length) out.push(q[i]);
+    }
+    return out;
+  },
+
   // [M6] LRU: last_used 오래된 순으로 총량이 상한 이하가 될 때까지 퇴출 대상 선정
   pickEvictions(metas, cap) {
     let total = metas.reduce((s, m) => s + m.size_bytes, 0);
@@ -301,7 +319,7 @@ function rebuildRecommendations() {
         if (!nbrs) continue;                      // 어디에도 없으면 기여 0으로 조용히 skip
         perSource.push({ title: v.title, w: v.w, dwell: v.dwell, nbrs, source });
       }
-      const list = swLogic.scoreCandidates(perSource, visited, 20);
+      const list = swLogic.interleaveBySource(swLogic.scoreCandidates(perSource, visited, 20));
       if (!list.length) {                         // [H8] 산출 0건 → popular 폴백
         const popular = (await tx.get("kv", "popular"))?.value;
         if (!popular) return false;               // [I6] clear 없이 스킵 — dirty 유지
