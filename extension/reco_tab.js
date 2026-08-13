@@ -136,10 +136,24 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
     const toggle = root.tagName === "A" ? root : (root.querySelector("a") || root);
     toggle.removeAttribute("href");
     toggle.style.cursor = "pointer";
-    // 복제로 딸려온 특수 기능 아이콘(svg)은 제거하고 종이 두 장 이모지로 교체
+    // 복제로 딸려온 특수 기능 아이콘(svg) 제거 후, 사이트 아이콘과 같은 문법
+    // (모노크롬 currentColor 인라인 svg)의 "겹친 문서 두 장" 아이콘으로 교체 —
+    // 이모지는 컬러라 이질적, currentColor는 테마 전환 시 글자색을 자동 추종
     root.querySelectorAll("svg").forEach((el) => el.remove());
     const label = root.querySelector("span") || toggle;
-    label.textContent = "📑 추천 문서";
+    label.textContent = "추천 문서";
+    const ic = document.createElement("span");
+    ic.innerHTML =
+      '<svg width="1em" height="1em" viewBox="0 0 16 16" fill="none" aria-hidden="true">' +
+      '<path d="M6.5 4.5v-1a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-1" ' +
+      'stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>' +
+      '<rect x="1.5" y="4.5" width="9" height="11" rx="2" stroke="currentColor" stroke-width="1.6"/>' +
+      "</svg>";
+    Object.assign(ic.style, {
+      marginRight: "6px", display: "inline-flex", verticalAlign: "-0.125em",
+    });
+    if (label === toggle) toggle.prepend(ic);
+    else label.before(ic);
     if (getComputedStyle(template).position === "static") root.style.position = "relative";
     toggle.addEventListener("click", (e) => {
       e.preventDefault();
