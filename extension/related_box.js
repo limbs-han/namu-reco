@@ -100,7 +100,10 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
     // 스크롤 추종(사용자 요구): 레일이 본문 전체 높이(실측 50,762px·flex·overflow
     // visible)라 sticky가 성립한다. 고정 헤더 없음 → top 12px. 사이트 위젯과 같은
     // 마크업이라 이질감 없음 — 최근 변경은 스크롤에 밀려 올라가고 이 박스만 남아 따라온다.
-    Object.assign(box.style, { position: "sticky", top: "12px" });
+    // z-index: 고정 상태에서 레일의 나중 형제(광고 슬롯 등)와 겹칠 때, z가 auto면
+    // 나중 요소가 위에 그려져 클릭을 가로챈다(시각과 히트 판정 불일치) — 10이면
+    // 광고 래퍼(대개 auto/낮음) 위, 사이트 메뉴 드롭다운(z 520) 아래.
+    Object.assign(box.style, { position: "sticky", top: "12px", zIndex: "10" });
     widget.parentElement.insertBefore(box, widget.nextSibling);   // "최근 변경 바로 밑"
     return box;
   };
