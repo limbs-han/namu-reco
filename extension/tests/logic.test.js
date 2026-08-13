@@ -72,14 +72,6 @@ test("[H8] N=20 절단 + 산출 0건이면 빈 배열(폴백 판단은 호출측
   assert.deepEqual(swLogic.scoreCandidates([], new Set()), []);
 });
 
-test("연관 문서 폴백 [v11 §4.9]: local_nbr 링크 → 엔트리 (자기 제외·10개·FALLBACK_SIM)", () => {
-  const links = ["자기자신", ...Array.from({ length: 15 }, (_, i) => `링크${i}`)];
-  const out = swLogic.localToEntries(links, "자기자신");
-  assert.equal(out.length, 10);
-  assert.ok(!out.some(([t]) => t === "자기자신"));
-  assert.deepEqual(out[0], ["링크0", FALLBACK_SIM, 0]);   // §4.6과 동일 의미론
-});
-
 test("E4 로직: LRU 퇴출 — last_used 오래된 순, 상한 이하까지만", () => {
   const metas = [
     { shard_id: 1, size_bytes: 60, last_used: 300 },

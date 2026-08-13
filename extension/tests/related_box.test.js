@@ -42,12 +42,13 @@ test("행 실질 검증 — 3행 미만·비-/w/ 행은 위젯이 아님", () =>
   assert.equal(relatedBox.findWidgetBox([{ pathname: "/w/x", parentElement: el(docRows(5)) }]), null);
 });
 
-test("행 데이터 — 샤드 엔트리 [제목, sim, pct]를 상위 n개 {title, href}로", () => {
-  const entries = Array.from({ length: 15 }, (_, i) => [`문서${i}`, 0.9 - i * 0.01, 0.5]);
-  const rows = relatedBox.rowData(entries);
+test("행 데이터 — 본문 링크를 자기 제외·상위 10개 {title, href}로", () => {
+  const links = ["현재문서", ...Array.from({ length: 15 }, (_, i) => `문서${i}`)];
+  const rows = relatedBox.rowData(links, "현재문서");
   assert.equal(rows.length, 10);                             // 상한 10
+  assert.ok(!rows.some((r) => r.title === "현재문서"));      // 목차 앵커 유래 자기 링크 제외
   assert.equal(rows[0].title, "문서0");
   assert.equal(rows[0].href, docUrlOf("문서0"));             // [J2] 단일 진실원
-  assert.equal(relatedBox.rowData([["C#", 0.9, 0.1]])[0].href, "https://namu.wiki/w/C%23");
-  assert.deepEqual(relatedBox.rowData([]), []);
+  assert.equal(relatedBox.rowData(["C#"], "x")[0].href, "https://namu.wiki/w/C%23");
+  assert.deepEqual(relatedBox.rowData([], "x"), []);
 });

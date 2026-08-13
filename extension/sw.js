@@ -59,13 +59,6 @@ const swLogic = {
       .slice(0, n);                               // [H8] N=20 확정
   },
 
-  // v11 §4.9 폴백: 신설 문서(샤드 미보유)의 연관 목록 = 본문 링크(local_nbr).
-  // §4.6과 동일 의미론 — sim은 FALLBACK_SIM 고정, pr_pct 0, 자기 자신 제외.
-  localToEntries(links, selfTitle, n = 10) {
-    return links.filter((t) => t !== selfTitle).slice(0, n)
-      .map((t) => [t, FALLBACK_SIM, 0]);
-  },
-
   // [M6] LRU: last_used 오래된 순으로 총량이 상한 이하가 될 때까지 퇴출 대상 선정
   pickEvictions(metas, cap) {
     let total = metas.reduce((s, m) => s + m.size_bytes, 0);
@@ -87,20 +80,15 @@ if (typeof chrome !== "undefined" && chrome.runtime) {
 
   // [B3·F6·J5] view 메시지: get→processed 검사→put을 단일 readwrite 트랜잭션으로.
   // local_nbr 갱신(§4.6 — 항상 최신 방문 덮어쓰기)도 같은 트랜잭션에서 수행한다.
-  // v11 §4.8/§4.9: 페이지 내 UI(추천 탭·연관 문서)의 조회 요청 — content script는
-  // 확장 origin의 IndexedDB를 직접 읽지 못하므로 메시징으로 제공한다.
+  // v11 §4.8: 추천 탭(reco_tab.js)의 조회 요청 — content script는 확장 origin의
+  // IndexedDB를 직접 읽지 못하므로 메시징으로 제공한다.
+  // (§4.9 연관 문서는 v0.5.0부터 본문 링크 직접 수집 — SW 경유 없음)
   chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     if (msg && msg.type === "get_recommendations") {
       db.txn(["recommendations"], "readonly", (tx) => tx.getAll("recommendations"))
         .then((rows) => sendResponse(rows.sort((a, b) => a.rank - b.rank)))
         .catch(() => sendResponse([]));
       return true;                                  // 비동기 sendResponse 유지
-    }
-    if (msg && msg.type === "get_related") {        // v11 §4.9 — 현재 문서의 샤드 이웃
-      getRelated(String(msg.title || ""))
-        .then(sendResponse)
-        .catch(() => sendResponse([]));
-      return true;
     }
     if (!msg || msg.type !== "view") return;
     db.txn(["events", "local_nbr"], "readwrite", async (tx) => {
@@ -223,34 +211,6 @@ async function fetchShardIntoCache(sid) {
   const row = { shard_id: sid, payload, version, size_bytes, last_used: Date.now() };
   await db.txn(["nbr_cache"], "readwrite", (tx) => tx.put("nbr_cache", row));
   return row;
-}
-
-// v11 §4.9 — 현재 문서의 이웃 top-10. 캐시 히트 시 last_used 갱신(§4.5),
-// 미스 시 온디맨드 fetch 후 nbr_cache 편입 + LRU 상한 유지 [M6].
-// 실패·미보유는 빈 배열 — UI는 박스를 표시하지 않는다.
-async function getRelated(title) {
-  if (!title || isNamespace(title)) return [];
-  const sid = shardIdOf(title);
-  let row = await db.txn(["nbr_cache"], "readwrite", async (tx) => {
-    const r = await tx.get("nbr_cache", sid);
-    if (r) {
-      r.last_used = Date.now();
-      await tx.put("nbr_cache", r);
-    }
-    return r;
-  });
-  if (!row) {
-    row = await fetchShardIntoCache(sid);
-    await evictCache();
-  }
-  const entries = row.payload[title];
-  if (entries) return entries.slice(0, 10);
-  // v11 §4.9 폴백: 덤프 이후 신설 문서 — 현재 문서 본문 링크(local_nbr)로 대체
-  const local = await db.txn(["local_nbr"], "readonly", (tx) => tx.get("local_nbr", title));
-  if (local && Array.isArray(local.links) && local.links.length) {
-    return swLogic.localToEntries(local.links, title);
-  }
-  return [];
 }
 
 // [G10·I3·J1] prefetchShards — 절대 예외를 전파하지 않는다.
