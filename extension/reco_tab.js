@@ -136,19 +136,19 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
     const toggle = root.tagName === "A" ? root : (root.querySelector("a") || root);
     toggle.removeAttribute("href");
     toggle.style.cursor = "pointer";
-    // 복제로 딸려온 특수 기능 아이콘(svg) 제거 후, 사이트 아이콘과 같은 문법
-    // (모노크롬 currentColor 인라인 svg)의 "겹친 문서 두 장" 아이콘으로 교체 —
-    // 이모지는 컬러라 이질적, currentColor는 테마 전환 시 글자색을 자동 추종
+    // 복제로 딸려온 특수 기능 아이콘(svg) 제거 후, 사이트 아이콘과 동일 문법으로 교체.
+    // 실측(2026-08-13): 사이트 메뉴 아이콘은 전부 solid fill 글리프(stroke 없음,
+    // fill=currentColor 상속, 높이 ~16px) — 선 아이콘·컬러 이모지는 이질적.
+    // 모양은 접힌 모서리 문서 + 본문 라인 2개 (겹친 두 장은 '복사'로 읽혀 배제).
     root.querySelectorAll("svg").forEach((el) => el.remove());
     const label = root.querySelector("span") || toggle;
     label.textContent = "추천 문서";
     const ic = document.createElement("span");
     ic.innerHTML =
-      '<svg width="1em" height="1em" viewBox="0 0 16 16" fill="none" aria-hidden="true">' +
-      '<path d="M6.5 4.5v-1a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-1" ' +
-      'stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>' +
-      '<rect x="1.5" y="4.5" width="9" height="11" rx="2" stroke="currentColor" stroke-width="1.6"/>' +
-      "</svg>";
+      '<svg width="1em" height="1em" viewBox="0 0 384 512" aria-hidden="true">' +
+      '<path fill="currentColor" fill-rule="evenodd" d="M96 0C60.7 0 32 28.7 32 64v384' +
+      'c0 35.3 28.7 64 64 64h192c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H96z' +
+      'M256 0v128h96L256 0zM112 236h160v36H112v-36zm0 100h160v36H112v-36z"/></svg>';
     Object.assign(ic.style, {
       marginRight: "6px", display: "inline-flex", verticalAlign: "-0.125em",
     });
