@@ -25,9 +25,29 @@ function docUrlOf(title) {                                     // [J2] 추천 �
 }                                                              //      encodeURIComponent 없이는 "C#"이 fragment로 잘리고(/w/C),
                                                                //      %2F 복원 없이는 "A/B"가 나무위키 관례(/w/A/B)와 갈린다
 
+const LONG_READ_MS = 3 * 60 * 1000;   // [M2] 사유 "오래 읽으셔서" 문턱 — 누적 체류 3분
+
+function eulReul(word) {              // [m1] 목적격 조사 — 마지막 글자 받침 기준, 비한글은 병기
+  const c = word.charCodeAt(word.length - 1);
+  if (c < 0xAC00 || c > 0xD7A3) return "을(를)";
+  return (c - 0xAC00) % 28 ? "을" : "를";
+}
+
+// §4.7 [J8] 추천 사유 문구 — 단일 진실원 (reco_tab·popup 공용, 여기 외 정의 금지).
+// [M2] 체류 계층: 3분 이상만 "오래", 미만·미상(reason_dwell_ms 없는 구버전 행)은
+// "읽으셔서" — 20초 열람에 "오래 읽으셔서"를 붙이던 과장 제거.
+function reasonText(row) {
+  if (row.reason_title) {
+    const long = (row.reason_dwell_ms || 0) >= LONG_READ_MS;
+    return `「${row.reason_title}」${eulReul(row.reason_title)} ${long ? "오래 " : ""}읽으셔서`;
+  }
+  return row.source === "popular" ? "인기 문서" : "";
+}
+
 // [G4] Node 접근용 가드 export — 반드시 파일 말미, 이 형태 그대로.
 //      브라우저(content script·classic SW)에서는 typeof 검사가 false라 건너뛰므로 무해.
 //      가드 없는 module.exports는 sw.js의 importScripts에서 예외 → 확장 전체 무동작 — 금지.
 if (typeof module !== "undefined") {
-  module.exports = { SHARD_BASE, NAMESPACES, FALLBACK_SIM, isNamespace, fnv1a32, shardIdOf, shardPath, docUrlOf };
+  module.exports = { SHARD_BASE, NAMESPACES, FALLBACK_SIM, LONG_READ_MS,
+    isNamespace, fnv1a32, shardIdOf, shardPath, docUrlOf, eulReul, reasonText };
 }

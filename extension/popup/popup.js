@@ -17,9 +17,7 @@
     a.addEventListener("click", () => chrome.tabs.create({ url: docUrlOf(r.title) }));
     const why = document.createElement("span");
     why.className = "why";
-    why.textContent = r.reason_title
-      ? `「${r.reason_title}」를 오래 읽으셔서`
-      : (r.source === "popular" ? "인기 문서" : "");
+    why.textContent = reasonText(r);  // §4.7 [J8] 단일 진실원 — common.js
     li.append(a, why);
     list.append(li);
   }

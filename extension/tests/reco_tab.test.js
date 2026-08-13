@@ -26,12 +26,7 @@ test("메뉴 컨테이너 발견 — /RecentChanges 부재 시 /RecentDiscuss �
   ]), bar);
 });
 
-test("사유 문구 — §4.7 [J8] 규칙 재사용", () => {
-  assert.equal(recoTab.reasonText({ reason_title: "하츠네 미쿠" }),
-               "「하츠네 미쿠」를 오래 읽으셔서");
-  assert.equal(recoTab.reasonText({ reason_title: null, source: "popular" }), "인기 문서");
-  assert.equal(recoTab.reasonText({ reason_title: null, source: "shard" }), "");
-});
+// 사유 문구 테스트는 common.test.js로 이관 — §4.7 [J8] 단일 진실원이 common.js로 이동
 
 test("다크 테마 판별 — body 배경 밝기 기준", () => {
   assert.equal(recoTab.isDarkBg("rgb(255, 255, 255)"), false);

@@ -24,12 +24,6 @@ const recoTab = {
     return null;
   },
 
-  reasonText(row) {                   // §4.7 [J8] 문구 규칙 재사용
-    return row.reason_title
-      ? `「${row.reason_title}」를 오래 읽으셔서`
-      : (row.source === "popular" ? "인기 문서" : "");
-  },
-
   isDarkBg(bg) {                      // body 배경 밝기로 테마 판별 (투명·미상은 라이트)
     const m = /rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d.]+))?\)/.exec(bg || "");
     if (!m) return false;
@@ -85,7 +79,7 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
         fontSize: "15px", color: p.color, textDecoration: "none", lineHeight: "1.35",
       });
       a.textContent = r.title;
-      const why = recoTab.reasonText(r);
+      const why = reasonText(r);      // §4.7 [J8] 단일 진실원 — common.js
       if (why) {
         const sub = document.createElement("span");
         sub.textContent = why;
