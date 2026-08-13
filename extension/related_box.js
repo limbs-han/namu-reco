@@ -114,9 +114,10 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
       removeBox();
       return;
     }
-    if (title === lastTitle && document.getElementById(RELATED_BOX_ID)) return;   // 변화 없음
+    if (title === lastTitle &&
+        (document.getElementById(RELATED_BOX_ID) || retry.left <= 0)) return;   // 표시됨·미표시 확정
     if (title !== pendingTitle) {                  // 제목이 방금 바뀜 — DOM 렌더를 1틱 대기
-      pendingTitle = title;                        // (URL이 DOM보다 먼저 바뀌는 SPA 특성)
+      pendingTitle = title;                        // (URL이 DOM보다 먼저 바뀌는 소프트 전환 특성)
       return;
     }
     const widget = relatedBox.findWidgetBox([...document.querySelectorAll("a")]);
@@ -138,8 +139,18 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
     build(widget, rows);
   };
 
-  timer = setInterval(refresh, RELATED_POLL_MS);   // 전환 감지 + 재렌더 생존 겸용
-  refresh();
+  timer = setInterval(refresh, RELATED_POLL_MS);   // 전환 감지 + 재렌더 생존 겸용 (정상 상태)
+
+  // 하드 로드 부트스트랩: 새로고침 직후엔 URL·DOM이 처음부터 일치하므로(SSR)
+  // 디바운스 없이 즉시, 150ms 버스트로 빠르게 붙인다 — 사이트 위젯과 체감 동시 등장.
+  pendingTitle = globalThis.namuContent ? namuContent.viewTitleFor(location.pathname) : null;
+  let boot = 20;                                   // 최대 ~3초 커버 후 1초 틱에 인계
+  const bootTick = () => {
+    if (orphaned || document.getElementById(RELATED_BOX_ID) || boot-- <= 0) return;
+    refresh();
+    setTimeout(bootTick, 150);
+  };
+  bootTick();
 })();
 
 globalThis.relatedBox = relatedBox;
