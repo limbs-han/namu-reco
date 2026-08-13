@@ -251,6 +251,36 @@ m=importlib.util.module_from_spec(s); s.loader.exec_module(m); print(m.fnv1a32('
 <label>결과 <select data-k="E18"><option></option><option>PASS</option><option>FAIL</option></select></label>
 <textarea data-k="E18m" placeholder="메모"></textarea>
 
+<h2>E19 — 연관 문서 위젯 주입·스타일 (v11 §4.9)</h2>
+<div class="auto">로직 레벨: related_box.test.js — 위젯 발견(행 목록 조상 상승)·행 데이터·href 규칙.</div>
+<ol>
+  <li>gold에 실존하는 문서(예: popular 상위) 열람 → 우측 "최근 변경" 위젯 <strong>바로 아래</strong>에
+      "연관 문서" 박스가 같은 디자인(헤더 타이포·행 간격·폰트)으로 표시.</li>
+  <li>판정: 행 최대 10개, 각 행은 이웃 문서 제목, 시각(time) 요소 없음. 다크 테마에서도 정상.</li>
+  <li>코드 검사: related_box.js에 난독화 클래스 하드코딩 0건.</li>
+</ol>
+<label>결과 <select data-k="E19"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E19m" placeholder="메모"></textarea>
+
+<h2>E20 — 연관 데이터 경로·미보유 처리</h2>
+<ol>
+  <li>행 클릭 → 해당 문서로 이동. SW DevTools에서 <code>nbr_cache</code>에 현재 문서 샤드가
+      적재됨(온디맨드 fetch — 캐시 미스 문서당 최대 1회, 상한 150MB LRU 회계 편입).</li>
+  <li>gold에 없는 문서(2021 이후 신설) 열람 → 박스가 표시되지 않고 예외 0건.</li>
+  <li>대문·네임스페이스 문서(<code>나무위키:대문</code>) → 박스 없음.</li>
+</ol>
+<label>결과 <select data-k="E20"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E20m" placeholder="메모"></textarea>
+
+<h2>E21 — 전환 갱신</h2>
+<ol>
+  <li>문서 A → 문서 B 소프트 전환 → 1초 내 박스 내용이 B의 이웃으로 교체(A의 이웃 잔존 0).</li>
+  <li>빠른 연속 전환(A→B→C) 후 최종 화면의 박스가 C의 이웃과 일치(늦게 도착한 응답이
+      덮어쓰지 않음).</li>
+</ol>
+<label>결과 <select data-k="E21"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E21m" placeholder="메모"></textarea>
+
 <footer>
   <button id="dl">검증 기록 다운로드 (JSON)</button>
   <span class="muted">받은 파일을 <code>review/</code>에 커밋해 수행 기록을 남긴다.</span>

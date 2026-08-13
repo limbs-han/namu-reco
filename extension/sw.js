@@ -80,14 +80,20 @@ if (typeof chrome !== "undefined" && chrome.runtime) {
 
   // [B3·F6·J5] view 메시지: get→processed 검사→put을 단일 readwrite 트랜잭션으로.
   // local_nbr 갱신(§4.6 — 항상 최신 방문 덮어쓰기)도 같은 트랜잭션에서 수행한다.
-  // v11 §4.8: 추천 탭(reco_tab.js)의 조회 요청 — content script는 확장 origin의
-  // IndexedDB를 직접 읽지 못하므로 메시징으로 제공한다.
+  // v11 §4.8/§4.9: 페이지 내 UI(추천 탭·연관 문서)의 조회 요청 — content script는
+  // 확장 origin의 IndexedDB를 직접 읽지 못하므로 메시징으로 제공한다.
   chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     if (msg && msg.type === "get_recommendations") {
       db.txn(["recommendations"], "readonly", (tx) => tx.getAll("recommendations"))
         .then((rows) => sendResponse(rows.sort((a, b) => a.rank - b.rank)))
         .catch(() => sendResponse([]));
       return true;                                  // 비동기 sendResponse 유지
+    }
+    if (msg && msg.type === "get_related") {        // v11 §4.9 — 현재 문서의 샤드 이웃
+      getRelated(String(msg.title || ""))
+        .then(sendResponse)
+        .catch(() => sendResponse([]));
+      return true;
     }
     if (!msg || msg.type !== "view") return;
     db.txn(["events", "local_nbr"], "readwrite", async (tx) => {
@@ -197,6 +203,43 @@ function purge(newVersion) {
   });
 }
 
+// 샤드 1개 fetch→해제→파싱→nbr_cache 편입. [M6] size_bytes = 해제 직후 바이트.
+// 실패는 예외로 던진다 — 격리는 호출측 책임 [G10].
+async function fetchShardIntoCache(sid) {
+  const res = await fetch(`${SHARD_BASE}/${shardPath(sid)}`);
+  if (!res.ok) throw new Error(`shard ${sid}: ${res.status}`);
+  const stream = res.body.pipeThrough(new DecompressionStream("gzip"));
+  const bytes = new Uint8Array(await new Response(stream).arrayBuffer());
+  const size_bytes = bytes.byteLength;
+  const payload = JSON.parse(new TextDecoder().decode(bytes));
+  const version = (await db.kvGet("manifest_version")) ?? null;
+  const row = { shard_id: sid, payload, version, size_bytes, last_used: Date.now() };
+  await db.txn(["nbr_cache"], "readwrite", (tx) => tx.put("nbr_cache", row));
+  return row;
+}
+
+// v11 §4.9 — 현재 문서의 이웃 top-10. 캐시 히트 시 last_used 갱신(§4.5),
+// 미스 시 온디맨드 fetch 후 nbr_cache 편입 + LRU 상한 유지 [M6].
+// 실패·미보유는 빈 배열 — UI는 박스를 표시하지 않는다.
+async function getRelated(title) {
+  if (!title || isNamespace(title)) return [];
+  const sid = shardIdOf(title);
+  let row = await db.txn(["nbr_cache"], "readwrite", async (tx) => {
+    const r = await tx.get("nbr_cache", sid);
+    if (r) {
+      r.last_used = Date.now();
+      await tx.put("nbr_cache", r);
+    }
+    return r;
+  });
+  if (!row) {
+    row = await fetchShardIntoCache(sid);
+    await evictCache();
+  }
+  const entries = row.payload[title];
+  return entries ? entries.slice(0, 10) : [];
+}
+
 // [G10·I3·J1] prefetchShards — 절대 예외를 전파하지 않는다.
 async function prefetchShards() {
   try {
@@ -224,19 +267,11 @@ async function prefetchShards() {
     // [J1] fetch 대상 = w(v) 상위 50 프로필 제목의 샤드 중 nbr_cache 부재분 (중복 제거)
     const rows = await db.txn(["profile"], "readonly", (tx) => tx.getAll("profile"));
     const top = swLogic.topProfile(rows, Date.now(), 50);
-    const version = manifest ? manifest.version : await db.kvGet("manifest_version");
     for (const sid of new Set(top.map((v) => shardIdOf(v.title)))) {
       try {                                       // [G10] 샤드 단위 독립 격리
         const have = await db.txn(["nbr_cache"], "readonly", (tx) => tx.get("nbr_cache", sid));
         if (have) continue;
-        const res = await fetch(`${SHARD_BASE}/${shardPath(sid)}`);
-        if (!res.ok) { console.warn("shard fetch failed:", sid, res.status); continue; }
-        const stream = res.body.pipeThrough(new DecompressionStream("gzip"));  // [J12] 80+
-        const bytes = new Uint8Array(await new Response(stream).arrayBuffer());
-        const size_bytes = bytes.byteLength;      // [M6] 해제 직후, JSON.parse 이전 측정
-        const payload = JSON.parse(new TextDecoder().decode(bytes));
-        await db.txn(["nbr_cache"], "readwrite", (tx) => tx.put("nbr_cache",
-          { shard_id: sid, payload, version: version ?? null, size_bytes, last_used: Date.now() }));
+        await fetchShardIntoCache(sid);           // [M6] size_bytes 정의 포함
       } catch (e) {
         console.warn("shard failed:", sid, e);    // 실패 샤드는 기록하지 않고 다음으로
       }

@@ -86,7 +86,7 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
       if (why) {
         const sub = document.createElement("span");
         sub.textContent = why;
-        Object.assign(sub.style, { fontSize: "12px", color: p.sub, marginTop: "1px" });
+        Object.assign(sub.style, { fontSize: "10.5px", color: p.sub, marginTop: "1px" });
         a.append(sub);
       }
       a.addEventListener("mouseenter", () => { a.style.background = dark() ? "rgba(255,255,255,.06)" : "rgba(0,0,0,.045)"; });
