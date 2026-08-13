@@ -136,8 +136,10 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
     const toggle = root.tagName === "A" ? root : (root.querySelector("a") || root);
     toggle.removeAttribute("href");
     toggle.style.cursor = "pointer";
+    // 복제로 딸려온 특수 기능 아이콘(svg)은 제거하고 종이 두 장 이모지로 교체
+    root.querySelectorAll("svg").forEach((el) => el.remove());
     const label = root.querySelector("span") || toggle;
-    label.textContent = "추천 문서";
+    label.textContent = "📑 추천 문서";
     if (getComputedStyle(template).position === "static") root.style.position = "relative";
     toggle.addEventListener("click", (e) => {
       e.preventDefault();
