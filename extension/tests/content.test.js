@@ -51,6 +51,28 @@ test("[I12·H3] pathname 프로퍼티 기준 선별·파생 — 비-/w/·URIErro
   assert.deepEqual(links, ["문서가", "B"]);
 });
 
+test("[M1] 본문 출현 빈도 내림차순 — 다등장 문서가 1회 등장(틀류)을 이긴다", () => {
+  const links = namuContent.collectLinks(fakeRoot([
+    { pathname: "/w/T1" },                     // 문서 최상단 틀 링크 (1회)
+    { pathname: "/w/A" }, { pathname: "/w/B" },
+    { pathname: "/w/A" }, { pathname: "/w/A" },
+    { pathname: "/w/B" },
+  ]));
+  assert.deepEqual(links, ["A", "B", "T1"]);   // 3회, 2회, 1회 순
+});
+
+test("[M1] 동률은 본문 첫 등장 순서 유지 (안정 정렬)", () => {
+  assert.deepEqual(namuContent.collectLinks(fakeRoot([
+    { pathname: "/w/X" }, { pathname: "/w/Y" }, { pathname: "/w/Z" },
+  ])), ["X", "Y", "Z"]);
+});
+
+test("[M1] table 내부 앵커(틀·정보상자)는 카운트 제외", () => {
+  const inTable = { pathname: "/w/T2", closest: (s) => (s === "table" ? {} : null) };
+  const inBody = { pathname: "/w/본문문서", closest: () => null };
+  assert.deepEqual(namuContent.collectLinks(fakeRoot([inTable, inBody])), ["본문문서"]);
+});
+
 test("[J4] 상한 40개", () => {
   const anchors = Array.from({ length: 50 }, (_, i) => ({ pathname: `/w/doc${i}` }));
   assert.equal(namuContent.collectLinks(fakeRoot(anchors)).length, 40);

@@ -41,22 +41,26 @@ const namuContent = {
 
   // [J4·H3·I12] 본문 컨테이너 한정 links 수집 — root 미발견(null)이면 null 반환(수집 skip 신호).
   // 후보 선별·제목 파생 모두 앵커 pathname 프로퍼티 기준 — href 문자열 파싱 금지 [H3·I12].
+  // v0.6.0 [M1]: 출현 빈도 내림차순 상위 MAX_LINKS. 둘러보기 틀·정보상자(<table> 내부)
+  // 앵커는 제외 — 틀 링크(각 1회 등장)가 DOM 순서만으로 상위를 점령하던 오염 차단.
   collectLinks(root) {
     if (!root) return null;
-    const seen = new Set();
+    const count = new Map();                   // 삽입 순서 = 본문 첫 등장 순서 (동률 tiebreak)
     for (const a of root.querySelectorAll("a")) {
-      if (seen.size >= MAX_LINKS) break;
       const p = a.pathname;
       if (typeof p !== "string" || !p.startsWith("/w/")) continue;
+      if (a.closest && a.closest("table")) continue;   // [M1] 시맨틱 태그 판정 — 난독화 클래스 금지
       let t;
       try {
         t = decodeURIComponent(p.replace(/^\/w\//, "")).normalize("NFC");
       } catch (e) {
-        continue;                     // URIError 앵커는 건너뜀 [H3]
+        continue;                              // URIError 앵커는 건너뜀 [H3]
       }
-      if (t && !isNamespace(t)) seen.add(t);   // [N1] 네임스페이스 제외 + 중복 제거
+      if (t && !isNamespace(t)) count.set(t, (count.get(t) || 0) + 1);   // [N1] 네임스페이스 제외
     }
-    return [...seen];
+    return [...count.keys()]
+      .sort((x, y) => count.get(y) - count.get(x))   // 빈도 내림차순 — Array.sort는 안정 정렬
+      .slice(0, MAX_LINKS);
   },
 };
 
