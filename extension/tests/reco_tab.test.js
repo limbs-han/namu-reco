@@ -35,7 +35,7 @@ test("다크 테마 판별 — body 배경 밝기 기준", () => {
   assert.equal(recoTab.isDarkBg(""), false);
 });
 
-test("항목 href는 docUrlOf 단일 진실원 [J2] — C# 류 제목 안전", () => {
-  assert.equal(recoTab.itemHref("C#"), "https://namu.wiki/w/C%23");
-  assert.equal(recoTab.itemHref("A/B"), "https://namu.wiki/w/A/B");
+test("항목 href는 상대 경로 [UX-10] — docPathOf 단일 진실원, C# 류 제목 안전", () => {
+  assert.equal(recoTab.itemHref("C#"), "/w/C%23");
+  assert.equal(recoTab.itemHref("A/B"), "/w/A/B");
 });

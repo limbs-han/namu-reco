@@ -48,7 +48,7 @@ const relatedBox = {
   // 본문 링크 배열 → 표시 행. 자기 자신(목차 앵커 유래) 제외, 상위 n개.
   rowData(links, selfTitle, n = RELATED_TOP_N) {
     return links.filter((t) => t !== selfTitle).slice(0, n)
-      .map((title) => ({ title, href: docUrlOf(title) }));   // [J2]
+      .map((title) => ({ title, href: docPathOf(title) }));   // [UX-10] 상대 경로
   },
 };
 

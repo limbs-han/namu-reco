@@ -54,7 +54,7 @@ test("행 데이터 — 본문 링크를 자기 제외·상위 10개 {title, hre
   assert.equal(rows.length, 10);                             // 상한 10
   assert.ok(!rows.some((r) => r.title === "현재문서"));      // 목차 앵커 유래 자기 링크 제외
   assert.equal(rows[0].title, "문서0");
-  assert.equal(rows[0].href, docUrlOf("문서0"));             // [J2] 단일 진실원
-  assert.equal(relatedBox.rowData(["C#"], "x")[0].href, "https://namu.wiki/w/C%23");
+  assert.equal(rows[0].href, docPathOf("문서0"));            // [UX-10] 상대 경로
+  assert.equal(relatedBox.rowData(["C#"], "x")[0].href, "/w/C%23");
   assert.deepEqual(relatedBox.rowData([], "x"), []);
 });

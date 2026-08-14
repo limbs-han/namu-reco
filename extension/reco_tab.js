@@ -39,8 +39,8 @@ const recoTab = {
     return 0.299 * r + 0.587 * g + 0.114 * b < 128;
   },
 
-  itemHref(title) {                   // [J2] 단일 진실원
-    return docUrlOf(title);
+  itemHref(title) {                   // [UX-10] 상대 경로 — 통짜 리로드·오프라인 공룡 페이지 방지
+    return docPathOf(title);
   },
 };
 
@@ -104,6 +104,8 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
       a.append(icon, col);
       a.addEventListener("mouseenter", () => { a.style.background = dark() ? "rgba(255,255,255,.06)" : "rgba(0,0,0,.045)"; });
       a.addEventListener("mouseleave", () => { a.style.background = "transparent"; });
+      a.addEventListener("click", () => closePanel());   // [UX-10] 소프트 전환이면 리로드가 없어
+                                                         // 패널이 안 사라진다 — 직접 닫는다
       panel.append(a);
     }
     wrapper.append(panel);

@@ -2,7 +2,13 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
 const path = require("node:path");
-const { josaOf, reasonText, LONG_READ_MS, isHanjaOnly } = require(path.join(__dirname, "..", "common.js"));
+const { josaOf, reasonText, LONG_READ_MS, isHanjaOnly, docPathOf, docUrlOf } = require(path.join(__dirname, "..", "common.js"));
+
+test("[UX-10] docPathOf — 상대 경로 단일 진실원, docUrlOf는 그 합성", () => {
+  assert.equal(docPathOf("C#"), "/w/C%23");
+  assert.equal(docPathOf("A/B"), "/w/A/B");
+  assert.equal(docUrlOf("C#"), "https://namu.wiki" + docPathOf("C#"));
+});
 
 test("[UX-01] isHanjaOnly — 전부 한자면 true, 한글·혼합·영문은 false", () => {
   assert.equal(isHanjaOnly("四"), true);

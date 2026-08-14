@@ -26,10 +26,13 @@ function isHanjaOnly(title) {
 }
 function shardIdOf(title) { return fnv1a32(title.normalize("NFC")) % 1024; }   // [F8]
 function shardPath(id)    { return `nbr/${String(id).padStart(4, "0")}.json.gz`; }
-function docUrlOf(title) {                                     // [J2] 추천 클릭 URL — O5(g)가 게이트.
-  return "https://namu.wiki/w/" + encodeURIComponent(title).replace(/%2F/gi, "/");
+function docPathOf(title) {                                    // [UX-10] 페이지 내 앵커용 상대 경로 —
+  return "/w/" + encodeURIComponent(title).replace(/%2F/gi, "/");   // SPA 라우터를 타면 소프트 전환.
 }                                                              //      encodeURIComponent 없이는 "C#"이 fragment로 잘리고(/w/C),
                                                                //      %2F 복원 없이는 "A/B"가 나무위키 관례(/w/A/B)와 갈린다
+function docUrlOf(title) {                                     // [J2] 절대 URL — popup(chrome.tabs.create) 전용.
+  return "https://namu.wiki" + docPathOf(title);               //      O5(g) 게이트 형식 불변
+}
 
 const LONG_READ_MS = 3 * 60 * 1000;   // [M2] 사유 "오래 읽으셔서" 문턱 — 누적 체류 3분
 
@@ -59,5 +62,5 @@ function reasonText(row) {
 //      가드 없는 module.exports는 sw.js의 importScripts에서 예외 → 확장 전체 무동작 — 금지.
 if (typeof module !== "undefined") {
   module.exports = { SHARD_BASE, NAMESPACES, FALLBACK_SIM, LONG_READ_MS,
-    isNamespace, isHanjaOnly, fnv1a32, shardIdOf, shardPath, docUrlOf, josaOf, reasonText };
+    isNamespace, isHanjaOnly, fnv1a32, shardIdOf, shardPath, docPathOf, docUrlOf, josaOf, reasonText };
 }
