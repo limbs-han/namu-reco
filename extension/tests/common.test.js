@@ -3,7 +3,7 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 const path = require("node:path");
 const { josaOf, reasonText, LONG_READ_MS, isHanjaOnly, docPathOf, docUrlOf,
-        presentableRows, softNavigate, fmtDwell, groupRows } = require(path.join(__dirname, "..", "common.js"));
+        presentableRows, softNavigate, fmtDwell, groupRows, pendingViewTitles } = require(path.join(__dirname, "..", "common.js"));
 
 test("[G1] groupRows — 사유 문자열 키, 첫 등장 순 그룹, 그룹 내 rank 순 유지", () => {
   const mk = (rank, title, reason, source) => ({ rank, title, source,
@@ -53,11 +53,22 @@ test("[UX-A3] presentableRows — rank 정렬 + 한자 전용 제외 (구버전 
   assert.deepEqual(presentableRows(rows).map((r) => r.title), ["새", "치타"]);
 });
 
-test("[E24-M1] presentableRows — excludeTitle로 현재 문서 제외, 미지정·null이면 전량", () => {
+test("[E24-M1] presentableRows — 문자열·배열 exclude로 제외, 미지정·null이면 전량", () => {
   const rows = [{ rank: 1, title: "성대" }, { rank: 2, title: "코볼" }];
   assert.deepEqual(presentableRows(rows, "성대").map((r) => r.title), ["코볼"]);
+  assert.deepEqual(presentableRows(rows, ["성대", "코볼"]), []);   // 배열(미처리 view 제목들)
   assert.deepEqual(presentableRows(rows).map((r) => r.title), ["성대", "코볼"]);
   assert.deepEqual(presentableRows(rows, null).map((r) => r.title), ["성대", "코볼"]);
+});
+
+test("[E24-M1+] pendingViewTitles — 최근 미처리 view만, 집계 완료·고아(stale)는 제외", () => {
+  const now = 3600e3;
+  const evs = [
+    { title: "성대", processed: 0, updated_at: now - 60e3 },        // 방금 떠남 → 포함
+    { title: "코볼", processed: 1, updated_at: now - 60e3 },        // 집계 완료 → 제외
+    { title: "보행", processed: 0, updated_at: now - 11 * 60e3 },   // 고아/stale → 제외 (추천 구멍 방지)
+  ];
+  assert.deepEqual(pendingViewTitles(evs, now), ["성대"]);
 });
 
 test("[m1] 조사 일반화 — 받침 판별, 비한글 끝 글자는 병기", () => {

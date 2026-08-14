@@ -108,8 +108,15 @@ if (typeof chrome !== "undefined" && chrome.runtime) {
   // (§4.9 연관 문서는 v0.5.0부터 본문 링크 직접 수집 — SW 경유 없음)
   chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     if (msg && msg.type === "get_recommendations") {
-      db.txn(["recommendations"], "readonly", (tx) => tx.getAll("recommendations"))
-        .then((rows) => sendResponse(presentableRows(rows, msg.exclude)))   // [UX-A3] 정화 + [E24-M1] 현재 문서 제외
+      // [UX-A3] 정화 + [E24-M1] 현재 문서(msg.exclude) + 최근 미처리 view(방금 떠난
+      // 문서·다른 탭 열람 중 — 미니배치 전 5분 창) 서빙 시점 제외
+      db.txn(["recommendations", "events"], "readonly", async (tx) => {
+        const pend = pendingViewTitles(
+          await tx.indexGetAll("events", "processed", IDBKeyRange.only(0)), Date.now());
+        if (msg.exclude) pend.push(msg.exclude);
+        return presentableRows(await tx.getAll("recommendations"), pend);
+      })
+        .then((rows) => sendResponse(rows))
         .catch(() => sendResponse([]));
       return true;                                  // 비동기 sendResponse 유지
     }

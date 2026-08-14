@@ -69,12 +69,21 @@ function reasonText(row) {
 // 다음 rebuild 전까지 저장분 그대로다(업그레이드 직후가 정확히 이 창). 모든 표시
 // 경로(드롭다운 = sw 메시지, 팝업 = IDB 직독)는 이 관문을 통과한다 — 필터 규칙이
 // 바뀌어도 여기 한 곳. 마이그레이션 금지 원칙 유지.
-// [E24-M1] excludeTitle = 현재 열람 문서 — 체류 중인 view는 아직 profile에 없어
-// rebuild의 방문 제외를 비껴간다. "현재 문서"는 탭마다 다르므로 서빙 시점에 뺀다.
-// 팝업(새 탭 의미론)은 미지정 = 제외 없음.
-function presentableRows(rows, excludeTitle) {
-  return rows.filter((r) => !isHanjaOnly(r.title) && r.title !== excludeTitle)
+// [E24-M1] exclude = 현재 열람 문서(문자열) 또는 미처리 view 제목들(배열) — 체류 중·
+// 방금 떠난 문서는 아직 profile에 없어 rebuild의 방문 제외를 비껴간다. 서빙 시점에 뺀다.
+function presentableRows(rows, exclude) {
+  const ex = new Set(typeof exclude === "string" ? [exclude] : exclude || []);
+  return rows.filter((r) => !isHanjaOnly(r.title) && !ex.has(r.title))
              .sort((a, b) => a.rank - b.rank);
+}
+
+const PENDING_VIEW_MS = 10 * 60 * 1000;   // 미니배치(5분) 2주기 — 방금 떠난 문서 제외 창
+// [E24-M1] 최근 미처리 view 제목 — "방금 떠난 문서"(ended, 집계 전)와 "다른 탭에서
+// 열람 중"(30초 heartbeat가 updated_at 갱신)을 서빙 시점에 제외. updated_at이 오래된
+// 고아 view는 제외하지 않는다 — 24h 고아 집계 [B3]에 맡겨 추천 구멍을 막는다.
+function pendingViewTitles(events, now) {
+  return events.filter((e) => e.processed !== 1 && now - e.updated_at < PENDING_VIEW_MS)
+               .map((e) => e.title);
 }
 
 // [G1] 출처별 섹션 그룹핑 — 라운드로빈 rank 순 입력에서 첫 등장 순 = 그룹 최고점 순,
@@ -123,5 +132,5 @@ function softNavigate(path, w, d) {
 if (typeof module !== "undefined") {
   module.exports = { SHARD_BASE, NAMESPACES, FALLBACK_SIM, LONG_READ_MS, DOC_GLYPH,
     isNamespace, isHanjaOnly, fnv1a32, shardIdOf, shardPath, docPathOf, docUrlOf, josaOf, reasonText,
-    presentableRows, softNavigate, fmtDwell, groupRows };
+    presentableRows, softNavigate, fmtDwell, groupRows, pendingViewTitles };
 }

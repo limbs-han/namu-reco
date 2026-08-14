@@ -1,7 +1,11 @@
 // popup.js — §4.7 [J8]: recommendations 전 행을 rank 순으로 표시. 표시·클릭 이상 기능 없음(§0).
 (async () => {
-  const rows = presentableRows(   // [UX-A3] 렌더 시점 정화 — sw 메시지 경로와 같은 관문
-    await db.txn(["recommendations"], "readonly", (tx) => tx.getAll("recommendations")));
+  // [UX-A3] 렌더 시점 정화 + [E24-M1] 방금 떠난 문서·열람 중 문서 제외 — sw 경로와 같은 관문.
+  // (현재 탭 문서 제외는 없음 — 팝업은 새 탭 의미론, tabs 권한 미보유)
+  const rows = await db.txn(["recommendations", "events"], "readonly", async (tx) =>
+    presentableRows(await tx.getAll("recommendations"),
+      pendingViewTitles(await tx.indexGetAll("events", "processed", IDBKeyRange.only(0)),
+                        Date.now())));
 
   const list = document.getElementById("list");
   const empty = document.getElementById("empty");
