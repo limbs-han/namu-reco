@@ -89,22 +89,16 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
       if (child !== head && child !== ul) child.remove();
     }
     box.querySelectorAll("progress, [role=progressbar]").forEach((el) => el.remove());
-    if (head) {                                  // [n3] 링크가 아닌 헤더 — a를 span으로 교체
-      const h = document.createElement("span");
-      h.setAttribute("class", head.getAttribute("class") || "");
-      // [UX-05] 사이트 CSS가 a 태그 선택자로 타이포를 주면 span은 잃는다(재검증 실측:
-      // 400/15px 회색) — 실문서 쪽 원본 헤더의 computed 값을 인라인 이식.
-      const orig = [...widget.children].find((c) => c.tagName === "A");
-      if (orig) {
-        const cs = getComputedStyle(orig);
-        Object.assign(h.style, { fontSize: cs.fontSize, fontWeight: cs.fontWeight,
-                                 color: cs.color });
-      }
-      Object.assign(h.style, { display: "flex", alignItems: "center", gap: "6px" });
+    if (head) {                                // [n3·UX-B4] 헤더는 클론된 a를 그대로 유지 —
+      head.removeAttribute("href");            // 사이트 CSS(a 선택자 — UX-05 실측 근거)가
+      head.style.pointerEvents = "none";       // 타이포·색을 실시간 공급해 테마 토글 즉시 추종.
+                                               // computed 색 박제(v0.6.1)는 토글 시 이전 테마
+                                               // 색이 잔존(UX-B4) — 삭제. 링크 아님 [n3] 유지.
+      Object.assign(head.style, { display: "flex", alignItems: "center", gap: "6px" });
+      while (head.firstChild) head.firstChild.remove();
       const ih = document.createElement("span");
-      ih.innerHTML = DOC_GLYPH;                  // [UX-05] 최근 변경(시계 아이콘)과 위계 대칭
-      h.append(ih.firstChild, document.createTextNode("연관 문서"));
-      head.replaceWith(h);
+      ih.innerHTML = DOC_GLYPH;                // [UX-05] 최근 변경(시계 아이콘)과 위계 대칭
+      head.append(ih.firstChild, document.createTextNode("연관 문서"));
     }
     const tpl = ul && ul.querySelector("li");
     if (!ul || !tpl) return null;                  // 구조 상이 — 표시 포기
