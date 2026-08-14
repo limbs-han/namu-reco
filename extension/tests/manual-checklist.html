@@ -300,6 +300,21 @@ m=importlib.util.module_from_spec(s); s.loader.exec_module(m); print(m.fnv1a32('
 <label>결과 <select data-k="E22"><option></option><option>PASS</option><option>FAIL</option></select></label>
 <textarea data-k="E22m" placeholder="메모"></textarea>
 
+<h2>E23 — v0.6.1 재게이트 (E22 재검증 리포트 확정 10건)</h2>
+<div class="auto">로직 레벨: common(isHanjaOnly·josaOf·문구 4분면·docPathOf)·logic(절단 전 라운드로빈)·related_box(placementSide) 테스트. E22의 M2 문구 기대치는 이 절의 새 문구로 대체.</div>
+<ol>
+  <li>낱글자: 사족보행·이족보행·김치·C#·숙채 + 한자 병기 제목 신규 3건에서 위젯·드롭다운 모두 한자 전용 제목 0건 (새·뱀 등 한글 단음절은 허용).</li>
+  <li>순환: 출처 5개 이상 확보 후 드롭다운 상위 5개 사유 출처가 전부 상이.</li>
+  <li>문구: shard 유래 「X」와(과) 가까운 문서 / 본문 링크 유래 「X」에서 이어지는 문서, 3분 이상 출처만 "오래 읽은" 접두. dwell 4분·6분 케이스로 경계 확인.</li>
+  <li>폭 스윕 840·880·919·950·971·1000px: 위젯이 사이드바(sticky) 또는 본문 끝 직후 중 하나 — 저작권 아래 표류·sticky 잔류 0건. 폭 왕복 중 UX-11(요소 소실) 재현 시도.</li>
+  <li>히트 영역: 위젯 행 텍스트 오른쪽 여백 클릭 무반응 (computed display가 inline-block인지 확인).</li>
+  <li>링크: 드롭다운·위젯 클릭이 소프트 전환(스크롤 유지)이면 이상적, 최소한 정확한 문서 이동. 오프라인에서 클릭해도 공룡 페이지 이탈 없음(소프트 전환 시). 클릭 후 패널 닫힘.</li>
+  <li>픽셀: 특수 기능과 나란히 열어 top 갭·폭·다크 배경 일치. 위젯 헤더가 최근 변경 헤더와 동급 위계(굵기·아이콘).</li>
+  <li>미검증 이월: 툴바 팝업 전 항목 + 첫 설치자 초기화 시나리오 (E22 재검증 리포트 §6 — 사람 손 검증 필수).</li>
+</ol>
+<label>결과 <select data-k="E23"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E23m" placeholder="메모"></textarea>
+
 <footer>
   <button id="dl">검증 기록 다운로드 (JSON)</button>
   <span class="muted">받은 파일을 <code>review/</code>에 커밋해 수행 기록을 남긴다.</span>
