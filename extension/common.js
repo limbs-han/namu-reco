@@ -65,10 +65,19 @@ function reasonText(row) {
   return row.source === "popular" ? "인기 문서" : "";
 }
 
+// [UX-A3] 렌더 시점 정화 — 구버전(≤0.6.0)이 recommendations에 남긴 한자 낱글자는
+// 다음 rebuild 전까지 저장분 그대로다(업그레이드 직후가 정확히 이 창). 모든 표시
+// 경로(드롭다운 = sw 메시지, 팝업 = IDB 직독)는 이 관문을 통과한다 — 필터 규칙이
+// 바뀌어도 여기 한 곳. 마이그레이션 금지 원칙 유지.
+function presentableRows(rows) {
+  return rows.filter((r) => !isHanjaOnly(r.title)).sort((a, b) => a.rank - b.rank);
+}
+
 // [G4] Node 접근용 가드 export — 반드시 파일 말미, 이 형태 그대로.
 //      브라우저(content script·classic SW)에서는 typeof 검사가 false라 건너뛰므로 무해.
 //      가드 없는 module.exports는 sw.js의 importScripts에서 예외 → 확장 전체 무동작 — 금지.
 if (typeof module !== "undefined") {
   module.exports = { SHARD_BASE, NAMESPACES, FALLBACK_SIM, LONG_READ_MS, DOC_GLYPH,
-    isNamespace, isHanjaOnly, fnv1a32, shardIdOf, shardPath, docPathOf, docUrlOf, josaOf, reasonText };
+    isNamespace, isHanjaOnly, fnv1a32, shardIdOf, shardPath, docPathOf, docUrlOf, josaOf, reasonText,
+    presentableRows };
 }

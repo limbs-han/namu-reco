@@ -109,7 +109,7 @@ if (typeof chrome !== "undefined" && chrome.runtime) {
   chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     if (msg && msg.type === "get_recommendations") {
       db.txn(["recommendations"], "readonly", (tx) => tx.getAll("recommendations"))
-        .then((rows) => sendResponse(rows.sort((a, b) => a.rank - b.rank)))
+        .then((rows) => sendResponse(presentableRows(rows)))   // [UX-A3] 렌더 시점 정화
         .catch(() => sendResponse([]));
       return true;                                  // 비동기 sendResponse 유지
     }

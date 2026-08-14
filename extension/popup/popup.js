@@ -1,7 +1,7 @@
 // popup.js — §4.7 [J8]: recommendations 전 행을 rank 순으로 표시. 표시·클릭 이상 기능 없음(§0).
 (async () => {
-  const rows = await db.txn(["recommendations"], "readonly", (tx) => tx.getAll("recommendations"));
-  rows.sort((a, b) => a.rank - b.rank);
+  const rows = presentableRows(   // [UX-A3] 렌더 시점 정화 — sw 메시지 경로와 같은 관문
+    await db.txn(["recommendations"], "readonly", (tx) => tx.getAll("recommendations")));
 
   const list = document.getElementById("list");
   const empty = document.getElementById("empty");

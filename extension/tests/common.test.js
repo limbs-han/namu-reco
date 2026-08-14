@@ -2,7 +2,8 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
 const path = require("node:path");
-const { josaOf, reasonText, LONG_READ_MS, isHanjaOnly, docPathOf, docUrlOf } = require(path.join(__dirname, "..", "common.js"));
+const { josaOf, reasonText, LONG_READ_MS, isHanjaOnly, docPathOf, docUrlOf,
+        presentableRows } = require(path.join(__dirname, "..", "common.js"));
 
 test("[UX-10] docPathOf — 상대 경로 단일 진실원, docUrlOf는 그 합성", () => {
   assert.equal(docPathOf("C#"), "/w/C%23");
@@ -17,6 +18,14 @@ test("[UX-01] isHanjaOnly — 전부 한자면 true, 한글·혼합·영문은 f
   assert.equal(isHanjaOnly("사족보행"), false);
   assert.equal(isHanjaOnly("C#"), false);
   assert.equal(isHanjaOnly(""), false);
+});
+
+test("[UX-A3] presentableRows — rank 정렬 + 한자 전용 제외 (구버전 저장분 렌더 시점 정화)", () => {
+  const rows = [
+    { rank: 3, title: "四" }, { rank: 1, title: "새" },
+    { rank: 4, title: "치타" }, { rank: 2, title: "步" },
+  ];
+  assert.deepEqual(presentableRows(rows).map((r) => r.title), ["새", "치타"]);
 });
 
 test("[m1] 조사 일반화 — 받침 판별, 비한글 끝 글자는 병기", () => {
