@@ -1,12 +1,17 @@
-body { width: 340px; margin: 0; padding: 10px 14px; font-family: system-ui, "Malgun Gothic", sans-serif; }
+/* [FNT] 드롭다운(사이트 body 상속)과 동일 폰트 스택 — 나무위키 실측(2026-08-14).
+   Pretendard는 사이트도 웹폰트가 아니라 로컬 설치 시에만 적용되므로 스택 선언이 곧 일치.
+   번들 금지 — 팝업만 Pretendard가 되면 오히려 드롭다운과 어긋난다. */
+body { width: 340px; margin: 0; padding: 10px 14px;
+  font-family: "Pretendard JP", Pretendard, -apple-system, BlinkMacSystemFont,
+    "Apple SD Gothic Neo", "Noto Sans KR", "Noto Sans CJK KR", NanumBarunGothic,
+    Roboto, "Segoe UI", "Malgun Gothic", sans-serif; }
 h1 { font-size: 1rem; margin: 0 0 8px; }
 #empty { color: #777; font-size: .9rem; }
 ol { margin: 0; padding-left: 1.4rem; }
 li { margin: 6px 0; }
-li a { font-size: .95rem; text-decoration: none; color: #0a58ca; cursor: pointer; }
+li a { font-size: 15px; text-decoration: none; color: #0a58ca; cursor: pointer; }   /* [FNT] 드롭다운 행 15px 실측 */
 li a:hover { text-decoration: underline; }
-li .why { display: block; color: #888; font-size: .78rem; }
-/* [G1·B3] 출처별 섹션 — 헤더는 구 .why 톤, 행은 아이콘+제목 (드롭다운과 시각 언어 통일) */
-.ghead { color: #888; font-size: .78rem; margin: 10px 0 2px; }
+/* [G1·B3] 출처별 섹션 — 행은 아이콘+제목 (드롭다운과 시각 언어 통일) */
+.ghead { color: #888; font-size: 10.5px; margin: 10px 0 2px; }   /* [FNT] 드롭다운 헤더 10.5px */
 #list ul { list-style: none; margin: 0; padding-left: .2rem; }
 #list li a svg { vertical-align: -2px; margin-right: 6px; }
