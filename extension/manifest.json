@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "나무위키 개인화 추천",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "나무위키 열람 기록 기반 문서 추천. 데이터 출처: 나무위키(CC BY-NC-SA 2.0 KR). 모든 기록은 내 브라우저에만 저장됩니다.",
   "minimum_chrome_version": "92",
   "icons": { "16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
