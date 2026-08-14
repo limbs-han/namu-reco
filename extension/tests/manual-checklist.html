@@ -328,6 +328,18 @@ m=importlib.util.module_from_spec(s); s.loader.exec_module(m); print(m.fnv1a32('
 <label>결과 <select data-k="E24"><option></option><option>PASS</option><option>FAIL</option></select></label>
 <textarea data-k="E24m" placeholder="메모"></textarea>
 
+<h2>E25 — v0.6.3 재게이트 (v0.6.2 리포트 Major M1 + 섹션 그룹핑 G1)</h2>
+<div class="auto">로직 레벨: common(presentableRows excludeTitle·groupRows) 테스트.</div>
+<ol>
+  <li>M1: 추천 클릭으로 이동한 문서에서 드롭다운 재개방 → 현재 문서 부재(성대 시나리오 재현). 목록이 1건 짧아질 수 있음은 정상. 신규 문서·비문서 페이지 오작동 없음. 팝업은 제외 없음(새 탭 의미론 — 의도된 차이).</li>
+  <li>G1: 드롭다운·팝업이 출처별 섹션 — 사유 문구는 그룹 헤더에 1회, 행은 아이콘+제목. 그룹 내 점수순, 그룹 순서 = 그룹 최고점. <strong>다양성 요건 재정의: 섹션 수 = 출처 수</strong>(구 E23 "상위 5개 출처 상이" 대체 — 인접 행 연관성 회복이 목적).</li>
+  <li>B3 해소: 팝업 행이 번호 대신 아이콘+제목 — 드롭다운과 시각 언어 일치. 클릭 시 새 탭 정상.</li>
+  <li>콜드스타트: 20건 전부 "인기 문서" 단일 섹션으로 표시되는지(헤더 1개 + 20행 — 반복 문구 20줄보다 개선 확인).</li>
+  <li>이월: Minor 3건(자동 업데이트 조용한 수집 중단 / ctrl+클릭 시 패널 닫힘 — 다음 라운드 1순위, 1줄 수정 / 디버그 0초 항목) + Nit(헤더 a 태그) + dwell 경계(4라운드째) + 오프라인 클릭.</li>
+</ol>
+<label>결과 <select data-k="E25"><option></option><option>PASS</option><option>FAIL</option></select></label>
+<textarea data-k="E25m" placeholder="메모"></textarea>
+
 <footer>
   <button id="dl">검증 기록 다운로드 (JSON)</button>
   <span class="muted">받은 파일을 <code>review/</code>에 커밋해 수행 기록을 남긴다.</span>
