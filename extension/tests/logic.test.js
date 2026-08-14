@@ -109,6 +109,15 @@ test("[M3] 빈 배열·단일 그룹은 순서 그대로", () => {
   assert.deepEqual(swLogic.interleaveBySource(one).map((r) => r.title), ["x", "y"]);
 });
 
+test("[UX-02] scoreCandidates — 한자 전용 후보는 소스 불문 제외, 상한 5 슬롯 미소모", () => {
+  const nbrs = [["四", 0.99, 0.9], ["N1", 0.9, 0], ["N2", 0.8, 0],
+                ["N3", 0.7, 0], ["N4", 0.6, 0], ["N5", 0.5, 0]];
+  const out = swLogic.scoreCandidates(
+    [{ title: "사족보행", w: 2, dwell: 0, nbrs, source: "shard" }], new Set());
+  // 四 제외 + 슬롯 미소모 → N1..N5 다섯 개 전부 살아남는다
+  assert.deepEqual(out.map((o) => o.title).sort(), ["N1", "N2", "N3", "N4", "N5"].sort());
+});
+
 test("E4 로직: LRU 퇴출 — last_used 오래된 순, 상한 이하까지만", () => {
   const metas = [
     { shard_id: 1, size_bytes: 60, last_used: 300 },

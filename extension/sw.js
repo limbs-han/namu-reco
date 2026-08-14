@@ -37,7 +37,9 @@ const swLogic = {
     for (const v of perSource) {
       let used = 0;
       for (const [title, sim, pr] of v.nbrs) {
-        if (visited.has(title)) continue;         // 방문 문서 제외
+        if (visited.has(title) || isHanjaOnly(title)) continue;   // 방문·한자 전용 제외 [UX-02]
+                                                  // used++ 이전 skip — 상한 5 슬롯 미소모,
+                                                  // 구버전 local_nbr의 오염 행도 소비 시점 정화
         if (used >= 5) break;                     // 출처 문서당 후보 상한 5
         used++;
         const contrib = v.w * sim;

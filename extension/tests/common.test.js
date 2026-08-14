@@ -2,7 +2,16 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
 const path = require("node:path");
-const { eulReul, reasonText, LONG_READ_MS } = require(path.join(__dirname, "..", "common.js"));
+const { eulReul, reasonText, LONG_READ_MS, isHanjaOnly } = require(path.join(__dirname, "..", "common.js"));
+
+test("[UX-01] isHanjaOnly — 전부 한자면 true, 한글·혼합·영문은 false", () => {
+  assert.equal(isHanjaOnly("四"), true);
+  assert.equal(isHanjaOnly("四足步行"), true);
+  assert.equal(isHanjaOnly("새"), false);
+  assert.equal(isHanjaOnly("사족보행"), false);
+  assert.equal(isHanjaOnly("C#"), false);
+  assert.equal(isHanjaOnly(""), false);
+});
 
 test("[m1] 목적격 조사 — 받침 유무 판별, 비한글 끝 글자는 병기", () => {
   assert.equal(eulReul("대한민국"), "을");

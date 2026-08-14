@@ -18,6 +18,12 @@ function isNamespace(title) {
   const i = title.indexOf(":");
   return i > 0 && NAMESPACES.includes(title.slice(0, i));
 }
+// [UX-01·02] 한자 전용 제목 판정 — 한자 병기 관례(사족보행(四足步行))가 낱글자 문서
+// 링크를 본문 선두에 심는다. 사용자 결정: 길이 무관, 전부 한자면 추천 후보에서 제외.
+// 한글·혼합 제목(이족보행 등)은 통과. Chrome 92+·Node 모두 \p{Script=Han} 지원.
+function isHanjaOnly(title) {
+  return /^\p{Script=Han}+$/u.test(title);
+}
 function shardIdOf(title) { return fnv1a32(title.normalize("NFC")) % 1024; }   // [F8]
 function shardPath(id)    { return `nbr/${String(id).padStart(4, "0")}.json.gz`; }
 function docUrlOf(title) {                                     // [J2] 추천 클릭 URL — O5(g)가 게이트.
@@ -49,5 +55,5 @@ function reasonText(row) {
 //      가드 없는 module.exports는 sw.js의 importScripts에서 예외 → 확장 전체 무동작 — 금지.
 if (typeof module !== "undefined") {
   module.exports = { SHARD_BASE, NAMESPACES, FALLBACK_SIM, LONG_READ_MS,
-    isNamespace, fnv1a32, shardIdOf, shardPath, docUrlOf, eulReul, reasonText };
+    isNamespace, isHanjaOnly, fnv1a32, shardIdOf, shardPath, docUrlOf, eulReul, reasonText };
 }

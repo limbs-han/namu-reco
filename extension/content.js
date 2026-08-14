@@ -56,7 +56,9 @@ const namuContent = {
       } catch (e) {
         continue;                              // URIError 앵커는 건너뜀 [H3]
       }
-      if (t && !isNamespace(t)) count.set(t, (count.get(t) || 0) + 1);   // [N1] 네임스페이스 제외
+      if (t && !isNamespace(t) && !isHanjaOnly(t)) {   // [N1] 네임스페이스 + [UX-01] 한자 전용 제외
+        count.set(t, (count.get(t) || 0) + 1);
+      }
     }
     return [...count.keys()]
       .sort((x, y) => count.get(y) - count.get(x))   // 빈도 내림차순 — Array.sort는 안정 정렬

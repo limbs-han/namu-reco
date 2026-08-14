@@ -73,6 +73,13 @@ test("[M1] table 내부 앵커(틀·정보상자)는 카운트 제외", () => {
   assert.deepEqual(namuContent.collectLinks(fakeRoot([inTable, inBody])), ["본문문서"]);
 });
 
+test("[UX-01] 한자 전용 제목은 수집 제외 — 한글 단음절(새)은 유지", () => {
+  const enc = (t) => ({ pathname: "/w/" + encodeURIComponent(t) });
+  assert.deepEqual(
+    namuContent.collectLinks(fakeRoot([enc("四"), enc("새"), enc("치타")])),
+    ["새", "치타"]);
+});
+
 test("[J4] 상한 40개", () => {
   const anchors = Array.from({ length: 50 }, (_, i) => ({ pathname: `/w/doc${i}` }));
   assert.equal(namuContent.collectLinks(fakeRoot(anchors)).length, 40);
