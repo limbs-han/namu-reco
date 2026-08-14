@@ -90,9 +90,20 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
     }
     box.querySelectorAll("progress, [role=progressbar]").forEach((el) => el.remove());
     if (head) {                                  // [n3] 링크가 아닌 헤더 — a를 span으로 교체
-      const h = document.createElement("span");  //      (스크린리더에 죽은 링크로 안 읽히게)
-      h.setAttribute("class", head.getAttribute("class") || "");   // 타이포 클래스 유지
-      h.textContent = "연관 문서";
+      const h = document.createElement("span");
+      h.setAttribute("class", head.getAttribute("class") || "");
+      // [UX-05] 사이트 CSS가 a 태그 선택자로 타이포를 주면 span은 잃는다(재검증 실측:
+      // 400/15px 회색) — 실문서 쪽 원본 헤더의 computed 값을 인라인 이식.
+      const orig = [...widget.children].find((c) => c.tagName === "A");
+      if (orig) {
+        const cs = getComputedStyle(orig);
+        Object.assign(h.style, { fontSize: cs.fontSize, fontWeight: cs.fontWeight,
+                                 color: cs.color });
+      }
+      Object.assign(h.style, { display: "flex", alignItems: "center", gap: "6px" });
+      const ih = document.createElement("span");
+      ih.innerHTML = DOC_GLYPH;                  // [UX-05] 최근 변경(시계 아이콘)과 위계 대칭
+      h.append(ih.firstChild, document.createTextNode("연관 문서"));
       head.replaceWith(h);
     }
     const tpl = ul && ul.querySelector("li");
@@ -108,6 +119,13 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
       a.querySelector("time")?.remove();           // 시각 자리 제거 (연관도엔 불필요)
       const label = a.querySelector("span") || a;
       label.textContent = r.title;
+      const rih = document.createElement("span");   // [UX-04] 드롭다운 항목과 같은 문서 글리프
+      rih.innerHTML = DOC_GLYPH;
+      const ricon = rih.firstChild;
+      ricon.setAttribute("width", "14");
+      ricon.setAttribute("height", "14");
+      Object.assign(ricon.style, { marginRight: "6px", verticalAlign: "-2px" });
+      a.prepend(ricon);
       // [m3/UX-03] 사이트 CSS가 display를 !important로 강제(v0.6.0 인라인 스타일 패배 실측)
       // — 인라인 important는 모든 시트 규칙에 우선한다. width:auto = shrink-to-fit.
       a.style.setProperty("display", "inline-block", "important");

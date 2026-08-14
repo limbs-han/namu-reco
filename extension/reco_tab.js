@@ -11,13 +11,7 @@
 const TAB_ID = "namu-reco-tab";
 const PANEL_ID = "namu-reco-panel";
 const RECHECK_MS = 1000;              // SPA 재렌더 생존: 존재 확인 후 재주입
-
-// 문서 글리프 svg — 사이트 아이콘 문법과 동일한 solid fill·currentColor. 탭·패널 항목 공용.
-const DOC_GLYPH =
-  '<svg width="16" height="16" viewBox="0 0 448 512" aria-hidden="true">' +
-  '<path fill="currentColor" fill-rule="evenodd" d="M80 0C44.7 0 16 28.7 16 64v384' +
-  'c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V160H288c-17.7 0-32-14.3-32-32V0H80z' +
-  'M288 0v128h144L288 0zM112 240h224v40H112v-40zm0 104h224v40H112v-40z"/></svg>';
+// DOC_GLYPH는 common.js로 이관 [UX-04] — 탭·드롭다운 항목·연관 문서 위젯 공용
 
 const recoTab = {
   // 메뉴 컨테이너 = "최근 변경"(/RecentChanges) 앵커의 부모. 사이트 변형 대비

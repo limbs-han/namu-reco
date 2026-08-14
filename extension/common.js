@@ -24,6 +24,14 @@ function isNamespace(title) {
 function isHanjaOnly(title) {
   return /^\p{Script=Han}+$/u.test(title);
 }
+// 문서 글리프 svg — 사이트 아이콘 문법과 동일한 solid fill·currentColor.
+// 추천 탭·드롭다운 항목·연관 문서 위젯 공용 [UX-04 시각 언어 통일].
+const DOC_GLYPH =
+  '<svg width="16" height="16" viewBox="0 0 448 512" aria-hidden="true">' +
+  '<path fill="currentColor" fill-rule="evenodd" d="M80 0C44.7 0 16 28.7 16 64v384' +
+  'c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V160H288c-17.7 0-32-14.3-32-32V0H80z' +
+  'M288 0v128h144L288 0zM112 240h224v40H112v-40zm0 104h224v40H112v-40z"/></svg>';
+
 function shardIdOf(title) { return fnv1a32(title.normalize("NFC")) % 1024; }   // [F8]
 function shardPath(id)    { return `nbr/${String(id).padStart(4, "0")}.json.gz`; }
 function docPathOf(title) {                                    // [UX-10] 페이지 내 앵커용 상대 경로 —
@@ -61,6 +69,6 @@ function reasonText(row) {
 //      브라우저(content script·classic SW)에서는 typeof 검사가 false라 건너뛰므로 무해.
 //      가드 없는 module.exports는 sw.js의 importScripts에서 예외 → 확장 전체 무동작 — 금지.
 if (typeof module !== "undefined") {
-  module.exports = { SHARD_BASE, NAMESPACES, FALLBACK_SIM, LONG_READ_MS,
+  module.exports = { SHARD_BASE, NAMESPACES, FALLBACK_SIM, LONG_READ_MS, DOC_GLYPH,
     isNamespace, isHanjaOnly, fnv1a32, shardIdOf, shardPath, docPathOf, docUrlOf, josaOf, reasonText };
 }
