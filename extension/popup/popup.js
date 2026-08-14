@@ -5,9 +5,8 @@
 
   const list = document.getElementById("list");
   const empty = document.getElementById("empty");
-  if (!rows.length) {                 // 설치 직후 첫 알람 전 등
+  if (!rows.length) {                 // 설치 직후 첫 알람 전 등 — 디버그 영역은 계속 렌더
     empty.hidden = false;
-    return;
   }
   for (const r of rows) {
     const li = document.createElement("li");
@@ -20,5 +19,16 @@
     why.textContent = reasonText(r);  // §4.7 [J8] 단일 진실원 — common.js
     li.append(a, why);
     list.append(li);
+  }
+
+  // [§7] 디버그 — profile 직독 (dwell 경계 실측용, SW 무경유. 팝업은 확장 origin)
+  const prof = await db.txn(["profile"], "readonly", (tx) => tx.getAll("profile"));
+  prof.sort((a, b) => (b.dwell_ms_total || 0) - (a.dwell_ms_total || 0));
+  const dbg = document.getElementById("debug-rows");
+  for (const p of prof) {
+    const li = document.createElement("li");
+    li.textContent = `${p.title} — ${fmtDwell(p.dwell_ms_total || 0)}` +
+      ((p.dwell_ms_total || 0) >= LONG_READ_MS ? " · 오래 읽음" : "");
+    dbg.append(li);
   }
 })();

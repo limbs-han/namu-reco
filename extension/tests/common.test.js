@@ -3,7 +3,13 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 const path = require("node:path");
 const { josaOf, reasonText, LONG_READ_MS, isHanjaOnly, docPathOf, docUrlOf,
-        presentableRows, softNavigate } = require(path.join(__dirname, "..", "common.js"));
+        presentableRows, softNavigate, fmtDwell } = require(path.join(__dirname, "..", "common.js"));
+
+test("[§7] fmtDwell — 분·초 표기 (dwell 경계 실측용 디버그)", () => {
+  assert.equal(fmtDwell(288000), "4분 48초");
+  assert.equal(fmtDwell(0), "0분 0초");
+  assert.equal(fmtDwell(LONG_READ_MS), "3분 0초");
+});
 
 test("[UX-10] docPathOf — 상대 경로 단일 진실원, docUrlOf는 그 합성", () => {
   assert.equal(docPathOf("C#"), "/w/C%23");

@@ -73,6 +73,11 @@ function presentableRows(rows) {
   return rows.filter((r) => !isHanjaOnly(r.title)).sort((a, b) => a.rank - b.rank);
 }
 
+function fmtDwell(ms) {   // [§7] 디버그 표기 — 검증 라운드의 dwell 경계 실측용 (E24)
+  const s = Math.floor(ms / 1000);
+  return `${Math.floor(s / 60)}분 ${s % 60}초`;
+}
+
 // [UX-B6] 소프트 전환 — the seed(Vue)는 앵커별 직접 리스너라 확장 DOM 앵커는 하드
 // 내비게이션이 기본. 라우터의 popstate 구독을 이용한다(스파이크 실측 2026-08-14:
 // 전진 3회+back 소프트 성공, popstate 후 #app 첫 변이 8.5ms — 로컬 렌더라 회선 무관).
@@ -100,5 +105,5 @@ function softNavigate(path, w, d) {
 if (typeof module !== "undefined") {
   module.exports = { SHARD_BASE, NAMESPACES, FALLBACK_SIM, LONG_READ_MS, DOC_GLYPH,
     isNamespace, isHanjaOnly, fnv1a32, shardIdOf, shardPath, docPathOf, docUrlOf, josaOf, reasonText,
-    presentableRows, softNavigate };
+    presentableRows, softNavigate, fmtDwell };
 }
