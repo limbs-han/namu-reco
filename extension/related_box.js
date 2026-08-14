@@ -120,6 +120,10 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
       ricon.setAttribute("height", "14");
       Object.assign(ricon.style, { marginRight: "6px", verticalAlign: "-2px" });
       a.prepend(ricon);
+      a.addEventListener("click", (e) => {       // [UX-B6] 소프트 전환 — 수정자·비좌클릭 통과
+        if (e.button === 0 && !e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey &&
+            softNavigate(r.href)) e.preventDefault();
+      });
       // [m3/UX-03] 사이트 CSS가 display를 !important로 강제(v0.6.0 인라인 스타일 패배 실측)
       // — 인라인 important는 모든 시트 규칙에 우선한다. width:auto = shrink-to-fit.
       a.style.setProperty("display", "inline-block", "important");

@@ -73,11 +73,32 @@ function presentableRows(rows) {
   return rows.filter((r) => !isHanjaOnly(r.title)).sort((a, b) => a.rank - b.rank);
 }
 
+// [UX-B6] 소프트 전환 — the seed(Vue)는 앵커별 직접 리스너라 확장 DOM 앵커는 하드
+// 내비게이션이 기본. 라우터의 popstate 구독을 이용한다(스파이크 실측 2026-08-14:
+// 전진 3회+back 소프트 성공, popstate 후 #app 첫 변이 8.5ms — 로컬 렌더라 회선 무관).
+// 3초 내 변이 0 = 라우터 침묵(사이트 개편 등) → 하드 폴백 — 최악이 현행과 동일.
+// w/d는 Node 테스트 어댑터 — 브라우저 호출은 생략(호출 시점에만 window·document 평가 [G4]).
+function softNavigate(path, w, d) {
+  w = w || window; d = d || document;
+  const app = d.getElementById("app");
+  if (!app) return false;                        // SPA 루트 부재 — 기본 내비 유지
+  w.history.pushState(null, "", path);
+  w.dispatchEvent(new w.PopStateEvent("popstate", { state: null }));
+  let alive = false;
+  const mo = new w.MutationObserver(() => { alive = true; mo.disconnect(); });
+  mo.observe(app, { childList: true, subtree: true, attributes: true });
+  w.setTimeout(() => {
+    mo.disconnect();
+    if (!alive) w.location.href = path;          // 데드맨 — 하드 폴백
+  }, 3000);
+  return true;
+}
+
 // [G4] Node 접근용 가드 export — 반드시 파일 말미, 이 형태 그대로.
 //      브라우저(content script·classic SW)에서는 typeof 검사가 false라 건너뛰므로 무해.
 //      가드 없는 module.exports는 sw.js의 importScripts에서 예외 → 확장 전체 무동작 — 금지.
 if (typeof module !== "undefined") {
   module.exports = { SHARD_BASE, NAMESPACES, FALLBACK_SIM, LONG_READ_MS, DOC_GLYPH,
     isNamespace, isHanjaOnly, fnv1a32, shardIdOf, shardPath, docPathOf, docUrlOf, josaOf, reasonText,
-    presentableRows };
+    presentableRows, softNavigate };
 }

@@ -98,8 +98,13 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
       a.append(icon, col);
       a.addEventListener("mouseenter", () => { a.style.background = dark() ? "rgba(255,255,255,.06)" : "rgba(0,0,0,.045)"; });
       a.addEventListener("mouseleave", () => { a.style.background = "transparent"; });
-      a.addEventListener("click", () => closePanel());   // [UX-10] 소프트 전환이면 리로드가 없어
-                                                         // 패널이 안 사라진다 — 직접 닫는다
+      a.addEventListener("click", (e) => {
+        if (e.button === 0 && !e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey &&
+            softNavigate(recoTab.itemHref(r.title))) {
+          e.preventDefault();       // [UX-B6] 소프트 전환 성사 — 하드 내비 취소.
+        }                           //         수정자·비좌클릭은 기본 동작(새 탭 등) 보존
+        closePanel();               // [UX-10] 소프트 전환이면 리로드가 없어 직접 닫는다
+      });
       panel.append(a);
     }
     wrapper.append(panel);
