@@ -101,7 +101,10 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
       a.querySelector("time")?.remove();           // 시각 자리 제거 (연관도엔 불필요)
       const label = a.querySelector("span") || a;
       label.textContent = r.title;
-      a.style.display = "inline-block";          // [m3] 클릭 영역 = 텍스트 폭 (행 전체 오클릭 방지)
+      // [m3/UX-03] 사이트 CSS가 display를 !important로 강제(v0.6.0 인라인 스타일 패배 실측)
+      // — 인라인 important는 모든 시트 규칙에 우선한다. width:auto = shrink-to-fit.
+      a.style.setProperty("display", "inline-block", "important");
+      a.style.setProperty("width", "auto", "important");
       a.style.maxWidth = "100%";
       ul.append(li);
     }
