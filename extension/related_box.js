@@ -45,6 +45,12 @@ const relatedBox = {
     return widgetRect.left >= contentRect.right || contentRect.left >= widgetRect.right;
   },
 
+  // [UX-09] 배치 결정 — 렌더 전(0×0) 위젯은 rect를 믿을 수 없으니 본문 흐름으로.
+  placementSide(widgetRect, contentRect) {
+    if (!widgetRect.width || !widgetRect.height) return false;
+    return relatedBox.isSideBySide(widgetRect, contentRect);
+  },
+
   // 본문 링크 배열 → 표시 행. 자기 자신(목차 앵커 유래) 제외, 상위 n개.
   rowData(links, selfTitle, n = RELATED_TOP_N) {
     return links.filter((t) => t !== selfTitle).slice(0, n)
@@ -57,6 +63,7 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
   let timer = null;
   let warned = false;
   let lastTitle = null;
+  let lastWidth = window.innerWidth;               // [UX-09] 폭 변경 감지 기준
   let pendingTitle = null;                         // 1틱 디바운스 — DOM 렌더 대기
   let retry = { title: null, left: 0 };            // 빈 수집 재시도 예산 (문서당 5회)
 
@@ -110,8 +117,9 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
     }
     const content = globalThis.namuContent
       ? namuContent.findContentRoot(document) : null;
-    const side = !content || relatedBox.isSideBySide(
+    const side = !content || relatedBox.placementSide(
       widget.getBoundingClientRect(), content.getBoundingClientRect());
+    box.dataset.side = side ? "1" : "0";         // [UX-09] 드리프트 감시 기준값
     if (side) {
       // 스크롤 추종(사용자 요구): 레일이 본문 전체 높이(실측 50,762px·flex·overflow
       // visible)라 sticky가 성립한다. 고정 헤더 없음 → top 12px. 사이트 위젯과 같은
@@ -123,7 +131,9 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
       widget.parentElement.insertBefore(box, widget.nextSibling);   // "최근 변경 바로 밑"
     } else {
       // [m2] 좁은 창 — 본문 끝 직후. 하단 최근 변경 목록·푸터보다 위라서 끝까지
-      // 읽은 사용자가 자연스럽게 만난다 ("다음에 읽을 문서" 자리). sticky 미적용.
+      // 읽은 사용자가 자연스럽게 만난다 ("다음에 읽을 문서" 자리).
+      // sticky류 명시적 해제 — 919~971px에서 sticky 잔류 실측 [UX-09].
+      Object.assign(box.style, { position: "", top: "", zIndex: "" });
       content.parentElement.insertBefore(box, content.nextSibling);
     }
     return box;
@@ -131,6 +141,10 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
 
   const refresh = () => {
     if (!chrome.runtime?.id) { stop(); return; }   // [K3] — 타이머 정리용 (네트워크·메시징 없음)
+    if (window.innerWidth !== lastWidth) {         // [UX-09] 폭 변경 — 배치 전면 재평가
+      lastWidth = window.innerWidth;
+      if (document.getElementById(RELATED_BOX_ID)) { removeBox(); lastTitle = null; }
+    }
     const title = globalThis.namuContent ? namuContent.viewTitleFor(location.pathname) : null;
     if (!title) {                                  // 대문·네임스페이스·비-/w/ — 박스 없음
       lastTitle = null;
@@ -138,8 +152,18 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
       removeBox();
       return;
     }
-    if (title === lastTitle &&
-        (document.getElementById(RELATED_BOX_ID) || retry.left <= 0)) return;   // 표시됨·미표시 확정
+    const existing = document.getElementById(RELATED_BOX_ID);
+    if (title === lastTitle && existing) {
+      // [UX-09] 배치 드리프트 감시 — 부트 땐 사이드바였다가 사이트가 폭 불변으로
+      // 사이드바를 본문 아래로 접으면(919~971px 실측) sticky 잔류 + 최하단 표류가 된다.
+      const content = namuContent.findContentRoot(document);
+      const drifted = content && (existing.dataset.side === "1") !==
+        relatedBox.isSideBySide(existing.getBoundingClientRect(), content.getBoundingClientRect());
+      if (!drifted) return;                        // 표시됨 + 배치 일치 — 정상
+      removeBox();
+      lastTitle = null;                            // 같은 틱에서 새 배치로 재구축
+    }
+    if (title === lastTitle && retry.left <= 0) return;   // 미표시 확정 유지
     if (title !== pendingTitle) {                  // 제목이 방금 바뀜 — DOM 렌더를 1틱 대기
       pendingTitle = title;                        // (URL이 DOM보다 먼저 바뀌는 소프트 전환 특성)
       return;

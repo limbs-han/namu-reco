@@ -48,6 +48,15 @@ test("[m2] 레이아웃 판정 — 가로 분리(사이드바)면 true, 세로 �
   assert.equal(relatedBox.isSideBySide({ left: 100, right: 900 }, { left: 950, right: 1300 }), true);
 });
 
+test("[UX-09] placementSide — 숨은(0×0) 위젯은 본문 흐름, 가로 분리만 사이드바", () => {
+  assert.equal(relatedBox.placementSide(
+    { left: 0, right: 0, width: 0, height: 0 }, { left: 100, right: 900 }), false);
+  assert.equal(relatedBox.placementSide(
+    { left: 1000, right: 1300, width: 300, height: 200 }, { left: 100, right: 900 }), true);
+  assert.equal(relatedBox.placementSide(
+    { left: 100, right: 900, width: 800, height: 300 }, { left: 100, right: 900 }), false);
+});
+
 test("행 데이터 — 본문 링크를 자기 제외·상위 10개 {title, href}로", () => {
   const links = ["현재문서", ...Array.from({ length: 15 }, (_, i) => `문서${i}`)];
   const rows = relatedBox.rowData(links, "현재문서");
