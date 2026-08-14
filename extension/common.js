@@ -33,19 +33,23 @@ function docUrlOf(title) {                                     // [J2] 추천 �
 
 const LONG_READ_MS = 3 * 60 * 1000;   // [M2] 사유 "오래 읽으셔서" 문턱 — 누적 체류 3분
 
-function eulReul(word) {              // [m1] 목적격 조사 — 마지막 글자 받침 기준, 비한글은 병기
+function josaOf(word, withBatchim, without) {   // [m1] 조사 — 끝 글자 받침 기준, 비한글은 병기
   const c = word.charCodeAt(word.length - 1);
-  if (c < 0xAC00 || c > 0xD7A3) return "을(를)";
-  return (c - 0xAC00) % 28 ? "을" : "를";
+  if (c < 0xAC00 || c > 0xD7A3) return `${withBatchim}(${without})`;
+  return (c - 0xAC00) % 28 ? withBatchim : without;
 }
 
 // §4.7 [J8] 추천 사유 문구 — 단일 진실원 (reco_tab·popup 공용, 여기 외 정의 금지).
-// [M2] 체류 계층: 3분 이상만 "오래", 미만·미상(reason_dwell_ms 없는 구버전 행)은
-// "읽으셔서" — 20초 열람에 "오래 읽으셔서"를 붙이던 과장 제거.
+// [UX-06] 출처 × 체류 분화 — 전부 데이터로 증명 가능한 표현만:
+// shard = 링크 그래프 유사도("가까운"), fallback = X 본문의 실제 링크("이어지는").
+// "함께 읽히는" 같은 행동 데이터 주장 금지 [M2 과장 재발 방지].
 function reasonText(row) {
   if (row.reason_title) {
-    const long = (row.reason_dwell_ms || 0) >= LONG_READ_MS;
-    return `「${row.reason_title}」${eulReul(row.reason_title)} ${long ? "오래 " : ""}읽으셔서`;
+    const t = row.reason_title;
+    const long = (row.reason_dwell_ms || 0) >= LONG_READ_MS ? "오래 읽은 " : "";
+    return row.source === "shard"
+      ? `${long}「${t}」${josaOf(t, "과", "와")} 가까운 문서`
+      : `${long}「${t}」에서 이어지는 문서`;
   }
   return row.source === "popular" ? "인기 문서" : "";
 }
@@ -55,5 +59,5 @@ function reasonText(row) {
 //      가드 없는 module.exports는 sw.js의 importScripts에서 예외 → 확장 전체 무동작 — 금지.
 if (typeof module !== "undefined") {
   module.exports = { SHARD_BASE, NAMESPACES, FALLBACK_SIM, LONG_READ_MS,
-    isNamespace, isHanjaOnly, fnv1a32, shardIdOf, shardPath, docUrlOf, eulReul, reasonText };
+    isNamespace, isHanjaOnly, fnv1a32, shardIdOf, shardPath, docUrlOf, josaOf, reasonText };
 }

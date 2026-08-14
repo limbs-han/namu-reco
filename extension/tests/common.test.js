@@ -2,7 +2,7 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
 const path = require("node:path");
-const { eulReul, reasonText, LONG_READ_MS, isHanjaOnly } = require(path.join(__dirname, "..", "common.js"));
+const { josaOf, reasonText, LONG_READ_MS, isHanjaOnly } = require(path.join(__dirname, "..", "common.js"));
 
 test("[UX-01] isHanjaOnly — 전부 한자면 true, 한글·혼합·영문은 false", () => {
   assert.equal(isHanjaOnly("四"), true);
@@ -13,19 +13,22 @@ test("[UX-01] isHanjaOnly — 전부 한자면 true, 한글·혼합·영문은 f
   assert.equal(isHanjaOnly(""), false);
 });
 
-test("[m1] 목적격 조사 — 받침 유무 판별, 비한글 끝 글자는 병기", () => {
-  assert.equal(eulReul("대한민국"), "을");
-  assert.equal(eulReul("사족보행"), "을");
-  assert.equal(eulReul("하츠네 미쿠"), "를");
-  assert.equal(eulReul("C#"), "을(를)");
+test("[m1] 조사 일반화 — 받침 판별, 비한글 끝 글자는 병기", () => {
+  assert.equal(josaOf("치타", "과", "와"), "와");
+  assert.equal(josaOf("대한민국", "과", "와"), "과");
+  assert.equal(josaOf("C#", "과", "와"), "과(와)");
+  assert.equal(josaOf("사족보행", "을", "를"), "을");
 });
 
-test("[M2] 사유 문구 계층 — 3분 이상만 '오래', 미만·미상(구버전 행)은 '읽으셔서'", () => {
-  assert.equal(reasonText({ reason_title: "대한민국", reason_dwell_ms: LONG_READ_MS }),
-               "「대한민국」을 오래 읽으셔서");
-  assert.equal(reasonText({ reason_title: "하츠네 미쿠", reason_dwell_ms: 25000 }),
-               "「하츠네 미쿠」를 읽으셔서");
-  assert.equal(reasonText({ reason_title: "김치" }), "「김치」를 읽으셔서");
+test("[UX-06] 사유 문구 — 출처×체류 4분면 + popular, 과장 표현 금지", () => {
+  assert.equal(reasonText({ reason_title: "치타", source: "shard", reason_dwell_ms: LONG_READ_MS }),
+               "오래 읽은 「치타」와 가까운 문서");
+  assert.equal(reasonText({ reason_title: "대한민국", source: "shard", reason_dwell_ms: 1000 }),
+               "「대한민국」과 가까운 문서");
+  assert.equal(reasonText({ reason_title: "김치", source: "fallback", reason_dwell_ms: LONG_READ_MS }),
+               "오래 읽은 「김치」에서 이어지는 문서");
+  assert.equal(reasonText({ reason_title: "사족보행", source: "fallback" }),
+               "「사족보행」에서 이어지는 문서");   // 구버전 행(dwell 미상) 폴백 포함
   assert.equal(reasonText({ reason_title: null, source: "popular" }), "인기 문서");
   assert.equal(reasonText({ reason_title: null, source: "shard" }), "");
 });
