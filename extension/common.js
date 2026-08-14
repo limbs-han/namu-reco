@@ -69,8 +69,12 @@ function reasonText(row) {
 // 다음 rebuild 전까지 저장분 그대로다(업그레이드 직후가 정확히 이 창). 모든 표시
 // 경로(드롭다운 = sw 메시지, 팝업 = IDB 직독)는 이 관문을 통과한다 — 필터 규칙이
 // 바뀌어도 여기 한 곳. 마이그레이션 금지 원칙 유지.
-function presentableRows(rows) {
-  return rows.filter((r) => !isHanjaOnly(r.title)).sort((a, b) => a.rank - b.rank);
+// [E24-M1] excludeTitle = 현재 열람 문서 — 체류 중인 view는 아직 profile에 없어
+// rebuild의 방문 제외를 비껴간다. "현재 문서"는 탭마다 다르므로 서빙 시점에 뺀다.
+// 팝업(새 탭 의미론)은 미지정 = 제외 없음.
+function presentableRows(rows, excludeTitle) {
+  return rows.filter((r) => !isHanjaOnly(r.title) && r.title !== excludeTitle)
+             .sort((a, b) => a.rank - b.rank);
 }
 
 function fmtDwell(ms) {   // [§7] 디버그 표기 — 검증 라운드의 dwell 경계 실측용 (E24)

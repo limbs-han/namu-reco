@@ -117,8 +117,10 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
   const togglePanel = (wrapper) => {
     if (document.getElementById(PANEL_ID)) { closePanel(); return; }
     if (!chrome.runtime?.id) { stop(); return; }     // [K3] 고아 선판정
+    // [E24-M1] 현재 열람 문서를 서빙 시점에 제외 — 비문서 페이지는 null(제외 없음)
+    const cur = globalThis.namuContent ? namuContent.viewTitleFor(location.pathname) : null;
     try {
-      chrome.runtime.sendMessage({ type: "get_recommendations" }, (rows) => {
+      chrome.runtime.sendMessage({ type: "get_recommendations", exclude: cur }, (rows) => {
         if (chrome.runtime.lastError) return;        // SW 기동 실패 등 — 조용히 스킵
         renderPanel(wrapper, Array.isArray(rows) ? rows : []);
       });

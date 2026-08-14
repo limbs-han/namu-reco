@@ -34,6 +34,13 @@ test("[UX-A3] presentableRows — rank 정렬 + 한자 전용 제외 (구버전 
   assert.deepEqual(presentableRows(rows).map((r) => r.title), ["새", "치타"]);
 });
 
+test("[E24-M1] presentableRows — excludeTitle로 현재 문서 제외, 미지정·null이면 전량", () => {
+  const rows = [{ rank: 1, title: "성대" }, { rank: 2, title: "코볼" }];
+  assert.deepEqual(presentableRows(rows, "성대").map((r) => r.title), ["코볼"]);
+  assert.deepEqual(presentableRows(rows).map((r) => r.title), ["성대", "코볼"]);
+  assert.deepEqual(presentableRows(rows, null).map((r) => r.title), ["성대", "코볼"]);
+});
+
 test("[m1] 조사 일반화 — 받침 판별, 비한글 끝 글자는 병기", () => {
   assert.equal(josaOf("치타", "과", "와"), "와");
   assert.equal(josaOf("대한민국", "과", "와"), "과");
