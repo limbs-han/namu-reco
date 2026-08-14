@@ -61,7 +61,7 @@ const swLogic = {
         reason_dwell_ms: a.reasonDwell ?? null,
       }))
       .sort((x, y) => y.score - x.score || (x.title < y.title ? -1 : 1))
-      .slice(0, n);                               // [H8] N=20 확정
+      .slice(0, n);                               // [H8] N=20은 호출측(rebuild) 절단으로 이동 — n은 상한 인자
   },
 
   // [M3] 사유(출처) 그룹 라운드로빈 — 출처당 상한 5 구조상 상위가 한 출처 파생으로
@@ -321,7 +321,10 @@ function rebuildRecommendations() {
         if (!nbrs) continue;                      // 어디에도 없으면 기여 0으로 조용히 skip
         perSource.push({ title: v.title, w: v.w, dwell: v.dwell, nbrs, source });
       }
-      const list = swLogic.interleaveBySource(swLogic.scoreCandidates(perSource, visited, 20));
+      // [UX-12] 절단은 라운드로빈 뒤에 — 선절단하면 최약 출처 그룹이 통째로 잘려
+      // 순환 폭이 출처 수보다 작게 고정된다 (v0.6.0 4칸 순환 결함)
+      const list = swLogic.interleaveBySource(
+        swLogic.scoreCandidates(perSource, visited, Infinity)).slice(0, 20);
       if (!list.length) {                         // [H8] 산출 0건 → popular 폴백
         const popular = (await tx.get("kv", "popular"))?.value;
         if (!popular) return false;               // [I6] clear 없이 스킵 — dirty 유지

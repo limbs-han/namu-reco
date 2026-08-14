@@ -118,6 +118,19 @@ test("[UX-02] scoreCandidates — 한자 전용 후보는 소스 불문 제외, 
   assert.deepEqual(out.map((o) => o.title).sort(), ["N1", "N2", "N3", "N4", "N5"].sort());
 });
 
+test("[UX-12] 절단 전 라운드로빈 — 출처 5개면 상위 5개가 전부 다른 출처", () => {
+  // 최약 출처 V4의 후보도 그룹으로 살아남아야 한다 (v0.6.0은 top-20 선절단으로 소실)
+  const src = Array.from({ length: 5 }, (_, s) => ({
+    title: `V${s}`, w: 5 - s, dwell: 0, source: "fallback",
+    nbrs: Array.from({ length: 5 }, (_, i) => [`V${s}-N${i}`, 0.4, 0]),
+  }));
+  const all = swLogic.scoreCandidates(src, new Set(), Infinity);
+  assert.equal(all.length, 25);                       // 절단 없음 — 5×5 전부
+  const list = swLogic.interleaveBySource(all).slice(0, 20);
+  assert.equal(new Set(list.slice(0, 5).map((r) => r.reason_title)).size, 5);
+  assert.equal(list.length, 20);                      // [H8] 저장 계약은 절단으로 유지
+});
+
 test("E4 로직: LRU 퇴출 — last_used 오래된 순, 상한 이하까지만", () => {
   const metas = [
     { shard_id: 1, size_bytes: 60, last_used: 300 },
