@@ -46,7 +46,7 @@ const LONG_READ_MS = 3 * 60 * 1000;   // [M2] 사유 "오래 읽으셔서" 문�
 
 function josaOf(word, withBatchim, without) {   // [m1] 조사 — 끝 글자 받침 기준, 비한글은 병기
   const c = word.charCodeAt(word.length - 1);
-  if (c < 0xAC00 || c > 0xD7A3) return `${withBatchim}(${without})`;
+  if (c < 0xAC00 || c > 0xD7A3) return `${without}(${withBatchim})`;   // [UX-B1] 명세 정본 와(과)
   return (c - 0xAC00) % 28 ? withBatchim : without;
 }
 

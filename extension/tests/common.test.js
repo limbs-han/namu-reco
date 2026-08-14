@@ -31,7 +31,7 @@ test("[UX-A3] presentableRows — rank 정렬 + 한자 전용 제외 (구버전 
 test("[m1] 조사 일반화 — 받침 판별, 비한글 끝 글자는 병기", () => {
   assert.equal(josaOf("치타", "과", "와"), "와");
   assert.equal(josaOf("대한민국", "과", "와"), "과");
-  assert.equal(josaOf("C#", "과", "와"), "과(와)");
+  assert.equal(josaOf("C#", "과", "와"), "와(과)");   // [UX-B1] 명세 정본 — 과(와)가 아니라 와(과)
   assert.equal(josaOf("사족보행", "을", "를"), "을");
 });
 
