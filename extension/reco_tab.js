@@ -47,7 +47,7 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
 
   // 특수 기능 패널 실측값(라이트) + 다크 근사 — E15에서 다크 실측 확인
   const palette = () => dark()
-    ? { bg: "rgb(38, 41, 43)", border: "1px solid rgba(255,255,255,.18)",
+    ? { bg: "rgb(28, 29, 31)", border: "1px solid rgba(255,255,255,.18)",   // [UX-07] 사이트 다크 패널 실측
         color: "rgb(224, 226, 228)", sub: "rgb(150, 155, 160)" }
     : { bg: "rgb(255, 255, 255)", border: "1px solid rgb(206, 212, 218)",
         color: "rgb(33, 37, 41)", sub: "rgb(120, 128, 136)" };
@@ -60,8 +60,8 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
     const panel = document.createElement("div");
     panel.id = PANEL_ID;
     Object.assign(panel.style, {                     // 실측 재현 (설계 §D2 표)
-      position: "absolute", top: "100%", left: "0", zIndex: "520",   // [n1] 네이티브 메뉴와 같은 왼쪽 정렬
-      minWidth: "220px", maxWidth: "300px", padding: "4px 0",
+      position: "absolute", top: "calc(100% + 4px)", left: "0", zIndex: "520",   // [n1·UX-07] 좌정렬 + 네이티브와 같은 4px 갭
+      minWidth: "240px", maxWidth: "300px", padding: "4px 0",                    // [UX-07] 네이티브 width 240 실측
       background: p.bg, border: p.border, borderRadius: "6px",
       boxShadow: "0 10px 15px -3px rgba(0,0,0,.165), 0 4px 6px -4px rgba(0,0,0,.165)",
       maxHeight: "70vh", overflowY: "auto", textAlign: "left",
