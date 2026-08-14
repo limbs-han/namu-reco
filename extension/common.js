@@ -77,6 +77,20 @@ function presentableRows(rows, excludeTitle) {
              .sort((a, b) => a.rank - b.rank);
 }
 
+// [G1] 출처별 섹션 그룹핑 — 라운드로빈 rank 순 입력에서 첫 등장 순 = 그룹 최고점 순,
+// 그룹 내 rank 순 = 점수순이 그대로 나온다. 키는 reasonText 문자열(같은 출처는
+// dwell·source가 동일해 안정). 빈 사유는 "" 그룹 — 렌더가 헤더 없이 표시.
+// 드롭다운·팝업 공용 (연관 위젯은 본문 빈도순이라 대상 아님).
+function groupRows(rows) {
+  const groups = new Map();
+  for (const r of rows) {
+    const k = reasonText(r);
+    if (!groups.has(k)) groups.set(k, []);
+    groups.get(k).push(r);
+  }
+  return [...groups.entries()].map(([header, list]) => ({ header, rows: list }));
+}
+
 function fmtDwell(ms) {   // [§7] 디버그 표기 — 검증 라운드의 dwell 경계 실측용 (E24)
   const s = Math.floor(ms / 1000);
   return `${Math.floor(s / 60)}분 ${s % 60}초`;
@@ -109,5 +123,5 @@ function softNavigate(path, w, d) {
 if (typeof module !== "undefined") {
   module.exports = { SHARD_BASE, NAMESPACES, FALLBACK_SIM, LONG_READ_MS, DOC_GLYPH,
     isNamespace, isHanjaOnly, fnv1a32, shardIdOf, shardPath, docPathOf, docUrlOf, josaOf, reasonText,
-    presentableRows, softNavigate, fmtDwell };
+    presentableRows, softNavigate, fmtDwell, groupRows };
 }

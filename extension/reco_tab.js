@@ -72,40 +72,38 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
       Object.assign(empty.style, { padding: "10px 12px", fontSize: "13px", color: p.sub });
       panel.append(empty);
     }
-    for (const r of rows) {
-      const a = document.createElement("a");
-      a.href = recoTab.itemHref(r.title);            // 일반 앵커 — 이동이 곧 새 view 수집
-      Object.assign(a.style, {                       // 항목 실측: 6px 12px / 15px
-        display: "flex", alignItems: "flex-start", padding: "6px 12px",
-        fontSize: "15px", color: p.color, textDecoration: "none", lineHeight: "1.35",
-      });
-      const holder = document.createElement("span"); // [n2] 네이티브 메뉴처럼 항목 아이콘
-      holder.innerHTML = DOC_GLYPH;
-      const icon = holder.firstChild;
-      Object.assign(icon.style, { flexShrink: "0", marginRight: "8px", marginTop: "2px" });
-      const col = document.createElement("span");
-      Object.assign(col.style, { display: "flex", flexDirection: "column", minWidth: "0" });
-      const t = document.createElement("span");
-      t.textContent = r.title;
-      col.append(t);
-      const why = reasonText(r);      // §4.7 [J8] 단일 진실원 — common.js
-      if (why) {
-        const sub = document.createElement("span");
-        sub.textContent = why;
-        Object.assign(sub.style, { fontSize: "10.5px", color: p.sub, marginTop: "1px" });
-        col.append(sub);
+    // [G1] 출처별 섹션 — 사유가 그룹 헤더로 승격(행마다 반복되던 10.5px 문구 제거),
+    // 행은 아이콘+제목 단일 라인. 그룹 순서·그룹 내 순서는 groupRows(rank 순회)가 보장.
+    for (const g of groupRows(rows)) {
+      if (g.header) {
+        const gh = document.createElement("div");
+        gh.textContent = g.header;
+        Object.assign(gh.style, { padding: "8px 12px 2px", fontSize: "10.5px", color: p.sub });
+        panel.append(gh);
       }
-      a.append(icon, col);
-      a.addEventListener("mouseenter", () => { a.style.background = dark() ? "rgba(255,255,255,.06)" : "rgba(0,0,0,.045)"; });
-      a.addEventListener("mouseleave", () => { a.style.background = "transparent"; });
-      a.addEventListener("click", (e) => {
-        if (e.button === 0 && !e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey &&
-            softNavigate(recoTab.itemHref(r.title))) {
-          e.preventDefault();       // [UX-B6] 소프트 전환 성사 — 하드 내비 취소.
-        }                           //         수정자·비좌클릭은 기본 동작(새 탭 등) 보존
-        closePanel();               // [UX-10] 소프트 전환이면 리로드가 없어 직접 닫는다
-      });
-      panel.append(a);
+      for (const r of g.rows) {
+        const a = document.createElement("a");
+        a.href = recoTab.itemHref(r.title);          // 일반 앵커 — 이동이 곧 새 view 수집
+        Object.assign(a.style, {                     // 항목 실측: 12px 좌우 / 15px (단일 라인)
+          display: "flex", alignItems: "center", padding: "5px 12px",
+          fontSize: "15px", color: p.color, textDecoration: "none", lineHeight: "1.35",
+        });
+        const holder = document.createElement("span"); // [n2] 네이티브 메뉴처럼 항목 아이콘
+        holder.innerHTML = DOC_GLYPH;
+        const icon = holder.firstChild;
+        Object.assign(icon.style, { flexShrink: "0", marginRight: "8px" });
+        a.append(icon, document.createTextNode(r.title));
+        a.addEventListener("mouseenter", () => { a.style.background = dark() ? "rgba(255,255,255,.06)" : "rgba(0,0,0,.045)"; });
+        a.addEventListener("mouseleave", () => { a.style.background = "transparent"; });
+        a.addEventListener("click", (e) => {
+          if (e.button === 0 && !e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey &&
+              softNavigate(recoTab.itemHref(r.title))) {
+            e.preventDefault();     // [UX-B6] 소프트 전환 성사 — 하드 내비 취소.
+          }                         //         수정자·비좌클릭은 기본 동작(새 탭 등) 보존
+          closePanel();             // [UX-10] 소프트 전환이면 리로드가 없어 직접 닫는다
+        });
+        panel.append(a);
+      }
     }
     wrapper.append(panel);
     const rect = panel.getBoundingClientRect();  // [n1] 오른쪽 끝 탭 + 좁은 창에서 뷰포트를

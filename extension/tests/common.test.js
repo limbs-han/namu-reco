@@ -3,7 +3,26 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 const path = require("node:path");
 const { josaOf, reasonText, LONG_READ_MS, isHanjaOnly, docPathOf, docUrlOf,
-        presentableRows, softNavigate, fmtDwell } = require(path.join(__dirname, "..", "common.js"));
+        presentableRows, softNavigate, fmtDwell, groupRows } = require(path.join(__dirname, "..", "common.js"));
+
+test("[G1] groupRows — 사유 문자열 키, 첫 등장 순 그룹, 그룹 내 rank 순 유지", () => {
+  const mk = (rank, title, reason, source) => ({ rank, title, source,
+    reason_title: reason, reason_dwell_ms: null });
+  const rows = [   // 라운드로빈 산출 형태 (rank 순)
+    mk(1, "뱀", "사족보행", "fallback"),
+    mk(2, "배추", "김치", "shard"),
+    mk(3, "대한민국", null, "popular"),
+    mk(4, "에뮤", "사족보행", "fallback"),
+    mk(5, "깍두기", "김치", "shard"),
+  ];
+  const gs = groupRows(rows);
+  assert.deepEqual(gs.map((g) => g.header),
+    ["「사족보행」에서 이어지는 문서", "「김치」와 가까운 문서", "인기 문서"]);
+  assert.deepEqual(gs[0].rows.map((r) => r.title), ["뱀", "에뮤"]);
+  assert.deepEqual(gs[1].rows.map((r) => r.title), ["배추", "깍두기"]);
+  // 빈 사유(비정상 행)는 "" 그룹 — 렌더가 헤더 없이 표시
+  assert.deepEqual(groupRows([mk(1, "X", null, "shard")])[0].header, "");
+});
 
 test("[§7] fmtDwell — 분·초 표기 (dwell 경계 실측용 디버그)", () => {
   assert.equal(fmtDwell(288000), "4분 48초");
