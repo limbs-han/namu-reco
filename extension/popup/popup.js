@@ -8,17 +8,31 @@
   if (!rows.length) {                 // 설치 직후 첫 알람 전 등 — 디버그 영역은 계속 렌더
     empty.hidden = false;
   }
-  for (const r of rows) {
-    const li = document.createElement("li");
-    const a = document.createElement("a");
-    a.textContent = r.title;
-    // [J2] chrome.tabs.create는 무권한 API — URL 조립은 반드시 common.js docUrlOf
-    a.addEventListener("click", () => chrome.tabs.create({ url: docUrlOf(r.title) }));
-    const why = document.createElement("span");
-    why.className = "why";
-    why.textContent = reasonText(r);  // §4.7 [J8] 단일 진실원 — common.js
-    li.append(a, why);
-    list.append(li);
+  // [G1·B3] 출처별 섹션 — 사유는 그룹 헤더 1회(reasonText 단일 진실원 [J8]),
+  // 행은 문서 글리프+제목 (드롭다운과 시각 언어 통일, 번호 제거)
+  for (const g of groupRows(rows)) {
+    if (g.header) {
+      const h = document.createElement("div");
+      h.className = "ghead";
+      h.textContent = g.header;
+      list.append(h);
+    }
+    const ul = document.createElement("ul");
+    for (const r of g.rows) {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      const ih = document.createElement("span");
+      ih.innerHTML = DOC_GLYPH;                  // currentColor — 링크색 상속
+      const icon = ih.firstChild;
+      icon.setAttribute("width", "14");
+      icon.setAttribute("height", "14");
+      a.append(icon, document.createTextNode(r.title));
+      // [J2] chrome.tabs.create는 무권한 API — URL 조립은 반드시 common.js docUrlOf
+      a.addEventListener("click", () => chrome.tabs.create({ url: docUrlOf(r.title) }));
+      li.append(a);
+      ul.append(li);
+    }
+    list.append(ul);
   }
 
   // [§7] 디버그 — profile 직독 (dwell 경계 실측용, SW 무경유. 팝업은 확장 origin)

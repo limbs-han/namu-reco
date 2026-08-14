@@ -6,3 +6,7 @@ li { margin: 6px 0; }
 li a { font-size: .95rem; text-decoration: none; color: #0a58ca; cursor: pointer; }
 li a:hover { text-decoration: underline; }
 li .why { display: block; color: #888; font-size: .78rem; }
+/* [G1·B3] 출처별 섹션 — 헤더는 구 .why 톤, 행은 아이콘+제목 (드롭다운과 시각 언어 통일) */
+.ghead { color: #888; font-size: .78rem; margin: 10px 0 2px; }
+#list ul { list-style: none; margin: 0; padding-left: .2rem; }
+#list li a svg { vertical-align: -2px; margin-right: 6px; }
