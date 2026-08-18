@@ -6,6 +6,7 @@ if (typeof importScripts !== "undefined") importScripts("common.js", "db.js");
 const CACHE_CAP = 150 * 2 ** 20;      // [M6] nbr_cache 총량 상한 150MB (해제 후 바이트 기준)
 const DAY = 86400000;
 const HALF_LIFE_MS = 7 * DAY;         // [M2] 반감기 7일
+const SOURCE_CAP = 5;                 // [F2] 한 목록(20행)이 쓰는 출처 수 상한 — 섹션당 ~4행
 
 const swLogic = {
   // [M2] 유효 가중치 — 읽기 시점 감쇠 (쓰기 불필요)
@@ -67,18 +68,28 @@ const swLogic = {
   // [M3] 사유(출처) 그룹 라운드로빈 — 출처당 상한 5 구조상 상위가 한 출처 파생으로
   // 뭉치는 클럼핑 해소. 그룹 순서 = 그룹 최고 score 순(입력 첫 등장 순 = Map 삽입 순),
   // 그룹 내부 순서 = score 순 유지. 행 내용·개수 불변 — 표시 순서만 바꾼다.
-  interleaveBySource(list) {
+  // [F2] 상위 SOURCE_CAP개 출처를 먼저 소진하고 나머지를 뒤에 잇는다. 열람 이력이 쌓이면
+  // 출처가 20개를 넘어 20행이 출처당 1행으로 쪼개졌다(헤더/행 0.65→1.00, 세로 2배 — 리포트
+  // F2). 앞 K개만 돌리면 20행이 K개 출처에서 나와 섹션당 ~4행이 된다. 뒤에 잇는 이유는
+  // 상위 K개의 후보가 20에 미달할 때 추천 건수를 잃지 않기 위함 — 절단은 여전히 호출측 [UX-12].
+  interleaveBySource(list, k = SOURCE_CAP) {
     const groups = new Map();
     for (const r of list) {
-      const k = r.reason_title ?? "";
-      if (!groups.has(k)) groups.set(k, []);
-      groups.get(k).push(r);
+      const t = r.reason_title ?? "";
+      if (!groups.has(t)) groups.set(t, []);
+      groups.get(t).push(r);
     }
     const qs = [...groups.values()];
     const out = [];
-    for (let i = 0; out.length < list.length; i++) {
-      for (const q of qs) if (i < q.length) out.push(q[i]);
-    }
+    const drain = (queues) => {
+      for (let i = 0; ; i++) {
+        const round = queues.filter((q) => i < q.length);
+        if (!round.length) return;
+        for (const q of round) out.push(q[i]);
+      }
+    };
+    drain(qs.slice(0, k));
+    drain(qs.slice(k));
     return out;
   },
 

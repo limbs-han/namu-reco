@@ -109,6 +109,23 @@ test("[M3] 빈 배열·단일 그룹은 순서 그대로", () => {
   assert.deepEqual(swLogic.interleaveBySource(one).map((r) => r.title), ["x", "y"]);
 });
 
+test("[F2] 출처 수 상한 — 상위 K개 출처가 20행을 채우고, 못 채우면 나머지로 이어붙인다", () => {
+  // 이력이 쌓이면 출처가 20개를 넘어 행마다 자기 섹션을 갖는다(헤더/행 1.00 붕괴, 리포트 F2).
+  const src = (n, per) => Array.from({ length: n }, (_, s) => ({
+    title: `V${s}`, w: n - s, dwell: 0, source: "fallback",
+    nbrs: Array.from({ length: per }, (_, i) => [`V${s}-N${i}`, 0.4, 0]),
+  }));
+  const all = swLogic.scoreCandidates(src(8, 5), new Set(), Infinity);
+  const list = swLogic.interleaveBySource(all).slice(0, 20);
+  assert.equal(list.length, 20);
+  assert.ok(new Set(list.map((r) => r.reason_title)).size <= 5, "20행의 출처는 5개 이하");
+  // 상위 K가 20행에 미달하면 나머지 출처로 채운다 — 추천 건수 손실 0 [UX-12]
+  const thin = swLogic.scoreCandidates(src(8, 2), new Set(), Infinity);
+  assert.equal(swLogic.interleaveBySource(thin).length, thin.length);   // 16건 전량 보존
+  assert.equal(new Set(swLogic.interleaveBySource(thin).slice(0, 10)
+    .map((r) => r.reason_title)).size, 5);   // 앞 10행은 상위 5개 출처에서만
+});
+
 test("[UX-02] scoreCandidates — 한자 전용 후보는 소스 불문 제외, 상한 5 슬롯 미소모", () => {
   const nbrs = [["四", 0.99, 0.9], ["N1", 0.9, 0], ["N2", 0.8, 0],
                 ["N3", 0.7, 0], ["N4", 0.6, 0], ["N5", 0.5, 0]];
