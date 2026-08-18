@@ -36,6 +36,12 @@ const recoTab = {
   itemHref(title) {                   // [UX-10] 상대 경로 — 통짜 리로드·오프라인 공룡 페이지 방지
     return docPathOf(title);
   },
+
+  // [B7] 제자리 이동 판정 — 수식키·비좌클릭은 브라우저 기본(새 탭·창)이므로 우리가
+  // 개입하지 않는다. v0.6.3은 이때도 closePanel을 불러 연속 ctrl+클릭이 불가능했다.
+  navigatesInPlace(e) {
+    return e.button === 0 && !e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey;
+  },
 };
 
 if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.runtime) (() => {
@@ -96,10 +102,10 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
         a.addEventListener("mouseenter", () => { a.style.background = dark() ? "rgba(255,255,255,.06)" : "rgba(0,0,0,.045)"; });
         a.addEventListener("mouseleave", () => { a.style.background = "transparent"; });
         a.addEventListener("click", (e) => {
-          if (e.button === 0 && !e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey &&
-              softNavigate(recoTab.itemHref(r.title))) {
+          if (!recoTab.navigatesInPlace(e)) return;   // [B7] 새 탭·창 — 기본 동작 + 패널 유지(연속 ctrl+클릭)
+          if (softNavigate(recoTab.itemHref(r.title))) {
             e.preventDefault();     // [UX-B6] 소프트 전환 성사 — 하드 내비 취소.
-          }                         //         수정자·비좌클릭은 기본 동작(새 탭 등) 보존
+          }
           closePanel();             // [UX-10] 소프트 전환이면 리로드가 없어 직접 닫는다
         });
         panel.append(a);

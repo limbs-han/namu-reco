@@ -39,3 +39,13 @@ test("항목 href는 상대 경로 [UX-10] — docPathOf 단일 진실원, C# �
   assert.equal(recoTab.itemHref("C#"), "/w/C%23");
   assert.equal(recoTab.itemHref("A/B"), "/w/A/B");
 });
+
+test("[B7] navigatesInPlace — 수식키·비좌클릭은 제자리 이동 아님 (패널 유지·새 탭 보존)", () => {
+  const e = (o) => ({ button: 0, ctrlKey: false, metaKey: false, shiftKey: false, altKey: false, ...o });
+  assert.equal(recoTab.navigatesInPlace(e({})), true);
+  assert.equal(recoTab.navigatesInPlace(e({ ctrlKey: true })), false);
+  assert.equal(recoTab.navigatesInPlace(e({ metaKey: true })), false);
+  assert.equal(recoTab.navigatesInPlace(e({ shiftKey: true })), false);
+  assert.equal(recoTab.navigatesInPlace(e({ altKey: true })), false);
+  assert.equal(recoTab.navigatesInPlace(e({ button: 1 })), false);   // 휠클릭 = 새 탭
+});
