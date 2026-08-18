@@ -83,8 +83,28 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
     for (const g of groupRows(rows)) {
       if (g.header) {
         const gh = document.createElement("div");
-        gh.textContent = g.header;
-        Object.assign(gh.style, { padding: "8px 12px 2px", fontSize: "10.5px", color: p.sub });
+        Object.assign(gh.style, { padding: "8px 12px 2px", fontSize: "10.5px", color: p.sub,
+          display: "flex", alignItems: "center", justifyContent: "space-between", gap: "8px" });
+        const label = document.createElement("span");
+        label.textContent = g.header;
+        gh.append(label);
+        if (g.topic) {                             // [G3] 병합·인기 섹션(topic null)엔 미표시
+          const mute = document.createElement("button");
+          mute.textContent = "−";
+          mute.title = "이 주제 관심 없음 — 관련 문서를 다시 읽을 때까지 추천에서 제외";
+          Object.assign(mute.style, { background: "none", border: "none", cursor: "pointer",
+            color: p.sub, fontSize: "13px", lineHeight: "1", padding: "0 2px", flexShrink: "0" });
+          mute.addEventListener("click", () => {
+            chrome.runtime.sendMessage({ type: "mute_topic", title: g.topic }, () => {
+              if (chrome.runtime.lastError) return;
+              const cur = globalThis.namuContent ? namuContent.viewTitleFor(location.pathname) : null;
+              chrome.runtime.sendMessage({ type: "get_recommendations", exclude: cur }, (rs) => {
+                if (!chrome.runtime.lastError) renderPanel(wrapper, Array.isArray(rs) ? rs : []);
+              });                                  // 즉시 재계산된 목록으로 그 자리에서 갱신
+            });
+          });
+          gh.append(mute);
+        }
         panel.append(gh);
       }
       for (const r of g.rows) {

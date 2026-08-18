@@ -123,6 +123,20 @@ const swLogic = {
     return out;
   },
 
+  // [G3] 주제 뮤트 — '-' 클릭 시 클러스터 구성원 전체를 묶어 뮤트(대표만 지우면 다음
+  // rebuild에서 다른 구성원 명의로 부활). 어디에도 없으면 자기 자신만.
+  muteGroupFor(clusterArrs, title) {
+    return clusterArrs.find((g) => g.includes(title)) || [title];
+  },
+
+  // [G3] 뮤트 지속성 = "관련 문서를 다시 볼 때까지"(사용자 결정). 데이터 증명 가능한 판정:
+  // 새 view의 제목이 구성원이거나, view 본문 링크(기존 수집 top40)에 구성원이 포함되면
+  // 관심이 돌아온 것 — 그 그룹만 해제. 미니배치가 view 처리 시 호출.
+  autoUnmute(groups, views) {
+    const seen = new Set(views.flatMap((v) => [v.title, ...(v.links || [])]));
+    return groups.filter((g) => !g.members.some((t) => seen.has(t)));
+  },
+
   // [M6] LRU: last_used 오래된 순으로 총량이 상한 이하가 될 때까지 퇴출 대상 선정
   pickEvictions(metas, cap) {
     let total = metas.reduce((s, m) => s + m.size_bytes, 0);
@@ -161,6 +175,29 @@ if (typeof chrome !== "undefined" && chrome.runtime) {
         .catch(() => sendResponse([]));
       return true;                                  // 비동기 sendResponse 유지
     }
+    if (msg && msg.type === "mute_topic" && msg.title) {
+      // [G3] '-' 클릭 — 클러스터 구성원 전체 뮤트 후 즉시 재계산(다음 주제가 그 자리에서 채워짐)
+      db.txn(["kv"], "readwrite", async (tx) => {
+        const arrs = (await tx.get("kv", "clusters"))?.value || [];
+        const muted = (await tx.get("kv", "muted"))?.value || [];
+        if (!muted.some((g) => g.members.includes(msg.title))) {
+          muted.push({ members: swLogic.muteGroupFor(arrs, msg.title), created_at: Date.now() });
+        }
+        await tx.put("kv", { key: "muted", value: muted });
+      }).then(() => rebuildRecommendations())
+        .then(() => sendResponse(true)).catch(() => sendResponse(false));
+      return true;
+    }
+    if (msg && msg.type === "unmute_topic" && msg.title) {
+      // [G3] 팝업 해제 버튼 — 그룹 제거 후 즉시 재계산(주제 복귀)
+      db.txn(["kv"], "readwrite", async (tx) => {
+        const muted = ((await tx.get("kv", "muted"))?.value || [])
+          .filter((g) => !g.members.includes(msg.title));
+        await tx.put("kv", { key: "muted", value: muted });
+      }).then(() => rebuildRecommendations())
+        .then(() => sendResponse(true)).catch(() => sendResponse(false));
+      return true;
+    }
     if (!msg || msg.type !== "view") return;
     db.txn(["events", "local_nbr"], "readwrite", async (tx) => {
       const prev = await tx.get("events", msg.view_id);
@@ -181,10 +218,19 @@ if (typeof chrome !== "undefined" && chrome.runtime) {
   chrome.alarms.onAlarm.addListener(async () => {
     await coldStartIfNeeded();                    // [G2·H1·I7] kv.popular 부재 시에만 fetch
     // [B3][F6] 조회→집계→마킹을 단일 트랜잭션에서
-    const n = await db.txn(["events", "profile", "kv"], "readwrite", async (tx) => {
+    const n = await db.txn(["events", "profile", "kv", "local_nbr"], "readwrite", async (tx) => {
       const events = await tx.unprocessedEnded(); // [F6] 조회도 같은 txn — 경합 창 제거
       if (!events.length) return 0;               // E3: 인덱스 조회 1회 후 즉시 종료
       await updateProfile(tx, events);            // [M2] 점화식 — 모든 IDB 접근은 tx 경유
+      const muted = (await tx.get("kv", "muted"))?.value || [];   // [G3] 관련 문서 재열람 = 해제
+      if (muted.length) {
+        const views = [];
+        for (const e of events) {
+          views.push({ title: e.title, links: (await tx.get("local_nbr", e.title))?.links || [] });
+        }
+        const kept = swLogic.autoUnmute(muted, views);
+        if (kept.length !== muted.length) await tx.put("kv", { key: "muted", value: kept });
+      }
       await markProcessed(tx, events);            // 같은 트랜잭션 — 크래시 시 이중 집계 방지
       await tx.put("kv", { key: "dirty", value: 1 });   // [H2] 마킹과 같은 txn
       return events.length;
@@ -346,7 +392,10 @@ function rebuildRecommendations() {
     async (tx) => {
       const now = Date.now();
       const rows = await tx.getAll("profile");
-      const top = swLogic.topProfile(rows, now, 50);
+      // [G3] 뮤트된 주제의 구성원은 시드에서 제외 — profile 데이터 자체는 보존(해제 시 복원)
+      const mutedTitles = new Set(
+        (((await tx.get("kv", "muted"))?.value) || []).flatMap((g) => g.members));
+      const top = swLogic.topProfile(rows, now, 50).filter((v) => !mutedTitles.has(v.title));
       const visited = new Set(rows.map((r) => r.title));   // 방문 판정 = profile 보유 제목
       const perSource = [];
       for (const v of top) {
@@ -372,6 +421,12 @@ function rebuildRecommendations() {
       // [UX-12] 절단은 라운드로빈 뒤에 — 선절단하면 최약 출처 그룹이 통째로 잘려
       // 순환 폭이 출처 수보다 작게 고정된다 (v0.6.0 4칸 순환 결함)
       const clusters = swLogic.clusterSources(perSource);   // [G2]
+      const byRep = new Map();                    // [G3] 뮤트 확장용 구성원 명단 영속화
+      for (const [t, c] of clusters) {
+        if (!byRep.has(c.rep)) byRep.set(c.rep, []);
+        byRep.get(c.rep).push(t);
+      }
+      await tx.put("kv", { key: "clusters", value: [...byRep.values()] });
       const scored = swLogic.scoreCandidates(perSource, visited, Infinity).map((r) => {
         const c = r.reason_title && clusters.get(r.reason_title);
         return c ? { ...r, reason_rep: c.rep, reason_rep_dwell_ms: c.dwell } : r;

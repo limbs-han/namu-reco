@@ -87,6 +87,20 @@ test("[G2] groupRows — 같은 클러스터 행은 한 섹션", () => {
     [["「식스팩」 등과 가까운 문서", 2], ["「김치」와 가까운 문서", 1]]);
 });
 
+test("[G3] groupRows — topic 필드: 뮤트 대상(대표 제목), 병합·인기·빈 사유는 null", () => {
+  const mk = (rank, title, reason, rep, score, source = "shard") => ({ rank, title, score, source,
+    reason_title: reason, reason_rep: rep, reason_rep_dwell_ms: null, reason_dwell_ms: null });
+  const gs = groupRows([
+    mk(1, "전완근", "근육", "식스팩", 9), mk(2, "배추", "김치", null, 8),
+    mk(3, "대한민국", null, null, 7, "popular"),
+  ]);
+  assert.deepEqual(gs.map((g) => g.topic), ["식스팩", "김치", null]);   // 클러스터는 대표가 뮤트 키
+  // 「그 외 추천」 병합 섹션은 여러 출처 묶음 — 뮤트 대상 아님
+  const singles = Array.from({ length: 7 }, (_, i) => mk(i + 1, `T${i}`, `R${i}`, null, 7 - i));
+  const merged = groupRows(singles).find((g) => g.header === "그 외 추천");
+  assert.equal(merged.topic, null);
+});
+
 test("[§7] fmtDwell — 분·초 표기 (dwell 경계 실측용 디버그)", () => {
   assert.equal(fmtDwell(288000), "4분 48초");
   assert.equal(fmtDwell(0), "0분 0초");

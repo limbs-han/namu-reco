@@ -12,6 +12,12 @@ li { margin: 6px 0; }
 li a { font-size: 15px; text-decoration: none; color: #0a58ca; cursor: pointer; }   /* [FNT] 드롭다운 행 15px 실측 */
 li a:hover { text-decoration: underline; }
 /* [G1·B3] 출처별 섹션 — 행은 아이콘+제목 (드롭다운과 시각 언어 통일) */
-.ghead { color: #888; font-size: 10.5px; margin: 10px 0 2px; }   /* [FNT] 드롭다운 헤더 10.5px */
+.ghead { color: #888; font-size: 10.5px; margin: 10px 0 2px;
+  display: flex; align-items: center; justify-content: space-between; gap: 8px; }   /* [FNT] 드롭다운 헤더 10.5px */
+/* [G3] 주제 뮤트('-')·해제 버튼 — 텍스트 버튼, 헤더와 같은 서브 톤 */
+.ghead button, #muted-rows button { background: none; border: none; cursor: pointer;
+  color: #888; font-size: 13px; line-height: 1; padding: 0 2px; flex-shrink: 0; }
+#muted-rows { margin: 4px 0 0; padding-left: .2rem; list-style: none; font-size: 12px; color: #555; }
+#muted-rows li { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 4px 0; }
 #list ul { list-style: none; margin: 0; padding-left: .2rem; }
 #list li a svg { vertical-align: -2px; margin-right: 6px; }

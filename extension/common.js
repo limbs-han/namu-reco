@@ -118,11 +118,15 @@ function groupRows(rows) {
   }
   const key = (list) => [Math.max(...list.map((r) => r.score ?? 0)),
                          -Math.min(...list.map((r) => r.rank ?? 0))];
-  const out = [...groups.entries()].map(([header, list]) => ({ header, rows: list }))
+  // [G3] topic = 섹션의 뮤트 키(클러스터 대표 또는 출처 제목). 병합·인기·빈 사유는 null
+  // — '-' 버튼 표시 판정. 「그 외 추천」은 여러 출처 묶음이라 한 번에 뮤트하면 위험.
+  const out = [...groups.entries()].map(([header, list]) =>
+      ({ header, topic: list[0].reason_rep ?? list[0].reason_title ?? null, rows: list }))
     .sort((a, b) => { const [x, y] = [key(a.rows), key(b.rows)]; return y[0] - x[0] || y[1] - x[1]; });
   if (out.length <= SECTION_CAP + 1) return out;
   return [...out.slice(0, SECTION_CAP),
-          { header: "그 외 추천", rows: out.slice(SECTION_CAP).flatMap((g) => g.rows) }];
+          { header: "그 외 추천", topic: null,
+            rows: out.slice(SECTION_CAP).flatMap((g) => g.rows) }];
 }
 
 function fmtDwell(ms) {   // [§7] 디버그 표기 — 검증 라운드의 dwell 경계 실측용 (E24)

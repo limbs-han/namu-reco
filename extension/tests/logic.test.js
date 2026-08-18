@@ -148,6 +148,29 @@ test("[G2] 클러스터 행은 라운드로빈에서 한 출처로 계상 — �
   ]).map((x) => x.title), ["a1", "b1", "a2"]);
 });
 
+test("[G3] muteGroupFor — 클러스터 구성원 전체, 어디에도 없으면 자기 자신만", () => {
+  const arrs = [["근육", "식스팩", "큰볼기근"], ["김치", "배추"]];
+  assert.deepEqual(swLogic.muteGroupFor(arrs, "식스팩"), ["근육", "식스팩", "큰볼기근"]);
+  assert.deepEqual(swLogic.muteGroupFor(arrs, "플랑크톤"), ["플랑크톤"]);
+  assert.deepEqual(swLogic.muteGroupFor([], "근육"), ["근육"]);
+});
+
+test("[G3] autoUnmute — 구성원을 다시 읽거나 본문 링크에 구성원이 있으면 그 그룹 해제", () => {
+  const groups = [
+    { members: ["근육", "식스팩"], created_at: 1 },
+    { members: ["김치", "배추"], created_at: 2 },
+    { members: ["Go(프로그래밍 언어)"], created_at: 3 },
+  ];
+  // 전완근 열람 — 본문 링크에 근육 포함 → 근육 그룹만 해제
+  assert.deepEqual(swLogic.autoUnmute(groups, [{ title: "전완근", links: ["근육", "위팔근"] }])
+    .map((g) => g.created_at), [2, 3]);
+  // 구성원 자체를 재열람 → 해제
+  assert.deepEqual(swLogic.autoUnmute(groups, [{ title: "배추", links: [] }])
+    .map((g) => g.created_at), [1, 3]);
+  // 무관한 열람 → 전부 유지 (links 부재 안전)
+  assert.deepEqual(swLogic.autoUnmute(groups, [{ title: "플랑크톤" }]), groups);
+});
+
 test("[UX-02] scoreCandidates — 한자 전용 후보는 소스 불문 제외, 상한 5 슬롯 미소모", () => {
   const nbrs = [["四", 0.99, 0.9], ["N1", 0.9, 0], ["N2", 0.8, 0],
                 ["N3", 0.7, 0], ["N4", 0.6, 0], ["N5", 0.5, 0]];
