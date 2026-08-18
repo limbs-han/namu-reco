@@ -43,6 +43,7 @@ function docUrlOf(title) {                                     // [J2] 절대 UR
 }
 
 const LONG_READ_MS = 3 * 60 * 1000;   // [M2] 사유 "오래 읽으셔서" 문턱 — 누적 체류 3분
+const SECTION_CAP = 5;                // [F2] 사유 헤더를 갖는 섹션 수 상한 — sw.js SOURCE_CAP과 짝
 
 function josaOf(word, withBatchim, without) {   // [m1] 조사 — 끝 글자 받침 기준, 비한글은 병기
   const c = word.charCodeAt(word.length - 1);
@@ -95,8 +96,10 @@ function pendingViewTitles(events, now) {
 // — 그 그룹의 첫 등장이 2라운드로 밀려 무조건 꼬리로 갔다(리포트 F1, 4/4 재현).
 // score는 이미 행에 실려 있어 제외 후 재계산이 공짜. 동률·부재(구버전 저장분)는 min rank
 // 타이브레이크 → 라운드로빈 원순서 보존.
-// [F2] 행 1개짜리 그룹이 2개 이상이면 "그 외 추천" 한 섹션으로 병합 — 헤더 1개가 행 1개를
-// 위해 존재하는 형태(헤더/행 1.00 붕괴)를 없앤다. 1개뿐이면 두지 않는다: 사유 문구만 잃는다.
+// [F2] 상위 SECTION_CAP개 섹션은 사유 유지, 그 뒤를 "그 외 추천" 한 섹션으로 병합 —
+// 헤더가 행마다 붙는 붕괴(헤더/행 1.00)를 상한으로 막는다. 초안이던 "1행 섹션 전부 병합"은
+// 구버전 저장분(전 섹션 1행)에서 목록 전체를 「그 외 추천」 하나로 통일해 실기 롤백됐다
+// (2026-08-18) — 상위 섹션 보존이 하한. 나머지가 1개뿐이면 병합하지 않는다: 사유만 잃는다.
 function groupRows(rows) {
   const groups = new Map();
   for (const r of rows) {
@@ -108,10 +111,9 @@ function groupRows(rows) {
                          -Math.min(...list.map((r) => r.rank ?? 0))];
   const out = [...groups.entries()].map(([header, list]) => ({ header, rows: list }))
     .sort((a, b) => { const [x, y] = [key(a.rows), key(b.rows)]; return y[0] - x[0] || y[1] - x[1]; });
-  const singles = out.filter((g) => g.rows.length === 1);
-  if (singles.length < 2) return out;
-  return [...out.filter((g) => g.rows.length > 1),
-          { header: "그 외 추천", rows: singles.map((g) => g.rows[0]) }];
+  if (out.length <= SECTION_CAP + 1) return out;
+  return [...out.slice(0, SECTION_CAP),
+          { header: "그 외 추천", rows: out.slice(SECTION_CAP).flatMap((g) => g.rows) }];
 }
 
 function fmtDwell(ms) {   // [§7] 디버그 표기 — 검증 라운드의 dwell 경계 실측용 (E24)

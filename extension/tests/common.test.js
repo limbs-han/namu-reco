@@ -40,17 +40,27 @@ test("[F1] groupRows — 그룹 순서는 남은 행의 최고 score 순 (서빙
   assert.deepEqual(groupRows(rows).map((g) => g.rows[0].title), ["식스팩", "넓은등근", "Go"]);
 });
 
-test("[F2] groupRows — 1행 섹션이 2개 이상이면 「그 외 추천」 한 섹션으로 병합", () => {
+test("[F2] groupRows — 상위 5섹션은 사유 유지, 6번째부터 「그 외 추천」 병합", () => {
   const mk = (rank, title, reason, score) => ({ rank, title, score, source: "shard",
     reason_title: reason, reason_dwell_ms: null });
-  const many = groupRows([
+  // 실기 결함 케이스(v0.6.4 1차 롤백 원인): 구버전 저장분 = 전 섹션 1행.
+  // "1행 섹션 전부 병합" 규칙은 목록 전체를 「그 외 추천」 하나로 통일해 버렸다.
+  const singles = Array.from({ length: 19 }, (_, i) => mk(i + 1, `T${i}`, `R${i}`, 19 - i));
+  const gs = groupRows(singles);
+  assert.equal(gs.length, 6);                                   // 5 + 병합 1
+  assert.deepEqual(gs.slice(0, 5).map((g) => g.header),         // 상위 5개는 사유 유지
+    ["「R0」와(과) 가까운 문서", "「R1」와(과) 가까운 문서", "「R2」와(과) 가까운 문서",
+     "「R3」와(과) 가까운 문서", "「R4」와(과) 가까운 문서"]);   // 비한글 끝 = 병기 [B1]
+  assert.equal(gs[5].header, "그 외 추천");
+  assert.equal(gs[5].rows.length, 14);                          // 건수 손실 0
+  // 섹션 6개 이하는 병합하지 않는다 — 하나 합쳐봤자 사유만 잃는다
+  assert.equal(groupRows(singles.slice(0, 6)).filter((g) => g.header === "그 외 추천").length, 0);
+  // 다행(多行) 섹션 혼재 시에도 상한은 섹션 수 기준
+  const mixed = groupRows([
     mk(1, "A1", "가", 9), mk(2, "B1", "나", 8), mk(3, "C1", "다", 7), mk(4, "A2", "가", 6),
   ]);
-  assert.deepEqual(many.map((g) => g.header), ["「가」와 가까운 문서", "그 외 추천"]);
-  assert.deepEqual(many[1].rows.map((r) => r.title), ["B1", "C1"]);   // 순서 유지, 맨 끝
-  // 1행 섹션이 하나뿐이면 병합하지 않는다 — 사유 문구만 잃고 얻는 게 없다
-  assert.deepEqual(groupRows([mk(1, "A1", "가", 9), mk(2, "B1", "나", 8), mk(3, "A2", "가", 6)])
-    .map((g) => g.header), ["「가」와 가까운 문서", "「나」와 가까운 문서"]);
+  assert.deepEqual(mixed.map((g) => g.header),
+    ["「가」와 가까운 문서", "「나」와 가까운 문서", "「다」와 가까운 문서"]);   // 3섹션 — 병합 없음
 });
 
 test("[§7] fmtDwell — 분·초 표기 (dwell 경계 실측용 디버그)", () => {
