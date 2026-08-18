@@ -126,6 +126,28 @@ test("[F2] 출처 수 상한 — 상위 K개 출처가 20행을 채우고, 못 �
     .map((r) => r.reason_title)).size, 5);   // 앞 10행은 상위 5개 출처에서만
 });
 
+test("[G2] clusterSources — 출처끼리 이웃이면 같은 클러스터, 대표 = 최고 가중치", () => {
+  const src = (title, w, dwell, nbrTitles) => ({ title, w, dwell, source: "shard",
+    nbrs: nbrTitles.map((t) => [t, 0.5, 0]) });
+  const c = swLogic.clusterSources([
+    src("근육", 3, 300000, ["식스팩", "단백질"]),     // 식스팩이 출처이자 이웃 → 병합
+    src("식스팩", 5, 60000, ["복근"]),
+    src("큰볼기근", 2, 0, ["근육"]),                  // 근육을 이웃으로 → 같은 클러스터 (방향 무관)
+    src("김치", 1, 0, ["배추"]),                      // 고립 — 클러스터 없음
+  ]);
+  assert.deepEqual(c.get("근육"), { rep: "식스팩", dwell: 60000 });   // w 5 > 3 > 2
+  assert.deepEqual(c.get("큰볼기근"), c.get("근육"));
+  assert.equal(c.has("김치"), false);                 // 단독 출처는 병합 대상 아님
+});
+
+test("[G2] 클러스터 행은 라운드로빈에서 한 출처로 계상 — 키 = reason_rep 우선", () => {
+  const r = (t, reason, rep) => ({ title: t, reason_title: reason, reason_rep: rep ?? null });
+  assert.deepEqual(swLogic.interleaveBySource([
+    r("a1", "근육", "식스팩"), r("a2", "식스팩", "식스팩"),   // 같은 클러스터 = 한 그룹
+    r("b1", "김치", null),
+  ]).map((x) => x.title), ["a1", "b1", "a2"]);
+});
+
 test("[UX-02] scoreCandidates — 한자 전용 후보는 소스 불문 제외, 상한 5 슬롯 미소모", () => {
   const nbrs = [["四", 0.99, 0.9], ["N1", 0.9, 0], ["N2", 0.8, 0],
                 ["N3", 0.7, 0], ["N4", 0.6, 0], ["N5", 0.5, 0]];

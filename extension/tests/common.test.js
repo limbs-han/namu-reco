@@ -63,6 +63,30 @@ test("[F2] groupRows — 상위 5섹션은 사유 유지, 6번째부터 「그 �
     ["「가」와 가까운 문서", "「나」와 가까운 문서", "「다」와 가까운 문서"]);   // 3섹션 — 병합 없음
 });
 
+test("[G2] reasonText — 클러스터 행은 「대표」 등과 가까운 문서, 오래 읽음은 대표 dwell 기준", () => {
+  const base = { title: "전완근", source: "shard", reason_title: "근육",
+    reason_dwell_ms: 30000, reason_rep: "식스팩", reason_rep_dwell_ms: null };
+  assert.equal(reasonText(base), "「식스팩」 등과 가까운 문서");
+  assert.equal(reasonText({ ...base, reason_rep_dwell_ms: LONG_READ_MS }),
+    "오래 읽은 「식스팩」 등과 가까운 문서");
+  // 폴백(이어지는) 행도 클러스터에선 "가까운" — sim=0.4로 그래프 유사도에 계상되므로 증명 가능,
+  // 역방향("등에서 이어지는")은 shard 행에 실제 링크가 없을 수 있어 과장
+  assert.equal(reasonText({ ...base, source: "fallback" }), "「식스팩」 등과 가까운 문서");
+  // reason_rep 없는 구버전 저장분·단독 출처는 현행 문구 그대로
+  assert.equal(reasonText({ ...base, reason_rep: null }), "「근육」과 가까운 문서");
+});
+
+test("[G2] groupRows — 같은 클러스터 행은 한 섹션", () => {
+  const mk = (rank, title, reason, rep, score) => ({ rank, title, score, source: "shard",
+    reason_title: reason, reason_rep: rep, reason_rep_dwell_ms: null, reason_dwell_ms: null });
+  const gs = groupRows([
+    mk(1, "전완근", "근육", "식스팩", 9), mk(2, "복근", "식스팩", "식스팩", 8),
+    mk(3, "배추", "김치", null, 7),
+  ]);
+  assert.deepEqual(gs.map((g) => [g.header, g.rows.length]),
+    [["「식스팩」 등과 가까운 문서", 2], ["「김치」와 가까운 문서", 1]]);
+});
+
 test("[§7] fmtDwell — 분·초 표기 (dwell 경계 실측용 디버그)", () => {
   assert.equal(fmtDwell(288000), "4분 48초");
   assert.equal(fmtDwell(0), "0분 0초");

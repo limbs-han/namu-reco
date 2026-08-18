@@ -56,6 +56,15 @@ function josaOf(word, withBatchim, without) {   // [m1] 조사 — 끝 글자 �
 // shard = 링크 그래프 유사도("가까운"), fallback = X 본문의 실제 링크("이어지는").
 // "함께 읽히는" 같은 행동 데이터 주장 금지 [M2 과장 재발 방지].
 function reasonText(row) {
+  if (row.reason_rep) {
+    // [G2] 출처 클러스터(이웃인 출처끼리 병합) — 대표 출처 + "등". 문구는 항상 "가까운":
+    // 폴백 행도 sim=0.4로 그래프 유사도에 계상돼 증명 가능. 역방향("등에서 이어지는")은
+    // shard 행에 실제 본문 링크가 없을 수 있어 과장 — 금지. "등"은 받침 고정이라 조사 불변.
+    // "오래 읽은"은 대표 출처의 dwell 기준(profile 실측). 구버전 저장분은 이 필드가 없어
+    // 아래 단독 출처 경로로 — 마이그레이션 불필요.
+    const long = (row.reason_rep_dwell_ms || 0) >= LONG_READ_MS ? "오래 읽은 " : "";
+    return `${long}「${row.reason_rep}」 등과 가까운 문서`;
+  }
   if (row.reason_title) {
     const t = row.reason_title;
     const long = (row.reason_dwell_ms || 0) >= LONG_READ_MS ? "오래 읽은 " : "";

@@ -65,6 +65,36 @@ const swLogic = {
       .slice(0, n);                               // [H8] N=20은 호출측(rebuild) 절단으로 이동 — n은 상한 인자
   },
 
+  // [G2] 출처 클러스터 — 출처 a의 이웃 목록에 출처 b가 있으면 같은 주제로 병합(방향 무관).
+  // 파고든 주제일수록 파생 문서들이 각자 출처가 돼 시드 섹션이 야위는 문제(전완근 1행)의
+  // 해소: 근육·식스팩·큰볼기근이 「대표」 등 한 섹션으로 묶인다. 대표 = 최고 가중치 출처,
+  // 그 dwell을 함께 실어 "오래 읽은" 판정도 대표 기준. 단독 출처는 맵에 없음(현행 유지).
+  // rebuild가 이미 들고 있는 이웃 데이터만 사용 — 추가 수집·조회 없음.
+  clusterSources(perSource) {
+    const idx = new Map(perSource.map((v, i) => [v.title, i]));
+    const parent = perSource.map((_, i) => i);
+    const find = (i) => (parent[i] === i ? i : (parent[i] = find(parent[i])));
+    for (const [i, v] of perSource.entries()) {
+      for (const [t] of v.nbrs) {
+        const j = idx.get(t);
+        if (j !== undefined) parent[find(i)] = find(j);
+      }
+    }
+    const members = new Map();
+    for (const [i, v] of perSource.entries()) {
+      const r = find(i);
+      if (!members.has(r)) members.set(r, []);
+      members.get(r).push(v);
+    }
+    const out = new Map();
+    for (const ms of members.values()) {
+      if (ms.length < 2) continue;
+      const rep = ms.reduce((a, b) => (b.w > a.w ? b : a));
+      for (const m of ms) out.set(m.title, { rep: rep.title, dwell: rep.dwell ?? null });
+    }
+    return out;
+  },
+
   // [M3] 사유(출처) 그룹 라운드로빈 — 출처당 상한 5 구조상 상위가 한 출처 파생으로
   // 뭉치는 클럼핑 해소. 그룹 순서 = 그룹 최고 score 순(입력 첫 등장 순 = Map 삽입 순),
   // 그룹 내부 순서 = score 순 유지. 행 내용·개수 불변 — 표시 순서만 바꾼다.
@@ -75,7 +105,7 @@ const swLogic = {
   interleaveBySource(list, k = SOURCE_CAP) {
     const groups = new Map();
     for (const r of list) {
-      const t = r.reason_title ?? "";
+      const t = r.reason_rep ?? r.reason_title ?? "";   // [G2] 클러스터는 한 출처로 계상
       if (!groups.has(t)) groups.set(t, []);
       groups.get(t).push(r);
     }
@@ -341,8 +371,12 @@ function rebuildRecommendations() {
       }
       // [UX-12] 절단은 라운드로빈 뒤에 — 선절단하면 최약 출처 그룹이 통째로 잘려
       // 순환 폭이 출처 수보다 작게 고정된다 (v0.6.0 4칸 순환 결함)
-      const list = swLogic.interleaveBySource(
-        swLogic.scoreCandidates(perSource, visited, Infinity)).slice(0, 20);
+      const clusters = swLogic.clusterSources(perSource);   // [G2]
+      const scored = swLogic.scoreCandidates(perSource, visited, Infinity).map((r) => {
+        const c = r.reason_title && clusters.get(r.reason_title);
+        return c ? { ...r, reason_rep: c.rep, reason_rep_dwell_ms: c.dwell } : r;
+      });
+      const list = swLogic.interleaveBySource(scored).slice(0, 20);
       if (!list.length) {                         // [H8] 산출 0건 → popular 폴백
         const popular = (await tx.get("kv", "popular"))?.value;
         if (!popular) return false;               // [I6] clear 없이 스킵 — dirty 유지
