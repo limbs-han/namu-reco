@@ -86,10 +86,17 @@ function pendingViewTitles(events, now) {
                .map((e) => e.title);
 }
 
-// [G1] 출처별 섹션 그룹핑 — 라운드로빈 rank 순 입력에서 첫 등장 순 = 그룹 최고점 순,
-// 그룹 내 rank 순 = 점수순이 그대로 나온다. 키는 reasonText 문자열(같은 출처는
-// dwell·source가 동일해 안정). 빈 사유는 "" 그룹 — 렌더가 헤더 없이 표시.
-// 드롭다운·팝업 공용 (연관 위젯은 본문 빈도순이라 대상 아님).
+// [G1] 출처별 섹션 그룹핑 — 키는 reasonText 문자열(같은 출처는 dwell·source가 동일해
+// 안정), 그룹 내 순서는 입력(rank) 순 = 그룹 내 점수순. 빈 사유는 "" 그룹 — 렌더가
+// 헤더 없이 표시. 드롭다운·팝업 공용 (연관 위젯은 본문 빈도순이라 대상 아님).
+//
+// [F1] 그룹 순서 = **남은 행의 최고 score**. rank는 라운드로빈 위치지 점수가 아니라서
+// "첫 등장 순 = 그룹 최고점 순"(v0.6.3)은 서빙 시점 제외가 1라운드 행을 걷는 순간 깨졌다
+// — 그 그룹의 첫 등장이 2라운드로 밀려 무조건 꼬리로 갔다(리포트 F1, 4/4 재현).
+// score는 이미 행에 실려 있어 제외 후 재계산이 공짜. 동률·부재(구버전 저장분)는 min rank
+// 타이브레이크 → 라운드로빈 원순서 보존.
+// [F2] 행 1개짜리 그룹이 2개 이상이면 "그 외 추천" 한 섹션으로 병합 — 헤더 1개가 행 1개를
+// 위해 존재하는 형태(헤더/행 1.00 붕괴)를 없앤다. 1개뿐이면 두지 않는다: 사유 문구만 잃는다.
 function groupRows(rows) {
   const groups = new Map();
   for (const r of rows) {
@@ -97,7 +104,14 @@ function groupRows(rows) {
     if (!groups.has(k)) groups.set(k, []);
     groups.get(k).push(r);
   }
-  return [...groups.entries()].map(([header, list]) => ({ header, rows: list }));
+  const key = (list) => [Math.max(...list.map((r) => r.score ?? 0)),
+                         -Math.min(...list.map((r) => r.rank ?? 0))];
+  const out = [...groups.entries()].map(([header, list]) => ({ header, rows: list }))
+    .sort((a, b) => { const [x, y] = [key(a.rows), key(b.rows)]; return y[0] - x[0] || y[1] - x[1]; });
+  const singles = out.filter((g) => g.rows.length === 1);
+  if (singles.length < 2) return out;
+  return [...out.filter((g) => g.rows.length > 1),
+          { header: "그 외 추천", rows: singles.map((g) => g.rows[0]) }];
 }
 
 function fmtDwell(ms) {   // [§7] 디버그 표기 — 검증 라운드의 dwell 경계 실측용 (E24)

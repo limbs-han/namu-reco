@@ -24,6 +24,35 @@ test("[G1] groupRows — 사유 문자열 키, 첫 등장 순 그룹, 그룹 내
   assert.deepEqual(groupRows([mk(1, "X", null, "shard")])[0].header, "");
 });
 
+test("[F1] groupRows — 그룹 순서는 남은 행의 최고 score 순 (서빙 시점 제외 후 재계산)", () => {
+  // rank는 라운드로빈 위치라 점수 순이 아니다. 1위 그룹의 1라운드 행이 제외되면
+  // 첫 등장 rank 기준 정렬은 그 그룹을 맨 끝으로 보낸다 — 리포트 F1 (4/4 재현).
+  const mk = (rank, title, reason, score) => ({ rank, title, score, source: "shard",
+    reason_title: reason, reason_dwell_ms: null });
+  const rows = [                     // 라운드로빈 산출 형태 (rank 순, score는 그룹 내 내림차순)
+    mk(1, "식스팩", "근육", 9),     mk(2, "넓은등근", "성대", 8),  mk(3, "Go", "Objective-C", 7),
+    mk(4, "큰볼기근", "근육", 8.5), mk(5, "척추기립근", "성대", 3), mk(6, "Forth", "Objective-C", 2),
+  ];
+  const after = rows.filter((r) => r.title !== "식스팩");   // presentableRows가 1라운드 행을 걷어낸 상태
+  assert.deepEqual(groupRows(after).map((g) => g.rows[0].title),
+    ["큰볼기근", "넓은등근", "Go"]);   // 「근육」 남은 최고점 8.5 > 8 > 7 → 여전히 1위 (버그는 꼬리로 보냈다)
+  // 무손상 입력의 순서는 불변 (기존 동작 보존)
+  assert.deepEqual(groupRows(rows).map((g) => g.rows[0].title), ["식스팩", "넓은등근", "Go"]);
+});
+
+test("[F2] groupRows — 1행 섹션이 2개 이상이면 「그 외 추천」 한 섹션으로 병합", () => {
+  const mk = (rank, title, reason, score) => ({ rank, title, score, source: "shard",
+    reason_title: reason, reason_dwell_ms: null });
+  const many = groupRows([
+    mk(1, "A1", "가", 9), mk(2, "B1", "나", 8), mk(3, "C1", "다", 7), mk(4, "A2", "가", 6),
+  ]);
+  assert.deepEqual(many.map((g) => g.header), ["「가」와 가까운 문서", "그 외 추천"]);
+  assert.deepEqual(many[1].rows.map((r) => r.title), ["B1", "C1"]);   // 순서 유지, 맨 끝
+  // 1행 섹션이 하나뿐이면 병합하지 않는다 — 사유 문구만 잃고 얻는 게 없다
+  assert.deepEqual(groupRows([mk(1, "A1", "가", 9), mk(2, "B1", "나", 8), mk(3, "A2", "가", 6)])
+    .map((g) => g.header), ["「가」와 가까운 문서", "「나」와 가까운 문서"]);
+});
+
 test("[§7] fmtDwell — 분·초 표기 (dwell 경계 실측용 디버그)", () => {
   assert.equal(fmtDwell(288000), "4분 48초");
   assert.equal(fmtDwell(0), "0분 0초");
