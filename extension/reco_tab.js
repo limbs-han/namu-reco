@@ -79,7 +79,7 @@ if (typeof document !== "undefined" && typeof chrome !== "undefined" && chrome.r
       panel.append(empty);
     }
     // [G1] 출처별 섹션 — 사유가 그룹 헤더로 승격(행마다 반복되던 10.5px 문구 제거),
-    // 행은 아이콘+제목 단일 라인. 그룹 순서·그룹 내 순서는 groupRows(rank 순회)가 보장.
+    // 행은 아이콘+제목 단일 라인. 그룹 순서(남은 행 최고 score [F1])·그룹 내 순서는 groupRows가 보장.
     for (const g of groupRows(rows)) {
       if (g.header) {
         const gh = document.createElement("div");
