@@ -28,9 +28,9 @@ test("[M2] 점화식: 기존 score는 감쇠 후 누적 — 무감쇠 누적은 
 test("topProfile: w(v) 내림차순 상위 n, 동률은 제목순", () => {
   const now = Date.now();
   const rows = [
-    { title: "B", score: 1, last_seen: now },
-    { title: "A", score: 1, last_seen: now },
-    { title: "C", score: 9, last_seen: now },
+    { title: "B", score: 1, last_seen: now, dwell_ms_total: 60000 },
+    { title: "A", score: 1, last_seen: now, dwell_ms_total: 60000 },
+    { title: "C", score: 9, last_seen: now, dwell_ms_total: 60000 },
   ];
   const top = swLogic.topProfile(rows, now, 2);
   assert.deepEqual(top.map((t) => t.title), ["C", "A"]);
@@ -72,14 +72,29 @@ test("[H8] N=20 절단 + 산출 0건이면 빈 배열(폴백 판단은 호출측
   assert.deepEqual(swLogic.scoreCandidates([], new Set()), []);
 });
 
-test("[M2] topProfile은 dwell_ms_total을 dwell로 전달 (부재 시 0)", () => {
+test("[M2] topProfile은 dwell_ms_total을 dwell로 전달", () => {
   const now = Date.now();
   const top = swLogic.topProfile([
     { title: "A", score: 5, last_seen: now, dwell_ms_total: 421000 },
-    { title: "B", score: 1, last_seen: now },
+    { title: "B", score: 1, last_seen: now, dwell_ms_total: 30000 },
   ], now, 2);
   assert.equal(top[0].dwell, 421000);
-  assert.equal(top[1].dwell, 0);
+  assert.equal(top[1].dwell, 30000);
+});
+
+test("[S1] 시드 최소 체류 문턱 — 누적 30초 미만은 출처 자격 없음 (슬롯도 미소모)", () => {
+  const now = Date.now();
+  const rows = [
+    { title: "다크 나이트(영화)", score: 9, last_seen: now, dwell_ms_total: 8000 },   // 스침 — w 최고여도 제외
+    { title: "정독한 문서", score: 1, last_seen: now, dwell_ms_total: 421000 },
+    { title: "경계값", score: 1, last_seen: now, dwell_ms_total: 30000 },              // 딱 30초 = 포함
+    { title: "구버전 행", score: 5, last_seen: now },                                  // dwell 필드 부재 → 0 → 제외
+  ];
+  assert.deepEqual(swLogic.topProfile(rows, now, 2).map((t) => t.title),
+    ["경계값", "정독한 문서"]);   // 스침이 상위 n 슬롯을 소모하지 않는다 (filter 후 slice)
+  // 전원 미달이면 시드 0 — rebuild의 popular 폴백 경로로 (기존 [H8])
+  assert.deepEqual(swLogic.topProfile(
+    [{ title: "A", score: 9, last_seen: now, dwell_ms_total: 5000 }], now, 50), []);
 });
 
 test("[M2] reason_dwell_ms = 최대 기여 출처의 누적 체류, dwell 부재는 null", () => {

@@ -7,6 +7,7 @@ const CACHE_CAP = 150 * 2 ** 20;      // [M6] nbr_cache 총량 상한 150MB (해
 const DAY = 86400000;
 const HALF_LIFE_MS = 7 * DAY;         // [M2] 반감기 7일
 const SOURCE_CAP = 5;                 // [F2] 한 목록(20행)이 쓰는 출처 수 상한 — 섹션당 ~4행
+const SEED_MIN_DWELL_MS = 30 * 1000;  // [S1] 시드 자격 최소 누적 체류 — 스침 문서의 관심사 행세 차단
 
 const swLogic = {
   // [M2] 유효 가중치 — 읽기 시점 감쇠 (쓰기 불필요)
@@ -22,8 +23,13 @@ const swLogic = {
   },
 
   // w(v) 상위 n 프로필 (동률은 제목순 — 결정적)
+  // [S1] 누적 체류 30초 미만은 시드(출처) 자격 없음 — ln(1+s) 압축 + 7일 감쇠가 "방금
+  // 스친 문서"를 과대평가해 「스침」와 가까운 문서 섹션을 만들던 문제(다크 나이트 사례).
+  // profile 행은 보존되므로 나중에 더 읽으면 자격 획득. filter를 slice 앞에 — 스침이
+  // 상위 n 슬롯을 소모하면 정독 문서가 밀린다. 전원 미달이면 시드 0 → popular 폴백 [H8].
   topProfile(rows, now, n = 50) {
     return rows
+      .filter((r) => (r.dwell_ms_total || 0) >= SEED_MIN_DWELL_MS)
       .map((r) => ({ title: r.title, w: swLogic.effectiveWeight(r.score, r.last_seen, now),
                      dwell: r.dwell_ms_total || 0 }))   // [M2] 사유 문구 계층 입력
       .sort((a, b) => b.w - a.w || (a.title < b.title ? -1 : 1))
